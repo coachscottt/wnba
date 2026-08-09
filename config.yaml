@@ -21,3 +21,16 @@ stats:
   # The Cup final is an extra game coded as regular season; it must not count
   # toward the 44-game cap. Group-stage Cup games DO count.
   cup_final_note: "Commissioner's Cup Championship"
+
+odds:
+  sport_key: basketball_wnba
+  # One market to start (guide §6.2); add more only after the phase 3 join works.
+  markets: [player_points]
+  regions: us
+  # american = integer prices like -115; the storage format for over/under_price
+  odds_format: american
+  # Only snapshot events tipping within this many hours
+  horizon_hours: 30
+  # Intended capture cadence (guide §6.5): open, midday, T-60min, closing.
+  # Used for the projected-monthly-usage math; scheduling itself is phase 10.
+  snapshots_per_day: 4

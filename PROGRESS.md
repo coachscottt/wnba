@@ -9,7 +9,7 @@ has seen the output.
 |---|---|---|---|
 | 0 | Environment and scaffold | `build/00-setup.md` | ✅ complete 2026-08-06 |
 | 1 | Stats ingestion | `build/01-stats-ingestion.md` | ✅ complete 2026-08-09 |
-| 2 | Odds ingestion | `build/02-odds-ingestion.md` | ⬜ not started |
+| 2 | Odds ingestion | `build/02-odds-ingestion.md` | ✅ complete 2026-08-09 |
 | 3 | Cleaning and joining | `build/03-cleaning-joining.md` | ⬜ not started |
 | 4 | Features | `build/04-features.md` | ⬜ not started |
 | 5 | Minutes model | `build/05-minutes-model.md` | ⬜ not started |
@@ -53,3 +53,15 @@ returned, and anything left unresolved.
 - `not_on_roster` availability status never emitted — box scores only list rostered players; needs roster/injury data in a later phase.
 - Play-by-play not ingested (deferred, see DECISIONS.md) — the 0.44 possession coefficient stays an approximation until then.
 - `plus_minus` arrives as a string and is null for 2 played rows ("plus_minus_missing" issue code); 28 played rows have null minutes (kept with issue code `minutes_null_for_played_row`).
+
+### Phase 2 — Odds ingestion (2026-08-09)
+
+**Built:** `src/ingest_odds.py` (events → per-event event-odds calls → raw JSON to `data/raw/odds/<stamp>_<event_id>.json` before parsing → append-only `odds_snapshots` inserts), odds section in `config.yaml` (single market `player_points`, us region, american format, 30h horizon), `.env` loader in `src/config.py`, `odds_snapshots` table in `src/db.py`, `run.py update --dry-run` flag. `requests` declared explicitly.
+
+**DoD results:** all pass — live snapshot 2026-08-09T16:04:24Z landed: 238 player_points lines, 4/4 games (Aces@Liberty, Mercury@Mystics, Wings@Lynx, Valkyries@Sparks), 5 books (betrivers 79, betonlineag 44, draftkings 40, williamhill_us 39, fanduel 36); `--dry-run` re-parsed all 4 raw files offline, 0 duplicate inserts; quota printed (4 credits/run, 4,754,475 remaining, projected 480/month at 4 snapshots/day); simulated dead network logs a clean error (API key scrubbed to ***) and exits 1 with no traceback.
+
+**Unresolved:**
+- **Capture cadence is manual until phase 10.** The 4-snapshot cadence (open / midday / T-60 / close) exists only as projection math; nothing schedules runs. The closing-line capture — the one that matters most — happens only if `update` is run near tip. Owner note: games tip ~19:00–22:00 ET.
+- The API key on this account has a very large quota (4.75M credits remaining) — it appears to be a shared/existing account also used by other projects; WNBA usage (~480/month) is negligible against it.
+- Only `player_points` is captured. Adding `player_rebounds`/`player_assists` is a one-line config change but deliberately deferred until the phase 3 join works.
+- Odds event ids are not yet mapped to ESPN game_ids (phase 3, via team names + commence_time kept in raw JSON).

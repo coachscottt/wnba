@@ -87,3 +87,27 @@ Format:
 **Alternatives:** Filter on is_active flags (they are true for All-Star teams, so useless).
 **Why:** The 2026 All-Star game (TEAM COOP vs TEAM SPOON) sits in the feed as season_type 2 and would pollute games/player_games with exhibition stats.
 **Revisit if:** future seasons use different event-team abbreviations — add them to the config list.
+
+## 2026-08-09 — Phase 2 packages: requests declared, python-dotenv skipped
+**Decided:** `uv add requests` (it was already installed transitively via sportsdataverse; now it's an explicit, pinned dependency of our own code). `.env` is read by a ten-line parser in `src/config.py` instead of python-dotenv.
+**Alternatives:** python-dotenv; relying on the transitive requests.
+**Why:** Depending on a transitive package is fragile — an upstream change could silently remove it. python-dotenv adds a package for functionality that is ten lines of stdlib; the ask-before-adding rule biases against it.
+**Revisit if:** .env needs quoting/multiline/interpolation semantics — then switch to python-dotenv rather than growing the hand parser.
+
+## 2026-08-09 — Odds stored as American integers
+**Decided:** `odds_format: american` in config; over/under prices stored as integers (e.g. -115).
+**Alternatives:** Decimal floats.
+**Why:** The guide requires picking one consistently in config. American integers round-trip exactly (no float representation noise) and match what US books display; de-vigging in phase 8 converts to implied probability regardless of format.
+**Revisit if:** a non-US region's books are added and decimal comparison becomes the norm.
+
+## 2026-08-09 — Snapshot identity and idempotent parsing
+**Decided:** One UTC timestamp per run stamps every row and raw filename (`<stamp>_<event_id>.json`). `odds_snapshots` has a UNIQUE index on (captured_at_utc, game_id, book, market, player_name_raw, line, is_alternate) with INSERT OR IGNORE.
+**Alternatives:** Per-request timestamps; an unconstrained append table.
+**Why:** A run-level stamp groups a slate's captures into one logical snapshot (the fetch loop spans seconds). The natural-key index makes `--dry-run` re-parsing idempotent — re-reading a raw file can never duplicate rows — while still keeping every distinct alternate line.
+**Revisit if:** intra-run price movement ever matters (it won't at 4 snapshots/day).
+
+## 2026-08-09 — odds_snapshots.game_id is the provider's event id
+**Decided:** Store The Odds API event id untouched; no join to ESPN game_ids yet.
+**Alternatives:** Match on team names + date at ingest time.
+**Why:** Name/id mapping is phase 3's job by design, and the raw JSON keeps home/away team names and commence_time for the join. Ingest stays dumb and lossless.
+**Revisit if:** never — phase 3 builds the mapping into separate columns/tables.

@@ -31,7 +31,11 @@ def main(argv: list[str] | None = None) -> int:
     )
     subparsers = parser.add_subparsers(dest="command")
     for name, help_text in HELP.items():
-        subparsers.add_parser(name, help=help_text)
+        sub = subparsers.add_parser(name, help=help_text)
+        if name == "update":
+            sub.add_argument(
+                "--dry-run", action="store_true",
+                help="re-parse the latest saved raw odds files; no network calls")
 
     args = parser.parse_args(argv)
 
@@ -40,9 +44,23 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.command == "update":
-        from src.ingest_stats import run_update
+        from src.ingest_odds import run_odds
 
-        return run_update()
+        if args.dry_run:
+            return run_odds(dry_run=True)
+
+        from src.ingest_stats import run_update
+        from src.log import get_logger as _gl
+
+        rc = 0
+        try:
+            rc = run_update()
+        except Exception as e:  # noqa: BLE001 — a dead network must not traceback
+            _gl("run").info(
+                f"stats update failed ({type(e).__name__}: {e}) — "
+                "continuing to odds snapshot")
+            rc = 1
+        return max(rc, run_odds())
 
     log = get_logger("run")
     phase = NOT_IMPLEMENTED[args.command]

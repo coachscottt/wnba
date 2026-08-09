@@ -69,6 +69,20 @@ CREATE TABLE IF NOT EXISTS teams (
     display_name TEXT
 );
 
+CREATE TABLE IF NOT EXISTS odds_snapshots (
+    snapshot_id     INTEGER PRIMARY KEY AUTOINCREMENT,
+    captured_at_utc TEXT NOT NULL,
+    game_id         TEXT NOT NULL,   -- provider event id; mapped to ESPN games in phase 3
+    book            TEXT NOT NULL,
+    market          TEXT NOT NULL,
+    player_name_raw TEXT NOT NULL,   -- book's exact spelling, never overwritten
+    line            REAL,
+    over_price      INTEGER,
+    under_price     INTEGER,
+    is_alternate    INTEGER NOT NULL DEFAULT 0,
+    UNIQUE (captured_at_utc, game_id, book, market, player_name_raw, line, is_alternate)
+);
+
 CREATE TABLE IF NOT EXISTS meta (
     key   TEXT PRIMARY KEY,
     value TEXT
