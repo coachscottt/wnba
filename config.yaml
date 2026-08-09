@@ -1,1 +1,23 @@
 season: 2026
+
+stats:
+  first_season: 2022
+  # 2 = regular season, 3 = postseason (1 = preseason, never ingested)
+  season_types: [2, 3]
+  # Event teams that appear in the schedule feed but are not franchises
+  # (2026 All-Star game: TEAM COOP vs TEAM SPOON). Dropped with a reported count.
+  exclude_abbreviations: [COOP, SPO]
+  # NBA-derived approximation of FT attempts that end a possession — see DECISIONS.md
+  ft_possession_coeff: 0.44
+  # Current-season window for the date validation check (guide §2).
+  # Prior seasons are validated against their own raw schedule bounds.
+  season_window:
+    start: "2026-05-08"
+    end: "2026-09-24"
+  expected_games_per_team: 44
+  # ESPN player minutes are integer-rounded; team sums land within +/-3 of
+  # 200 + 25/OT. Anything past this is treated as a dropped player.
+  minutes_sum_tolerance: 3
+  # The Cup final is an extra game coded as regular season; it must not count
+  # toward the 44-game cap. Group-stage Cup games DO count.
+  cup_final_note: "Commissioner's Cup Championship"

@@ -5,9 +5,8 @@ import sys
 
 from src.log import get_logger
 
-# Which build phase delivers each subcommand. Interfaces only for now.
+# Which build phase delivers each subcommand.
 NOT_IMPLEMENTED = {
-    "update": 1,
     "clean": 3,
     "train": 5,
     "project": 8,
@@ -39,6 +38,11 @@ def main(argv: list[str] | None = None) -> int:
     if args.command is None:
         parser.print_help()
         return 0
+
+    if args.command == "update":
+        from src.ingest_stats import run_update
+
+        return run_update()
 
     log = get_logger("run")
     phase = NOT_IMPLEMENTED[args.command]

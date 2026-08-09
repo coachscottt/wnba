@@ -8,7 +8,7 @@ has seen the output.
 | # | Phase | Spec | Status |
 |---|---|---|---|
 | 0 | Environment and scaffold | `build/00-setup.md` | ✅ complete 2026-08-06 |
-| 1 | Stats ingestion | `build/01-stats-ingestion.md` | ⬜ not started |
+| 1 | Stats ingestion | `build/01-stats-ingestion.md` | ✅ complete 2026-08-09 |
 | 2 | Odds ingestion | `build/02-odds-ingestion.md` | ⬜ not started |
 | 3 | Cleaning and joining | `build/03-cleaning-joining.md` | ⬜ not started |
 | 4 | Features | `build/04-features.md` | ⬜ not started |
@@ -41,3 +41,15 @@ returned, and anything left unresolved.
 **DoD results:** all pass — `--help` lists all six subcommands (exit 0); `update` prints "not implemented — phase 1 builds this" (exit 0); bare `run.py` prints help, no traceback (exit 0); `uv sync` works from clean checkout (created `.venv`, CPython 3.12.1).
 
 **Unresolved:** ODDS_API_KEY in `.env` is empty — needed by phase 2, not phase 1. DB Browser for SQLite not yet installed (user-facing tool, not needed until data exists). Repo was downloaded as a zip before git was installed, so history starts at this commit rather than upstream's.
+
+### Phase 1 — Stats ingestion (2026-08-09)
+
+**Built:** `src/config.py` (config.yaml loader), `src/db.py` (SQLite schema: games, player_games, availability, players, teams, meta), `src/ingest_stats.py` (fetch via sportsdataverse → raw parquet to `data/raw/stats/` → parse → upsert → 7 validation checks → summary), `run.py update` wired. Seasons 2022–2026 backfilled: 1,297 games, 29,421 player-games, 361 players. Availability breakdown: 24,693 played / 2,580 dnp_coach / 1,821 dnp_injury / 302 inactive / 25 dnp_rest.
+
+**DoD results:** all pass — second `update` run reports "0 new games"; 7/7 validation checks pass (two required fixes recorded in DECISIONS.md: ±3 minutes rounding tolerance, Commissioner's Cup final excluded from the 44-game cap); summary prints seasons/games/player-games/date range/checks; availability has 4,856 rows with minutes_played = 0; Toronto Tempo and Portland Fire each ingested cleanly (350 player-games, 17 players, no imputation).
+
+**Unresolved:**
+- **Source feed lags ~1 week.** Latest completed game in the sportsdataverse release is 2026-08-01; 25 games played Aug 2–9 show as "Scheduled". Fine for model development; projections (phase 5+) will need the live ESPN endpoints (`espn_wnba_scoreboard` etc.) for freshness.
+- `not_on_roster` availability status never emitted — box scores only list rostered players; needs roster/injury data in a later phase.
+- Play-by-play not ingested (deferred, see DECISIONS.md) — the 0.44 possession coefficient stays an approximation until then.
+- `plus_minus` arrives as a string and is null for 2 played rows ("plus_minus_missing" issue code); 28 played rows have null minutes (kept with issue code `minutes_null_for_played_row`).
