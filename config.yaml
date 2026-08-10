@@ -38,6 +38,40 @@ odds:
   # ~19:00 ET for evening slates. Historical calls cost 10x.
   backfill_times_utc: ["15:30", "23:00"]
 
+features:
+  # trailing windows (games) for form rates; EWM half-life in games
+  windows: [3, 5, 10]
+  ewm_half_life_games: 5
+  # stats that get form features (per-40, sum-based within window)
+  form_stats: [points, reb, ast]
+  # shrinkage constants k in (n*obs + k*prior)/(n+k) — "games the prior is worth".
+  # Initial values, to be tuned on validation folds in phases 6/9 (guide §8.3):
+  # small season + mid-season projection => meaningfully large k.
+  k_form: 10
+  k_team: 8
+  k_opp: 12
+  k_opp_pos: 15
+  # league prior = as-of season-to-date league average; below this many league
+  # games, blend the previous season; with no history at all use the defaults
+  min_league_games_for_prior: 30
+  league_prior_defaults:   # per-40 fallbacks, only reachable at the very start of 2022
+    points: 14.0
+    reb: 6.6
+    ast: 3.1
+  # rest: cap at 7 days; anything longer (incl. the FIBA World Cup break) is its
+  # own category via f_long_break, not a continuous value
+  rest_cap_days: 7
+  # primary ball-handler = top as-of ast/40 on roster with at least this many games
+  ballhandler_min_games: 5
+  # availability statuses that count as pregame-known absences (dnp_coach is a
+  # game-time decision, deliberately excluded)
+  out_statuses: [dnp_injury, dnp_rest, inactive]
+  # leakage test sample size
+  test_sample: 50
+  # hours west of Eastern, for timezones-crossed (PHX: no DST, call it 2.5)
+  team_tz_offsets: {ATL: 0, CHI: 1, CON: 0, DAL: 1, GS: 3, IND: 0, LA: 3, LV: 3,
+                    MIN: 1, NY: 0, PHX: 2.5, POR: 3, SEA: 3, TOR: 0, WSH: 0}
+
 clean:
   # Which player_games column settles each market (alternates share the base key)
   market_stats:

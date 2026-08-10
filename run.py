@@ -70,8 +70,11 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.command == "clean":
         from src.clean import run_clean
+        from src.features import run_features
 
-        return run_clean()
+        rc = run_clean()
+        run_features()
+        return rc
 
     if args.command == "audit":
         from src.clean import run_audit

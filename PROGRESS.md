@@ -11,7 +11,7 @@ has seen the output.
 | 1 | Stats ingestion | `build/01-stats-ingestion.md` | ✅ complete 2026-08-09 |
 | 2 | Odds ingestion | `build/02-odds-ingestion.md` | ✅ complete 2026-08-09 |
 | 3 | Cleaning and joining | `build/03-cleaning-joining.md` | ✅ complete 2026-08-10 |
-| 4 | Features | `build/04-features.md` | ⬜ not started |
+| 4 | Features | `build/04-features.md` | ✅ complete 2026-08-10 |
 | 5 | Minutes model | `build/05-minutes-model.md` | ⬜ not started |
 | 6 | Rate models | `build/06-rate-models.md` | ⬜ not started |
 | 7 | Simulation | `build/07-simulation.md` | ⬜ not started |
@@ -77,3 +77,15 @@ returned, and anything left unresolved.
 - 238 stats_pending rows resolve automatically: run `update` once the stats feed catches up (lags ~1 week), then `clean`.
 - `is_whole_line` and `is_alternate` are all 0 so far — every captured line has been a half-point main line; the flags are live and will populate when alternates are added to config.
 - Push-handling policy for evaluation deliberately deferred to phase 9 (see DECISIONS.md).
+
+### Phase 4 — Features (2026-08-10)
+
+**Built:** `src/features.py` — 41 as-of features per played player-game across six families: form (trailing 3/5/10 + EWM + shrunk season per-40 for points/reb/ast, games_played, effective shrinkage weight), role (usage, start rate, minutes share, FT rate, 3PA rate, started-tonight), team (pace/ORtg/DRtg, as-of, shrunk k=8), opponent (pace/DRtg k=12, positional defense ratio k=15), situational (rest capped at 7 with >7 as its own `f_long_break` category for the FIBA break, b2b, home, timezones crossed, game number), teammate availability (vacated minutes overall + same-position via as-of trailing minutes of pregame-known absences, primary-ball-handler-out flag). `features` table (24,693 rows) rebuilt by `run.py clean`. `tests/test_leakage.py` runs standalone.
+
+**DoD results:** all pass — leakage test: 50 sampled player-games recomputed from as-of snapshots (future deleted AND same-date stats nulled) across 47 cutoff dates, all 41 features identical; feature summary printed with coverage/mean/sd/min/max/nulls — no feature over 20% nulls (worst 4.2%) and none with zero variance; expansion teams: 583 TOR/POR rows, team features all non-null, game 1 correctly falls back to the shrunk league prior (pace 80.8, ortg 100.9).
+
+**Unresolved:**
+- k values (10/8/12/15) are initial guesses by design — tune on validation folds in phases 6/9 (DECISIONS.md carries the reminder).
+- Features exist only for historical played rows. Projection-time feature building for tonight's games (roster from a `today_out` override or injury feed, per guide §5.5) is built when `project` arrives (phase 8).
+- `f_usage_l5` has a fat tail (max 71 from 1-minute stints inside small windows) — consider minutes-weighting the window when the rate models care.
+- `f_started` treated as pregame info; phase 9 should verify measured edge with and without it (capture-time reality check).

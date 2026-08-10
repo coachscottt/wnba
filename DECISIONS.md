@@ -141,3 +141,15 @@ Format:
 **Alternatives:** difflib (stdlib).
 **Why:** Our code imports it directly for fuzzy proposals; same transitive-fragility argument as requests. difflib's ratio quality on names is noticeably worse.
 **Revisit if:** never, realistically.
+
+## 2026-08-10 — Shrinkage constants (phase 4 initial values)
+**Decided:** `k_form: 10`, `k_team: 8`, `k_opp: 12`, `k_opp_pos: 15` in config.yaml, applied as (n·obs + k·prior)/(n+k).
+**Alternatives:** Small k (chases hot streaks — guide explicitly warns against k=1); tuning now.
+**Why:** These are deliberate starting points sized to a 44-game season: a player's season-to-date rate only outweighs the prior after ~10 games; opponent effects (15 teams, tiny samples) shrink hardest. Proper tuning needs validation folds, which exist from phase 6/9 — retune there. Current effective form weights: p10 0.17 / median 0.66 / p90 0.75.
+**Revisit if:** phase 6/9 validation — this entry is the reminder.
+
+## 2026-08-10 — Feature scope choices
+**Decided:** (a) Form windows and season-to-date reset per season; teammate-availability trailing minutes and ball-handler ast/40 use career windows crossing seasons. (b) Shrinkage priors are as-of league-position averages with previous-season fallback and config defaults at the 2022 boundary. (c) `out_statuses` for vacated-minutes/ball-handler-out = dnp_injury, dnp_rest, inactive — **dnp_coach excluded** (a coach's decision is not pregame-knowable; counting it would leak). (d) `f_started` for game N is treated as pregame info (confirmed lineups are public before tip). (e) Shot mix = 3PA-rate + FT-rate only — rim/mid split needs play-by-play, which is deferred. (f) Features rebuild inside `run.py clean`; the leakage test is a standalone script (`python -m tests.test_leakage`), avoiding a pytest dependency.
+**Alternatives:** Within-season vacated minutes (bad early-season estimates); including dnp_coach as an absence; pytest.
+**Why:** Each follows the leakage rule or the ask-before-adding-packages rule; cross-season vacated minutes because "the star's usual minutes" is best estimated from last season in game 1.
+**Revisit if:** projection-time reality differs — e.g. lineups not confirmed at capture time makes (d) optimistic; phase 9 should measure with and without `f_started`.
