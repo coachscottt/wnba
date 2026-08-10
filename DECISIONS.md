@@ -111,3 +111,33 @@ Format:
 **Alternatives:** Match on team names + date at ingest time.
 **Why:** Name/id mapping is phase 3's job by design, and the raw JSON keeps home/away team names and commence_time for the join. Ingest stays dumb and lossless.
 **Revisit if:** never — phase 3 builds the mapping into separate columns/tables.
+
+## 2026-08-10 — ESPN dates are already Eastern; only odds need conversion
+**Decided:** `games.game_date` is used directly as the Eastern game date. The odds side derives `game_date_et` from `commence_time` (UTC) via `zoneinfo America/New_York`.
+**Alternatives:** Re-deriving ET dates on both sides.
+**Why:** Verified in the raw schedule parquet: `game_date_time` is timezone-aware `America/New_York`, and `game_date` equals its ET calendar date even for Portland's 22:00 ET tips (which are already next-day in UTC — the exact trap §7.4 warns about).
+**Revisit if:** the feed ever ships naive or UTC datetimes — the West-Coast date check in validation would start failing.
+
+## 2026-08-10 — Historical odds backfill for join validation (~162 credits)
+**Decided:** `run.py update --backfill START END` fetches historical near-tip snapshots (10x credit cost). Ran once for 2026-07-26..08-01: 808 lines, 15 events. Snapshot times 15:30Z + 23:00Z per day (config `backfill_times_utc`).
+**Alternatives:** Wait weeks for the live archive to accumulate against completed stats.
+**Why:** Phase 3's join cannot be trusted without real matched rows, and the stats feed lags a week — live snapshots alone would leave every row `stats_pending`. Two timestamps per day because the historical events list omits games that already tipped, so a single evening snapshot misses afternoon slates.
+**Revisit if:** a deeper historical backfill is wanted for phase 9 evaluation — same command, longer range, budget accordingly (~30 credits/game-day).
+
+## 2026-08-10 — Name cascade: exact and team+date auto-match; fuzzy only proposes
+**Decided:** Exact normalized match (incl. "Last, First" flip) auto-maps at confidence 1.0; unique initial+surname match on the game's roster auto-maps at 0.9 (`team_date`); everything else generates printed proposals — rapidfuzz candidates, plus same-first-name roster members when fuzzy finds nothing (catches surname changes). Approvals live in `data/external/name_approvals.csv` (committed), applied as `user`/1.0, forever.
+**Alternatives:** Auto-accepting high fuzzy scores.
+**Why:** The spec forbids auto-accepted fuzzy matches. The roster/first-name fallback exists because of a real case: books list 'Megan Gustafson', ESPN lists 'Megan DiLeo' — no string similarity, same person (surname change), only roster context finds her.
+**Revisit if:** two same-named players ever collide (the `ambiguous_exact` path already refuses to map them globally; they would need per-game mapping).
+
+## 2026-08-10 — prop_lines semantics: voided, pushes, statuses
+**Decided:** Every odds snapshot row lands in `prop_lines` (1:1, enforced by row-count print). `voided` = name and game matched but no clean played box-score row (DNP/scratched/absent): line kept, `actual`/`result` NULL — never an under. `result='push'` when actual equals a whole line; `is_whole_line` flagged for all integer lines. `stats_pending` = game newer than ingested stats; excluded from the match-rate denominator and resolves on the next `clean` after stats catch up.
+**Alternatives:** Dropping unmatched rows; treating scratched players' lines as settled.
+**Why:** Guide §7.5 — the scratched-star-becomes-an-under bug is catastrophic and silent. Push handling for evaluation (exclude vs three-way) is deliberately deferred to phase 9, where the metric choice makes it concrete; the data model already carries what it needs.
+**Revisit if:** phase 9 — write the push policy down there.
+
+## 2026-08-10 — rapidfuzz declared explicitly
+**Decided:** `uv add rapidfuzz` (was already installed transitively).
+**Alternatives:** difflib (stdlib).
+**Why:** Our code imports it directly for fuzzy proposals; same transitive-fragility argument as requests. difflib's ratio quality on names is noticeably worse.
+**Revisit if:** never, realistically.

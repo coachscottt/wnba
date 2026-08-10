@@ -34,3 +34,15 @@ odds:
   # Intended capture cadence (guide §6.5): open, midday, T-60min, closing.
   # Used for the projected-monthly-usage math; scheduling itself is phase 10.
   snapshots_per_day: 4
+  # Historical backfill snapshot times (UTC): ~11:30 ET for afternoon slates,
+  # ~19:00 ET for evening slates. Historical calls cost 10x.
+  backfill_times_utc: ["15:30", "23:00"]
+
+clean:
+  # Which player_games column settles each market (alternates share the base key)
+  market_stats:
+    player_points: points
+  # Odds-API team display names that differ from ESPN's; empty until one appears
+  team_aliases: {}
+  # Fuzzy proposals below this rapidfuzz score are not even suggested
+  fuzzy_cutoff: 75

@@ -10,7 +10,7 @@ has seen the output.
 | 0 | Environment and scaffold | `build/00-setup.md` | ✅ complete 2026-08-06 |
 | 1 | Stats ingestion | `build/01-stats-ingestion.md` | ✅ complete 2026-08-09 |
 | 2 | Odds ingestion | `build/02-odds-ingestion.md` | ✅ complete 2026-08-09 |
-| 3 | Cleaning and joining | `build/03-cleaning-joining.md` | ⬜ not started |
+| 3 | Cleaning and joining | `build/03-cleaning-joining.md` | ✅ complete 2026-08-10 |
 | 4 | Features | `build/04-features.md` | ⬜ not started |
 | 5 | Minutes model | `build/05-minutes-model.md` | ⬜ not started |
 | 6 | Rate models | `build/06-rate-models.md` | ⬜ not started |
@@ -65,3 +65,15 @@ returned, and anything left unresolved.
 - The API key on this account has a very large quota (4.75M credits remaining) — it appears to be a shared/existing account also used by other projects; WNBA usage (~480/month) is negligible against it.
 - Only `player_points` is captured. Adding `player_rebounds`/`player_assists` is a one-line config change but deliberately deferred until the phase 3 join works.
 - Odds event ids are not yet mapped to ESPN game_ids (phase 3, via team names + commence_time kept in raw JSON).
+
+### Phase 3 — Cleaning and joining (2026-08-10)
+
+**Built:** `src/clean.py` — `odds_event_map` (event→game via team display names + ET date), persistent `name_map` (exact → team+date → user approvals; fuzzy proposes only), `prop_lines` (every snapshot row 1:1 with match_status, is_whole_line / is_alternate / is_voided flags, actual + over/under/push results), `reports/unmatched.md` every run. `run.py clean` and `run.py audit` wired. Historical backfill added to `update` (`--backfill START END`); ran for Jul 26–Aug 1 (808 lines, 15 events, ~162 credits).
+
+**DoD results:** all pass — unmatched.md written and readable (overall + by book/month/team rates, top-20 names, fuzzy proposals, loss accounting); before/after counts printed at each step; 25 voided rows (scratched/DNP) carry lines but NULL results and are excluded from outcome data; 1,046 odds rows → 1,046 prop_lines rows (nothing dropped). Current state: 779 ok (437 over / 342 under), 25 voided, 238 stats_pending (Aug 2+ games awaiting the lagging stats feed), 4 name_unmatched. **Match rate 99.5%.**
+
+**Unresolved:**
+- **Owner approval pending:** books' 'Megan Gustafson' vs ESPN's 'Megan DiLeo' [3934218] — same person per roster context (surname change). Approve by adding `Megan Gustafson,3934218` to `data/external/name_approvals.csv`, then re-run `clean`. Never auto-accepted per spec.
+- 238 stats_pending rows resolve automatically: run `update` once the stats feed catches up (lags ~1 week), then `clean`.
+- `is_whole_line` and `is_alternate` are all 0 so far — every captured line has been a half-point main line; the flags are live and will populate when alternates are added to config.
+- Push-handling policy for evaluation deliberately deferred to phase 9 (see DECISIONS.md).

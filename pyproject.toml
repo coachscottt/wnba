@@ -5,6 +5,7 @@ description = "WNBA player prop projection model"
 requires-python = ">=3.11"
 dependencies = [
     "pyyaml>=6.0.3",
+    "rapidfuzz>=3.14.5",
     "requests>=2.34.2",
     "sportsdataverse>=0.0.75",
 ]

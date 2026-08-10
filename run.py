@@ -7,11 +7,9 @@ from src.log import get_logger
 
 # Which build phase delivers each subcommand.
 NOT_IMPLEMENTED = {
-    "clean": 3,
     "train": 5,
     "project": 8,
     "evaluate": 9,
-    "audit": 3,
 }
 
 HELP = {
@@ -36,6 +34,10 @@ def main(argv: list[str] | None = None) -> int:
             sub.add_argument(
                 "--dry-run", action="store_true",
                 help="re-parse the latest saved raw odds files; no network calls")
+            sub.add_argument(
+                "--backfill", nargs=2, metavar=("START", "END"),
+                help="fetch historical odds snapshots for ET dates START..END "
+                     "(10x credit cost)")
 
     args = parser.parse_args(argv)
 
@@ -48,6 +50,10 @@ def main(argv: list[str] | None = None) -> int:
 
         if args.dry_run:
             return run_odds(dry_run=True)
+        if args.backfill:
+            from src.ingest_odds import run_backfill
+
+            return run_backfill(*args.backfill)
 
         from src.ingest_stats import run_update
         from src.log import get_logger as _gl
@@ -61,6 +67,16 @@ def main(argv: list[str] | None = None) -> int:
                 "continuing to odds snapshot")
             rc = 1
         return max(rc, run_odds())
+
+    if args.command == "clean":
+        from src.clean import run_clean
+
+        return run_clean()
+
+    if args.command == "audit":
+        from src.clean import run_audit
+
+        return run_audit()
 
     log = get_logger("run")
     phase = NOT_IMPLEMENTED[args.command]

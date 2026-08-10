@@ -187,6 +187,96 @@ def _print_quota(headers, run_cost: int, cfg: dict) -> None:
              f"projected {monthly}/month at {cfg['snapshots_per_day']} snapshots/day")
 
 
+# ---------------------------------------------------------------- historical backfill
+
+
+def run_backfill(start: str, end: str) -> int:
+    """Fetch historical near-tip snapshots for each ET date in [start, end].
+
+    Two snapshot times per day (config backfill_times_utc) cover afternoon and
+    evening slates; the historical events list only shows not-yet-started games.
+    Historical calls are 10x credits — this is a deliberate, bounded spend.
+    """
+    from zoneinfo import ZoneInfo
+
+    cfg = load_config()["odds"]
+    conn = connect()
+    api_key = load_env().get("ODDS_API_KEY", "")
+    if not api_key:
+        log.info("no ODDS_API_KEY in .env")
+        return 1
+
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    et = ZoneInfo("America/New_York")
+    markets = ",".join(cfg["markets"])
+    day = datetime.fromisoformat(start).date()
+    end_day = datetime.fromisoformat(end).date()
+    total_rows, cost_first, cost_last = 0, None, None
+
+    while day <= end_day:
+        seen_events = set()
+        for hhmm in cfg.get("backfill_times_utc", ["15:30", "23:00"]):
+            ts = f"{day}T{hhmm}:00Z"
+            try:
+                r = requests.get(
+                    f"{API}/historical/sports/{cfg['sport_key']}/events",
+                    params={"apiKey": api_key, "date": ts}, timeout=TIMEOUT)
+                r.raise_for_status()
+            except requests.RequestException as e:
+                log.info(f"  ERROR historical events {ts}: {type(e).__name__}: "
+                         f"{_scrub(str(e), api_key)} — continuing")
+                continue
+            if cost_first is None:
+                cost_first = int(r.headers.get("x-requests-used", 0))
+            snap = r.json()
+            snap_iso = snap["timestamp"].replace("+00:00", "Z")
+            stamp = _stamp(datetime.fromisoformat(snap_iso.replace("Z", "+00:00")))
+            (RAW_DIR / f"{stamp}_events.json").write_text(
+                json.dumps(snap["data"], indent=1), encoding="utf-8")
+
+            todays = [
+                e for e in snap["data"]
+                if e["id"] not in seen_events
+                and datetime.fromisoformat(
+                    e["commence_time"].replace("Z", "+00:00")
+                ).astimezone(et).date() == day
+            ]
+            rows_batch = 0
+            for ev in todays:
+                seen_events.add(ev["id"])
+                try:
+                    r2 = requests.get(
+                        f"{API}/historical/sports/{cfg['sport_key']}/events/{ev['id']}/odds",
+                        params={"apiKey": api_key, "date": ts,
+                                "regions": cfg["regions"], "markets": markets,
+                                "oddsFormat": cfg["odds_format"]},
+                        timeout=TIMEOUT)
+                    r2.raise_for_status()
+                except requests.RequestException as e:
+                    log.info(f"  ERROR {ev['away_team']} @ {ev['home_team']}: "
+                             f"{type(e).__name__}: {_scrub(str(e), api_key)} — continuing")
+                    continue
+                cost_last = int(r2.headers.get("x-requests-used", 0))
+                payload = r2.json()["data"]
+                cap_iso = r2.json()["timestamp"].replace("+00:00", "Z")
+                cap_stamp = _stamp(datetime.fromisoformat(cap_iso.replace("Z", "+00:00")))
+                (RAW_DIR / f"{cap_stamp}_{ev['id']}.json").write_text(
+                    json.dumps(payload, indent=1), encoding="utf-8")
+                try:
+                    rows = parse_event_odds(payload, cap_iso)
+                except (KeyError, TypeError, ValueError) as e:
+                    log.info(f"  ERROR parsing {ev['id']}: {e} — raw saved, continuing")
+                    continue
+                rows_batch += insert_rows(conn, rows)
+            log.info(f"  {day} @ {hhmm}Z: {len(todays)} events, {rows_batch} lines inserted")
+            total_rows += rows_batch
+        day += timedelta(days=1)
+
+    spent = (cost_last - cost_first) if (cost_first is not None and cost_last) else "?"
+    log.info(f"backfill done: {total_rows} lines inserted, ~{spent} credits spent")
+    return 0
+
+
 # ---------------------------------------------------------------- dry run
 
 

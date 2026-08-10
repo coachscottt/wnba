@@ -83,6 +83,47 @@ CREATE TABLE IF NOT EXISTS odds_snapshots (
     UNIQUE (captured_at_utc, game_id, book, market, player_name_raw, line, is_alternate)
 );
 
+CREATE TABLE IF NOT EXISTS odds_event_map (
+    event_id          TEXT PRIMARY KEY,   -- The Odds API event id
+    game_id           TEXT,               -- ESPN game id, null if unmatched
+    game_date_et      TEXT NOT NULL,      -- Eastern calendar date of tip-off
+    commence_time_utc TEXT NOT NULL,
+    home_team_raw     TEXT,
+    away_team_raw     TEXT,
+    match_status      TEXT NOT NULL       -- ok | stats_pending | game_unmatched
+);
+
+CREATE TABLE IF NOT EXISTS name_map (
+    raw_name   TEXT NOT NULL,             -- book spelling, untouched
+    source     TEXT NOT NULL,
+    player_id  TEXT NOT NULL,
+    confidence REAL NOT NULL,
+    mapped_by  TEXT NOT NULL,             -- exact | team_date | user
+    PRIMARY KEY (raw_name, source)
+);
+
+CREATE TABLE IF NOT EXISTS prop_lines (
+    snapshot_id     INTEGER PRIMARY KEY,  -- 1:1 with odds_snapshots: nothing dropped
+    captured_at_utc TEXT NOT NULL,
+    event_id        TEXT NOT NULL,
+    game_id         TEXT,
+    game_date_et    TEXT,
+    book            TEXT NOT NULL,
+    market          TEXT NOT NULL,
+    player_name_raw TEXT NOT NULL,
+    player_id       TEXT,
+    line            REAL,
+    over_price      INTEGER,
+    under_price     INTEGER,
+    is_alternate    INTEGER NOT NULL DEFAULT 0,
+    is_whole_line   INTEGER NOT NULL DEFAULT 0,
+    is_voided       INTEGER NOT NULL DEFAULT 0,  -- scratched/DNP: NOT an under
+    actual          REAL,
+    result          TEXT CHECK (result IN ('over','under','push') OR result IS NULL),
+    match_status    TEXT NOT NULL         -- ok | voided | stats_pending |
+                                          -- game_unmatched | name_unmatched | market_unknown
+);
+
 CREATE TABLE IF NOT EXISTS meta (
     key   TEXT PRIMARY KEY,
     value TEXT
