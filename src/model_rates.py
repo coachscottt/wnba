@@ -133,6 +133,10 @@ def tune_k(train: pl.DataFrame, rcfg: dict) -> dict[str, float]:
     fit = train.filter(pl.col("game_date") < cut)
     val = train.filter(pl.col("game_date") >= cut)
     kmax = int(rcfg["crps_max_count"])
+    # minutes-weighted CRPS: props are priced on rotation players, and an
+    # unweighted mean lets the deep bench outvote the stars
+    wt = val["minutes"].to_numpy().astype(float)
+    wt = wt / wt.sum()
     ks = {}
     for stat, target in TARGETS.items():
         y_fit = fit[target].to_numpy().astype(float)
@@ -144,23 +148,52 @@ def tune_k(train: pl.DataFrame, rcfg: dict) -> dict[str, float]:
                 r = fit_dispersion(y_fit, mean_counts(fit, stat, rcfg, k=kw),
                                    stat, quiet=True)
                 cdf = nb_cdf_grid(mean_counts(val, stat, rcfg, k=kw), r, kmax)
-                crps = float(crps_from_cdf(cdf, y_val).mean())
+                crps = float((crps_from_cdf(cdf, y_val) * wt).sum())
                 if best_crps is None or crps < best_crps:
                     best, best_crps = kw, crps
         ks[stat] = best
     log.info(f"per-stat (shrinkage k, ewm blend w) tuned on validation slice "
-             f"({cut}..holdout): "
+             f"({cut}..holdout, minutes-weighted CRPS): "
              + ", ".join(f"{s}: k={v['k']:g} w={v['w']:g}" for s, v in ks.items()))
     return ks
 
 
-def shrunk_accuracy(df: pl.DataFrame, acc: str, priors: dict, rcfg: dict) -> np.ndarray:
-    makes_c, att_c, k_key = ACCURACIES[acc]
-    k = float(rcfg[k_key])
+def shrunk_accuracy(df: pl.DataFrame, acc: str, priors: dict,
+                    k: float) -> np.ndarray:
+    makes_c, att_c, _ = ACCURACIES[acc]
     prior = np.array([priors[acc].get(p, priors[acc]["ALL"]) for p in df["pos"]])
     makes = df[makes_c].fill_null(0.0).to_numpy()
     atts = df[att_c].fill_null(0.0).to_numpy()
     return (makes + k * prior) / (atts + k)
+
+
+ACC_PAIRS = {"p3": ("fg3m", "fg3a_t"), "p2": ("fg2m", "fg2a"),
+             "ftp": ("ftm", "fta_t")}
+
+
+def tune_accuracy_k(train: pl.DataFrame, rcfg: dict) -> dict[str, float]:
+    """Beta pseudo-attempt counts chosen by binomial NLL of makes|attempts on
+    the validation slice — replaces the hand-picked 60/80/40."""
+    cut = str(rcfg["k_tune_start"])
+    fit = train.filter(pl.col("game_date") < cut)
+    val = train.filter(pl.col("game_date") >= cut)
+    priors = fit_accuracy_priors(fit)
+    ks = {}
+    for acc, (mk, at) in ACC_PAIRS.items():
+        a = val[at].to_numpy().astype(float)
+        m = val[mk].to_numpy().astype(float)
+        use = a > 0
+        best_k, best_nll = None, None
+        for k in rcfg["acc_k_grid"]:
+            p = np.clip(shrunk_accuracy(val, acc, priors, float(k)),
+                        1e-4, 1 - 1e-4)
+            nll = -np.sum(m[use] * np.log(p[use])
+                          + (a[use] - m[use]) * np.log(1 - p[use]))
+            if best_nll is None or nll < best_nll:
+                best_k, best_nll = float(k), nll
+        ks[acc] = best_k
+    log.info(f"accuracy Beta k tuned by binomial NLL on validation: {ks}")
+    return ks
 
 
 def fit_accuracy_priors(train: pl.DataFrame) -> dict:
@@ -298,6 +331,7 @@ def run_train_rates() -> int:
 
     priors = fit_accuracy_priors(train)
     ks = tune_k(train, rcfg)
+    ks_acc = tune_accuracy_k(train, rcfg)
     disp: dict[str, float] = {}
     all_pass = True
 
@@ -308,7 +342,7 @@ def run_train_rates() -> int:
     disp["fg3a"] = r3a
     log.info(f"  (3PA attempt model: CRPS model {res3a['model']:.4f} vs "
              f"szn-raw {res3a['szn-raw']:.4f}, trail-10 {res3a['trail-10']:.4f})")
-    p3_test = shrunk_accuracy(test, "p3", priors, rcfg)
+    p3_test = shrunk_accuracy(test, "p3", priors, ks_acc["p3"])
     kmax3 = 25
     y3 = test["fg3m"].to_numpy().astype(float)
     m3a = mean_counts(test, "fg3a", rcfg, k=ks["fg3a"])
@@ -329,10 +363,10 @@ def run_train_rates() -> int:
         res_3pm[name] = float(crps_from_cdf(cdf_b, y3).mean())
     res_3pm |= {"model": crps3, "pit": describe_pit(u3)}
     w3 = test["f_fg3a_cum"].fill_null(0).to_numpy()
-    w3 = w3 / (w3 + float(rcfg["k_p3"]))
+    w3 = w3 / (w3 + ks_acc["p3"])
     log.info(f"  p3 Beta shrinkage weight attempts/(attempts+k), holdout: "
              f"p10 {np.quantile(w3, .1):.2f} median {np.median(w3):.2f} "
-             f"p90 {np.quantile(w3, .9):.2f} (k_p3={rcfg['k_p3']} pseudo-attempts)")
+             f"p90 {np.quantile(w3, .9):.2f} (k_p3={ks_acc['p3']:g} pseudo-attempts)")
     if not report_stat("fg3m", res_3pm):
         all_pass = False
 
@@ -361,8 +395,8 @@ def run_train_rates() -> int:
     yp = test["points"].to_numpy().astype(float)
     n = test.height
     p3v = p3_test
-    p2v = shrunk_accuracy(test, "p2", priors, rcfg)
-    ftv = shrunk_accuracy(test, "ftp", priors, rcfg)
+    p2v = shrunk_accuracy(test, "p2", priors, ks_acc["p2"])
+    ftv = shrunk_accuracy(test, "ftp", priors, ks_acc["ftp"])
     m3, m2, mf = (mean_counts(test, s, rcfg, k=ks[s])
                   for s in ("fg3a", "fg2a", "fta"))
     pts_sims = np.zeros((n, sims))
@@ -405,8 +439,9 @@ def run_train_rates() -> int:
     with open(MODEL_PATH, "wb") as f:
         pickle.dump({"dispersion": disp, "accuracy_priors": priors,
                      "k_rate": ks,
-                     "config": {k: rcfg[k] for k in
-                                ("k_p3", "k_p2", "k_ftp", "lg_pace_ref")},
+                     "config": {"k_p3": ks_acc["p3"], "k_p2": ks_acc["p2"],
+                                "k_ftp": ks_acc["ftp"],
+                                "lg_pace_ref": rcfg["lg_pace_ref"]},
                      "trained_through": str(df["game_date"].max())}, f)
     log.info("saved models/rates.pkl")
     return 0

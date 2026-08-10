@@ -166,6 +166,12 @@ Format:
 **Why:** Guide §11 structure exactly; correlations come free.
 **Revisit if:** teammate-out repricing looks wrong in practice — then a usage model conditioned on the active lineup is the upgrade.
 
+## 2026-08-10 — Star-tier fix: three mechanisms, all validation-tuned
+**Decided:** (1) The minutes-share regressor gets an isotonic correction fit on the calibration slice (tree regressors compress extremes — stars' shares were under-predicted). (2) The Dirichlet gains a share-exponent gamma (alpha ∝ mu^1.5, tuned jointly with c by worst-level coverage on the calibration slice) — a single global c cannot calibrate starters and bench at once. (3) Rate (k, EWM-blend) tuning is now minutes-WEIGHTED CRPS (chosen: w=0.3 EWM blend on most stats, k 2–8) — unweighted CRPS let the deep bench outvote the stars. Accuracy Beta ks re-tuned by binomial NLL went UP (k_p3=150, k_p2=100, k_ftp=60): shooting percentages want more shrinkage, not less — accuracy was never the star problem.
+**Alternatives:** Leaving it for phase 9 (would systematically fade star overs in pricing); hand-inflating star rates (unprincipled).
+**Why:** Overlay verdict after the fix: A'ja Wilson 28.3 sim vs 27.6 holdout actual (was 24.8), Stewart 23.2 vs 22.5 (was 19.0), role players unchanged and correct; league-wide team-points bias −2.0 → −0.35. Cost, stated plainly: minutes MAE 4.23 → 4.56 (still beats trailing-5 at 4.76) — gamma trades some median accuracy across the full population for correct star allocation, and stars are where props are priced.
+**Revisit if:** phase 9 shows slight star OVER-shoot (Wilson/Jones now +0.7/+0.8) — the market comparison will size it; a per-tier gamma or a variance-decoupled share model is the next rung.
+
 ## 2026-08-10 — Shrinkage constants (phase 4 initial values)
 **Decided:** `k_form: 10`, `k_team: 8`, `k_opp: 12`, `k_opp_pos: 15` in config.yaml, applied as (n·obs + k·prior)/(n+k).
 **Alternatives:** Small k (chases hot streaks — guide explicitly warns against k=1); tuning now.

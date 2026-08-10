@@ -138,7 +138,9 @@ All overdispersion ratios ≫ 1 — Poisson would have been wrong everywhere, as
 
 **DoD results:** minutes sum asserted in every sim of every game (200 exact, +25 only on simulated OT); team points sim-vs-actual mean error −2.0 (MAE 10.3, n=310 team-games — no game-total lines captured, compared to realized scores); team rebounds 33.6/team (realistic); P(points≥k) grids printed around 8 posted lines; overlay plots for the 5 most-priced players saved to reports/overlay_*.png.
 
-**Unresolved — the top item for phase 9:**
-- **Star-tier residual: top scorers still sim ~8–10% under their holdout-period scoring** (Wilson 24.8 vs 27.6, Stewart 19.0 vs 22.5, Ionescu 13.3 vs 17.0 conditional-on-playing; role players are calibrated). Decomposition: Wilson's minutes are right → pure rate lag; Stewart/Ionescu are ~2 minutes under AND rate-lagged (season-cumulative rates lag mid-season ramps; Ionescu is an injury-return ramp). Candidate fixes for phase 9 adjudication: star-tier minutes-share bias in the HGB regressor, Beta accuracy pseudo-counts (k_p2=80) possibly over-shrinking high-volume shooters, league-wide −2.3% scoring drift (as-of estimates lag a rising scoring environment). **Pricing consequence if unfixed: the model will systematically fade star overs — phase 9's CLV-vs-market comparison is the right instrument to size this.**
-- Usage-share redistribution beyond minutes-flow is deferred (DECISIONS.md).
-- Overlay comparison is holdout-sims vs season log by construction; holdout-period actuals are printed alongside for honesty.
+**Star-tier bias: FIXED (owner-directed follow-up, same day).** Three validation-tuned mechanisms (isotonic minutes-share calibration, Dirichlet share-exponent γ=1.5 tuned jointly with c by coverage, minutes-weighted rate tuning with 0.3 EWM blend — see DECISIONS.md). After: Wilson 28.3 sim vs 27.6 holdout actual, Stewart 23.2 vs 22.5, Smith 11.9 vs 11.9, Jones 15.7 vs 14.9, Ionescu 15.3 vs 17.0 (injury-ramp, halved); team-points bias −2.0 → **−0.35**; all phase 5/6 gates re-pass (minutes MAE 4.56 vs baseline 4.76 — the accepted cost of γ; coverage 56/82/94); leakage + sum tests pass.
+
+**Unresolved:**
+- Slight star overshoot possible now (Wilson +0.7, Jones +0.8 on ~20-game samples) — phase 9's market comparison sizes it.
+- Ionescu-type injury-return ramps remain the hardest case (−1.7); beat-reporter minutes restrictions (guide §9.3) are the missing input, not more math.
+- Usage-share redistribution beyond minutes-flow deferred (DECISIONS.md).

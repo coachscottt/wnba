@@ -83,6 +83,18 @@ class CalibratedDnp:
         return np.column_stack([1 - p, p])
 
 
+class CalibratedShare:
+    """HGB share regressor + isotonic correction fit on the calibration slice.
+    Tree regressors compress the extremes — high-minute players' shares are
+    systematically under-predicted, which starves stars of simulated minutes."""
+
+    def __init__(self, reg, iso):
+        self.reg, self.iso = reg, iso
+
+    def predict(self, X):
+        return np.clip(self.iso.predict(self.reg.predict(X)), 1e-4, None)
+
+
 def fit_models(train: pl.DataFrame, seed: int) -> dict:
     from sklearn.isotonic import IsotonicRegression
 
@@ -100,10 +112,16 @@ def fit_models(train: pl.DataFrame, seed: int) -> dict:
             late["y_dnp"].to_numpy())
 
     played = train.filter(pl.col("y_dnp") == 0)
+    early_p = played.filter(pl.col("game_date") < cal_cut)
+    late_p = played.filter(pl.col("game_date") >= cal_cut)
     reg = HistGradientBoostingRegressor(
         max_iter=400, learning_rate=0.05, max_depth=5, random_state=seed)
-    reg.fit(to_numpy(played, REG_FEATURES), played["y_share"].to_numpy())
-    return {"clf": CalibratedDnp(clf, iso), "reg": reg, "cal_cut": cal_cut}
+    reg.fit(to_numpy(early_p, REG_FEATURES), early_p["y_share"].to_numpy())
+    iso_share = IsotonicRegression(out_of_bounds="clip", y_min=0.0, y_max=0.25)
+    iso_share.fit(reg.predict(to_numpy(late_p, REG_FEATURES)),
+                  late_p["y_share"].to_numpy())
+    return {"clf": CalibratedDnp(clf, iso),
+            "reg": CalibratedShare(reg, iso_share), "cal_cut": cal_cut}
 
 
 def predict_p_mu(models: dict, df: pl.DataFrame) -> pl.DataFrame:
@@ -115,7 +133,7 @@ def predict_p_mu(models: dict, df: pl.DataFrame) -> pl.DataFrame:
 
 
 def sim_quantiles(df: pl.DataFrame, c: float, sims: int,
-                  rng: np.random.Generator) -> pl.DataFrame:
+                  rng: np.random.Generator, gamma: float = 1.0) -> pl.DataFrame:
     """Simulate every team-game in df (needs p_dnp/mu_raw); returns per-player
     quantiles of the full two-stage minutes distribution."""
     QS = [0.5, 0.25, 0.75, 0.10, 0.90, 0.025, 0.975]
@@ -124,8 +142,8 @@ def sim_quantiles(df: pl.DataFrame, c: float, sims: int,
     for (gid, _), grp in df.group_by(["game_id", "team_id"],
                                      maintain_order=True):
         m = simulate_team(grp["p_dnp"].to_numpy(), grp["mu_raw"].to_numpy(),
-                          c, sims, rng)
-        assert abs(m.sum(axis=1) - 200.0).max() < 1e-6, "sum constraint violated"
+                          c, sims, rng, gamma=gamma)
+        assert np.abs(m.sum(axis=1) - 200.0).max() < 1e-6, "sum constraint violated"
         q = np.quantile(m, QS, axis=0)
         for j, pid in enumerate(grp["player_id"]):
             keys.append((gid, pid))
@@ -145,11 +163,13 @@ def coverage_of(df: pl.DataFrame, pred: pl.DataFrame) -> dict:
             for lvl in (50, 80, 95)}
 
 
-def fit_concentration(models: dict, train: pl.DataFrame, mcfg: dict) -> float:
-    """Pick the Dirichlet concentration by matching interval COVERAGE on the
-    late-train calibration slice (never the holdout). A likelihood fit
-    conflates the regressor's mu-error with true rotation dispersion and
-    lands far too low — coverage is the quantity we actually need calibrated."""
+def fit_concentration(models: dict, train: pl.DataFrame,
+                      mcfg: dict) -> tuple[float, float]:
+    """Pick the Dirichlet concentration c AND share-exponent gamma by
+    matching interval COVERAGE on the late-train calibration slice (never
+    the holdout). A likelihood fit conflates the regressor's mu-error with
+    true rotation dispersion and lands far too low; a single global c cannot
+    calibrate starters and bench at once — gamma>1 tightens big shares."""
     late = predict_p_mu(
         models, train.filter(pl.col("game_date") >= models["cal_cut"]))
     if mcfg.get("eval_regulation_only", True):
@@ -158,25 +178,32 @@ def fit_concentration(models: dict, train: pl.DataFrame, mcfg: dict) -> float:
     grid = np.geomspace(float(mcfg["concentration_min"]),
                         float(mcfg["concentration_max"]),
                         int(mcfg["concentration_points"]))
-    best_c, best_err = None, None
-    for c in grid:
-        cov = coverage_of(late, sim_quantiles(late, float(c), 300, rng))
-        err = sum(abs(cov[lvl] - lvl / 100) for lvl in (50, 80, 95))
-        if best_err is None or err < best_err:
-            best_c, best_err = float(c), err
-    log.info(f"Dirichlet concentration by calibration-slice coverage: "
-             f"c = {best_c:.0f} (grid {grid[0]:.0f}..{grid[-1]:.0f}, "
-             f"total coverage error {best_err:.3f})")
-    return best_c
+    best, best_err = None, None
+    for gamma in mcfg.get("gamma_grid", [1.0, 1.15, 1.3, 1.5]):
+        for c in grid:
+            cov = coverage_of(late, sim_quantiles(late, float(c), 300, rng,
+                                                  gamma=float(gamma)))
+            # minimize the WORST level's deviation — same criterion the gate applies
+            err = max(abs(cov[lvl] - lvl / 100) for lvl in (50, 80, 95))
+            if best_err is None or err < best_err:
+                best, best_err = (float(c), float(gamma)), err
+    log.info(f"Dirichlet (c, gamma) by calibration-slice coverage: "
+             f"c = {best[0]:.0f}, gamma = {best[1]:g} "
+             f"(max coverage deviation {best_err:.3f})")
+    return best
 
 
 # ---------------------------------------------------------------- simulate
 
 
 def simulate_team(p_dnp: np.ndarray, mu_raw: np.ndarray, c: float, sims: int,
-                  rng: np.random.Generator, ot_periods: int = 0) -> np.ndarray:
+                  rng: np.random.Generator, ot_periods: int = 0,
+                  gamma: float = 1.0) -> np.ndarray:
     """Simulate minutes for one team-game. Returns (sims, n_players).
-    Team minutes sum to exactly 200 (+25 per explicit overtime period)."""
+    Team minutes sum to exactly 200 (+25 per explicit overtime period).
+    gamma > 1 concentrates alpha on big shares — established starters get
+    relatively tighter minutes than the bench (a single global c cannot fit
+    both tiers)."""
     n = len(p_dnp)
     total = 200.0 + 25.0 * ot_periods
     plays = rng.random((sims, n)) >= p_dnp[None, :]
@@ -185,22 +212,22 @@ def simulate_team(p_dnp: np.ndarray, mu_raw: np.ndarray, c: float, sims: int,
     too_few = plays.sum(axis=1) < 5
     if too_few.any():
         plays[np.ix_(too_few, order[:5])] = True
-    out = np.zeros((sims, n))
-    mu = np.clip(mu_raw, 1e-4, None)
-    for i in range(sims):
-        idx = np.flatnonzero(plays[i])
-        alpha = c * (mu[idx] / mu[idx].sum())
-        out[i, idx] = rng.dirichlet(alpha) * total
-    return out
+    mu = np.clip(mu_raw, 1e-4, None) ** gamma
+    mp = mu[None, :] * plays
+    alpha = c * mp / mp.sum(axis=1, keepdims=True)
+    g = rng.gamma(np.clip(alpha, 0, None))
+    shares = g / g.sum(axis=1, keepdims=True)
+    return shares * total
 
 
 # ---------------------------------------------------------------- evaluate
 
 
-def evaluate(models: dict, c: float, test: pl.DataFrame, mcfg: dict) -> dict:
+def evaluate(models: dict, c: float, test: pl.DataFrame, mcfg: dict,
+             gamma: float = 1.0) -> dict:
     rng = np.random.default_rng(int(mcfg["seed"]))
     test = predict_p_mu(models, test)
-    pred = sim_quantiles(test, c, int(mcfg["sims_eval"]), rng)
+    pred = sim_quantiles(test, c, int(mcfg["sims_eval"]), rng, gamma=gamma)
     ev = test.join(pred, on=["game_id", "player_id"], how="inner")
 
     y = ev["minutes"].to_numpy()
@@ -267,8 +294,8 @@ def run_train() -> int:
              f"time-based split, never random")
 
     models = fit_models(train, int(mcfg["seed"]))
-    c = fit_concentration(models, train, mcfg)
-    res = evaluate(models, c, test, mcfg)
+    c, gamma = fit_concentration(models, train, mcfg)
+    res = evaluate(models, c, test, mcfg, gamma=gamma)
     plot_calibration(res["calibration"])
 
     log.info("")
@@ -303,11 +330,12 @@ def run_train() -> int:
 
     # refit on all data for the saved production model
     models_full = fit_models(df, int(mcfg["seed"]))
-    c_full = fit_concentration(models_full, df, mcfg)
+    c_full, gamma_full = fit_concentration(models_full, df, mcfg)
     MODEL_PATH.parent.mkdir(exist_ok=True)
     with open(MODEL_PATH, "wb") as f:
         pickle.dump({"clf": models_full["clf"], "reg": models_full["reg"],
-                     "concentration": c_full, "clf_features": CLF_FEATURES,
+                     "concentration": c_full, "gamma": gamma_full,
+                     "clf_features": CLF_FEATURES,
                      "reg_features": REG_FEATURES,
                      "trained_through": str(df["game_date"].max()),
                      "holdout_metrics": {k: v for k, v in res.items()

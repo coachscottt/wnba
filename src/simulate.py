@@ -111,6 +111,7 @@ def simulate_game(game_df: pl.DataFrame, models: dict, scfg: dict, rcfg: dict,
     minutes = np.zeros((n, S))
     team_ids = game_df["team_id"].to_list()
     c = float(mm["concentration"])
+    gamma = float(mm.get("gamma", 1.0))
     for tid in set(team_ids):
         idx = np.array([i for i, t in enumerate(team_ids) if t == tid])
         plays = rng.random((S, len(idx))) >= p_dnp[idx][None, :]
@@ -120,7 +121,7 @@ def simulate_game(game_df: pl.DataFrame, models: dict, scfg: dict, rcfg: dict,
             plays[np.ix_(few, order[:5])] = True
         # Dirichlet via per-element gamma draws (vectorized over sims);
         # alpha = 0 for non-playing rows -> gamma = 0 -> share = 0
-        mp = mu_raw[idx][None, :] * plays
+        mp = (mu_raw[idx] ** gamma)[None, :] * plays
         alpha = c * mp / mp.sum(axis=1, keepdims=True)
         g = rng.gamma(np.clip(alpha, 0, None))
         shares = g / g.sum(axis=1, keepdims=True)

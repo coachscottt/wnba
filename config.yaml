@@ -102,6 +102,8 @@ rates:
   k_grid: [1, 2, 3, 5, 8, 10, 15]
   # blend weight on the EWM recent-form rate (season cumulative lags ramps)
   ewm_blend_grid: [0, 0.15, 0.3, 0.45]
+  # Beta pseudo-attempt grid for accuracy shrinkage tuning (binomial NLL)
+  acc_k_grid: [10, 20, 40, 60, 100, 150]
   k_tune_start: "2025-07-01"
   # Beta-prior pseudo-attempts for accuracy shrinkage (games' worth of evidence
   # the league/position prior is worth) — a 6-for-12 shooter is not a 50% shooter
