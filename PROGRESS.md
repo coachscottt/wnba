@@ -14,7 +14,7 @@ has seen the output.
 | 4 | Features | `build/04-features.md` | ✅ complete 2026-08-10 |
 | 5 | Minutes model | `build/05-minutes-model.md` | ✅ complete 2026-08-10 |
 | 6 | Rate models | `build/06-rate-models.md` | ✅ complete 2026-08-10 (all 4 stats) |
-| 7 | Simulation | `build/07-simulation.md` | ⬜ not started |
+| 7 | Simulation | `build/07-simulation.md` | ✅ complete 2026-08-10 |
 | 8 | Pricing | `build/08-pricing.md` | ⬜ not started |
 | 9 | Evaluation | `build/09-evaluation.md` | ⬜ not started |
 | 10 | Automation | `build/10-automation.md` | ⬜ not started |
@@ -129,3 +129,16 @@ All overdispersion ratios ≫ 1 — Poisson would have been wrong everywhere, as
 - The raw 3PA *attempts* model slightly loses to the season-raw baseline on CRPS (0.7854 vs 0.7559) even though 3PM and points — the priced quantities — win. Likely the opp/pace adjustments add noise on attempts; worth an ablation in phase 9.
 - FTA dispersion is extreme (r=2.9) — free-throw attempts are the least predictable component; drives the points tails, watch it in phase 7 calibration.
 - Accuracy counters (p3/p2/ftp) are season-scoped; career-scoped counters would stabilize early-season estimates further.
+
+### Phase 7 — Simulation (2026-08-10)
+
+**Built:** `src/simulate.py` — full joint engine (shared pace + OT draws per game, vectorized Dirichlet minutes, NB attempts × Binomial makes, points + PRA/PR/PA/RA derived per sim), 10k sims/game seeded, summaries (mean/sd/P≥k per unit) stored in `sim_summary`, raw draws discarded. Run with `python -m src.simulate` (155 holdout games).
+
+**The overlay check earned its keep.** First run showed stars underprojected ~20% (A'ja Wilson sim 22.0 vs actual 26.8) — phase 4's k=10 shrinkage was crushing high-rate players, invisible to phase 6's all-player CRPS gate. Fixed by per-stat k tuning on the validation slice (k now 1–3; see DECISIONS.md); the fix also made the 3PA attempts submodel beat its baselines (closing that phase 6 unresolved). All phase 6 CRPS margins improved after re-tune (points 2.3384 vs 2.4277/2.4508).
+
+**DoD results:** minutes sum asserted in every sim of every game (200 exact, +25 only on simulated OT); team points sim-vs-actual mean error −2.0 (MAE 10.3, n=310 team-games — no game-total lines captured, compared to realized scores); team rebounds 33.6/team (realistic); P(points≥k) grids printed around 8 posted lines; overlay plots for the 5 most-priced players saved to reports/overlay_*.png.
+
+**Unresolved — the top item for phase 9:**
+- **Star-tier residual: top scorers still sim ~8–10% under their holdout-period scoring** (Wilson 24.8 vs 27.6, Stewart 19.0 vs 22.5, Ionescu 13.3 vs 17.0 conditional-on-playing; role players are calibrated). Decomposition: Wilson's minutes are right → pure rate lag; Stewart/Ionescu are ~2 minutes under AND rate-lagged (season-cumulative rates lag mid-season ramps; Ionescu is an injury-return ramp). Candidate fixes for phase 9 adjudication: star-tier minutes-share bias in the HGB regressor, Beta accuracy pseudo-counts (k_p2=80) possibly over-shrinking high-volume shooters, league-wide −2.3% scoring drift (as-of estimates lag a rising scoring environment). **Pricing consequence if unfixed: the model will systematically fade star overs — phase 9's CLV-vs-market comparison is the right instrument to size this.**
+- Usage-share redistribution beyond minutes-flow is deferred (DECISIONS.md).
+- Overlay comparison is holdout-sims vs season log by construction; holdout-period actuals are printed alongside for honesty.

@@ -96,6 +96,13 @@ minutes:
 
 rates:
   holdout_start: "2026-06-01"
+  # per-stat shrinkage k tuned on the late-train validation slice (never the
+  # holdout) — `run.py train` prints the chosen values. The feature layer's
+  # k_form=10 stays for the minutes model; rate means re-shrink from raw+prior.
+  k_grid: [1, 2, 3, 5, 8, 10, 15]
+  # blend weight on the EWM recent-form rate (season cumulative lags ramps)
+  ewm_blend_grid: [0, 0.15, 0.3, 0.45]
+  k_tune_start: "2025-07-01"
   # Beta-prior pseudo-attempts for accuracy shrinkage (games' worth of evidence
   # the league/position prior is worth) — a 6-for-12 shooter is not a 50% shooter
   k_p3: 60
@@ -107,6 +114,19 @@ rates:
   crps_max_count: 70
   sims_points: 2000
   seed: 20260810
+
+simulation:
+  # 10k covers main lines; 50k when deep alternates/milestones matter
+  n_sims: 10000
+  seed: 20260810
+  # game-level OT probability and pace residual sd are fit from pre-holdout
+  # games at runtime and printed; set a number here to override
+  ot_prob: null
+  pace_sd: null
+  # players for the game-log overlay check; empty = top 5 most-priced
+  overlay_players: []
+  # P(stat >= k) grid upper bound
+  p_ge_max: 45
 
 clean:
   # Which player_games column settles each market (alternates share the base key)

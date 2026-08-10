@@ -154,6 +154,18 @@ Format:
 **Why:** Isolates rate quality from minutes uncertainty — otherwise a good rate model hides behind minutes noise. Baselines sharing the family isolates exactly the thing being claimed: the mean structure (shrinkage + opponent + pace) adds information.
 **Revisit if:** never — phase 7 evaluates the composition.
 
+## 2026-08-10 — Phase 7: rate shrinkage re-tuned after the overlay check caught star bias
+**Decided:** Rate-model means re-shrink from raw + as-of league prior with per-stat k tuned by CRPS on a late-train validation slice (chosen: fg3a k=1, fg2a k=1, fta k=3, reb k=3, ast k=2 — far below the feature layer's k_form=10), plus an optional EWM recent-form blend (grid-tuned, mostly small). The feature layer's k_form=10 is unchanged (the minutes model validated with it).
+**Alternatives:** Keeping k=10 (the overlay check showed stars underprojected ~20% — A'ja Wilson sim 22.0 vs actual 26.8 — because a 31-per-40 scorer was still pulled 27% toward a ~15 league prior); Dirichlet-style MLE (same μ-error conflation as phase 5).
+**Why:** The guide's overlay check is "the best debugging tool in the project" and it worked exactly as advertised: phase 6's all-player CRPS gate couldn't see a star-tier bias because stars are few — but stars are where props are priced. Tuning k per stat on validation (the tuning phases 4/6 deferred) halved the bias and also fixed the 3PA attempts submodel (now beats baselines: 0.7426 vs 0.7555).
+**Revisit if:** phase 9 — see the star-tier residual below.
+
+## 2026-08-10 — Simulation engine structure
+**Decided:** Per game: shared pace draw (Normal, residual sd fit pre-holdout = 3.87) and shared OT draw (P=0.038 fit pre-holdout) for both teams; DNP coin flips; vectorized Dirichlet minutes shares (per-element gamma draws) × (200 + 25·OT); NB attempts scaled by that sim's minutes × pace; Binomial makes; points/PRA/PR/PA/RA derived per sim. Attempt redistribution when a teammate sits flows through the minutes reallocation (shares renormalize, attempts follow minutes) — an explicit usage-share layer would double-count it. Summaries stored (mean, sd, P(≥k) at 1-unit intervals in `sim_summary`), never raw draws. Props settle including OT, so OT sims are included.
+**Alternatives:** Per-player independent sims (loses the zero-sum minutes and shared-pace correlations that combos need).
+**Why:** Guide §11 structure exactly; correlations come free.
+**Revisit if:** teammate-out repricing looks wrong in practice — then a usage model conditioned on the active lineup is the upgrade.
+
 ## 2026-08-10 — Shrinkage constants (phase 4 initial values)
 **Decided:** `k_form: 10`, `k_team: 8`, `k_opp: 12`, `k_opp_pos: 15` in config.yaml, applied as (n·obs + k·prior)/(n+k).
 **Alternatives:** Small k (chases hot streaks — guide explicitly warns against k=1); tuning now.

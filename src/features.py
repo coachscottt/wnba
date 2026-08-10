@@ -220,6 +220,9 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
         (pl.col("f_games_played") / (pl.col("f_games_played") + kf))
         .alias("f_form_weight"),
         pl.col("started").cast(pl.Float64).alias("f_started"))
+    # expose the as-of league priors so downstream models can re-shrink with
+    # their own validated k (phase 6 tunes per-stat k on validation folds)
+    feat = feat.rename({f"lg_{s}40": f"f_lg_{s}40" for s in stats})
 
     # ---- team context + opponent, as-of from the games table
     g = frames["games"].with_columns(pl.col("game_date").cast(pl.Utf8))

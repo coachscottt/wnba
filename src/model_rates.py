@@ -72,27 +72,86 @@ def pace_factor(df: pl.DataFrame, rcfg: dict) -> np.ndarray:
             / float(rcfg["lg_pace_ref"]))
 
 
+def shrunk_rate40(df: pl.DataFrame, stat: str, k: float,
+                  w_ewm: float = 0.0) -> np.ndarray:
+    """Per-40 mean rate: raw season rate re-shrunk toward the as-of league
+    prior at this k, then blended with the EWM recent-form rate (w_ewm) —
+    the season cumulative lags mid-season ramps (injury returns, role
+    changes); the EWM tracks them."""
+    szn = COUNT_STATS[stat][0]
+    stem = szn.removeprefix("f_").removesuffix("_szn")
+    raw = df[szn + "_raw"].to_numpy().astype(float)
+    lg = df["f_lg_" + stem].to_numpy().astype(float)
+    n = df["f_games_played"].fill_null(0.0).to_numpy()
+    ok = (n > 0) & ~np.isnan(raw)
+    base = np.where(ok, (n * np.nan_to_num(raw) + k * lg) / (n + k), lg)
+    if w_ewm > 0:
+        ewm = df[f"f_{stem}_ewm"].to_numpy().astype(float)
+        base = np.where(np.isnan(ewm), base, w_ewm * ewm + (1 - w_ewm) * base)
+    return base
+
+
 def mean_counts(df: pl.DataFrame, stat: str, rcfg: dict,
-                rate_col: str | None = None) -> np.ndarray:
-    """Expected count for the game: per-40 mean rate x minutes/40."""
+                rate_col: str | None = None,
+                k: dict | None = None) -> np.ndarray:
+    """Expected count for the game: per-40 mean rate x minutes/40.
+    k = {"k": shrinkage, "w": ewm blend weight} for the model path."""
     szn, opp, _ = COUNT_STATS[stat]
-    rate = df[rate_col or szn].to_numpy().astype(float)
-    rate = np.where(np.isnan(rate), np.nan_to_num(df[szn].to_numpy(), nan=0.0), rate)
-    adj = df[opp].to_numpy() if rate_col is None else 1.0  # baselines: no adj
-    m = rate * adj * (pace_factor(df, rcfg) if rate_col is None else 1.0) \
-        * df["minutes"].to_numpy() / 40.0
+    if rate_col is None:
+        rate = shrunk_rate40(df, stat, float(k["k"]), float(k["w"]))
+        adj = df[opp].to_numpy() * pace_factor(df, rcfg)
+    else:  # baselines: pure rate, no adjustments, no shrinkage
+        rate = df[rate_col].to_numpy().astype(float)
+        rate = np.where(np.isnan(rate),
+                        np.nan_to_num(df[szn].to_numpy(), nan=0.0), rate)
+        adj = 1.0
+    m = rate * adj * df["minutes"].to_numpy() / 40.0
     return np.clip(m, 1e-6, None)
 
 
-def fit_dispersion(y: np.ndarray, m: np.ndarray, label: str) -> float:
+def fit_dispersion(y: np.ndarray, m: np.ndarray, label: str,
+                   quiet: bool = False) -> float:
     """NB dispersion r by moment matching; prints the var/mean justification."""
     vm = float(np.var(y) / np.mean(y)) if np.mean(y) > 0 else 1.0
     excess = float(np.sum((y - m) ** 2 - m))
     r = float(np.sum(m ** 2) / excess) if excess > 0 else np.inf
-    log.info(f"  {label}: observed variance/mean = {vm:.2f} "
-             f"({'overdispersed -> NB justified' if vm > 1.1 else 'near 1 — Poisson would do; using NB with large r'}), "
-             f"residual dispersion r = {r if np.isfinite(r) else 1e9:.1f}")
+    if not quiet:
+        log.info(f"  {label}: observed variance/mean = {vm:.2f} "
+                 f"({'overdispersed -> NB justified' if vm > 1.1 else 'near 1 — Poisson would do; using NB with large r'}), "
+                 f"residual dispersion r = {r if np.isfinite(r) else 1e9:.1f}")
     return r if np.isfinite(r) else 1e9
+
+
+TARGETS = {"fg3a": "fg3a_t", "fg2a": "fg2a", "fta": "fta_t",
+           "reb": "reb", "ast": "ast"}
+
+
+def tune_k(train: pl.DataFrame, rcfg: dict) -> dict[str, float]:
+    """Per-stat shrinkage k chosen by CRPS on a late-train validation slice.
+    This is the tuning phase 4 deferred; the holdout is never touched."""
+    cut = str(rcfg["k_tune_start"])
+    fit = train.filter(pl.col("game_date") < cut)
+    val = train.filter(pl.col("game_date") >= cut)
+    kmax = int(rcfg["crps_max_count"])
+    ks = {}
+    for stat, target in TARGETS.items():
+        y_fit = fit[target].to_numpy().astype(float)
+        y_val = val[target].to_numpy().astype(float)
+        best, best_crps = None, None
+        for k in rcfg["k_grid"]:
+            for w in rcfg["ewm_blend_grid"]:
+                kw = {"k": float(k), "w": float(w)}
+                r = fit_dispersion(y_fit, mean_counts(fit, stat, rcfg, k=kw),
+                                   stat, quiet=True)
+                cdf = nb_cdf_grid(mean_counts(val, stat, rcfg, k=kw), r, kmax)
+                crps = float(crps_from_cdf(cdf, y_val).mean())
+                if best_crps is None or crps < best_crps:
+                    best, best_crps = kw, crps
+        ks[stat] = best
+    log.info(f"per-stat (shrinkage k, ewm blend w) tuned on validation slice "
+             f"({cut}..holdout): "
+             + ", ".join(f"{s}: k={v['k']:g} w={v['w']:g}" for s, v in ks.items()))
+    return ks
 
 
 def shrunk_accuracy(df: pl.DataFrame, acc: str, priors: dict, rcfg: dict) -> np.ndarray:
@@ -191,9 +250,9 @@ def save_pit_plot(u: np.ndarray, stat: str) -> None:
 
 
 def eval_count_stat(train: pl.DataFrame, test: pl.DataFrame, stat: str,
-                    target: str, rcfg: dict, rng) -> tuple[float, dict]:
+                    target: str, rcfg: dict, rng, k: float) -> tuple[float, dict]:
     kmax = int(rcfg["crps_max_count"])
-    m_tr = mean_counts(train, stat, rcfg)
+    m_tr = mean_counts(train, stat, rcfg, k=k)
     r = fit_dispersion(train[target].to_numpy().astype(float), m_tr, stat)
 
     results = {}
@@ -201,7 +260,7 @@ def eval_count_stat(train: pl.DataFrame, test: pl.DataFrame, stat: str,
     for name, rate_col in [("model", None),
                            ("szn-raw", COUNT_STATS[stat][0] + "_raw"),
                            ("trail-10", COUNT_STATS[stat][0].replace("_szn", "_l10"))]:
-        m = mean_counts(test, stat, rcfg, rate_col)
+        m = mean_counts(test, stat, rcfg, rate_col, k=k)
         cdf = nb_cdf_grid(m, r, kmax)
         crps = float(crps_from_cdf(cdf, y).mean())
         results[name] = crps
@@ -238,19 +297,21 @@ def run_train_rates() -> int:
              f"on ACTUAL minutes — minutes uncertainty is phase 5's job")
 
     priors = fit_accuracy_priors(train)
+    ks = tune_k(train, rcfg)
     disp: dict[str, float] = {}
     all_pass = True
 
     # ---- stat 1: three-pointers made (attempts NB x Beta-shrunk accuracy)
     log.info("— stat 1: three-pointers made —")
-    r3a, res3a = eval_count_stat(train, test, "fg3a", "fg3a_t", rcfg, rng)
+    r3a, res3a = eval_count_stat(train, test, "fg3a", "fg3a_t", rcfg, rng,
+                                 ks["fg3a"])
     disp["fg3a"] = r3a
     log.info(f"  (3PA attempt model: CRPS model {res3a['model']:.4f} vs "
              f"szn-raw {res3a['szn-raw']:.4f}, trail-10 {res3a['trail-10']:.4f})")
     p3_test = shrunk_accuracy(test, "p3", priors, rcfg)
     kmax3 = 25
     y3 = test["fg3m"].to_numpy().astype(float)
-    m3a = mean_counts(test, "fg3a", rcfg)
+    m3a = mean_counts(test, "fg3a", rcfg, k=ks["fg3a"])
     cdf3 = mixture_3pm_cdf(m3a, r3a, p3_test, kmax3)
     crps3 = float(crps_from_cdf(cdf3, y3).mean())
     u3 = pit_from_cdf(cdf3, y3, rng)
@@ -277,14 +338,16 @@ def run_train_rates() -> int:
 
     # ---- stat 2: rebounds
     log.info("— stat 2: rebounds —")
-    r_reb, res_reb = eval_count_stat(train, test, "reb", "reb", rcfg, rng)
+    r_reb, res_reb = eval_count_stat(train, test, "reb", "reb", rcfg, rng,
+                                     ks["reb"])
     disp["reb"] = r_reb
     if not report_stat("reb", res_reb):
         all_pass = False
 
     # ---- stat 3: assists
     log.info("— stat 3: assists —")
-    r_ast, res_ast = eval_count_stat(train, test, "ast", "ast", rcfg, rng)
+    r_ast, res_ast = eval_count_stat(train, test, "ast", "ast", rcfg, rng,
+                                     ks["ast"])
     disp["ast"] = r_ast
     if not report_stat("ast", res_ast):
         all_pass = False
@@ -293,14 +356,15 @@ def run_train_rates() -> int:
     log.info("— stat 4: points = 2x2PM + 3x3PM + FTM, simulated —")
     for s, t in (("fg2a", "fg2a"), ("fta", "fta_t")):
         disp[s] = fit_dispersion(train[t].to_numpy().astype(float),
-                                 mean_counts(train, s, rcfg), s)
+                                 mean_counts(train, s, rcfg, k=ks[s]), s)
     sims = int(rcfg["sims_points"])
     yp = test["points"].to_numpy().astype(float)
     n = test.height
     p3v = p3_test
     p2v = shrunk_accuracy(test, "p2", priors, rcfg)
     ftv = shrunk_accuracy(test, "ftp", priors, rcfg)
-    m3, m2, mf = (mean_counts(test, s, rcfg) for s in ("fg3a", "fg2a", "fta"))
+    m3, m2, mf = (mean_counts(test, s, rcfg, k=ks[s])
+                  for s in ("fg3a", "fg2a", "fta"))
     pts_sims = np.zeros((n, sims))
     for mv, rv, acc, mult in ((m3, disp["fg3a"], p3v, 3),
                               (m2, disp["fg2a"], p2v, 2),
@@ -340,6 +404,7 @@ def run_train_rates() -> int:
     MODEL_PATH.parent.mkdir(exist_ok=True)
     with open(MODEL_PATH, "wb") as f:
         pickle.dump({"dispersion": disp, "accuracy_priors": priors,
+                     "k_rate": ks,
                      "config": {k: rcfg[k] for k in
                                 ("k_p3", "k_p2", "k_ftp", "lg_pace_ref")},
                      "trained_through": str(df["game_date"].max())}, f)
