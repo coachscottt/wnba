@@ -1569,17 +1569,27 @@ name = "wnba-props"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "numpy", version = "2.5.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "pyyaml" },
     { name = "rapidfuzz" },
     { name = "requests" },
+    { name = "scikit-learn" },
+    { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "scipy", version = "1.18.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "sportsdataverse" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "matplotlib", specifier = ">=3.11.1" },
+    { name = "numpy", specifier = ">=2.4.6" },
     { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "rapidfuzz", specifier = ">=3.14.5" },
     { name = "requests", specifier = ">=2.34.2" },
+    { name = "scikit-learn", specifier = ">=1.9.0" },
+    { name = "scipy", specifier = ">=1.17.1" },
     { name = "sportsdataverse", specifier = ">=0.0.75" },
 ]
 

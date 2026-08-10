@@ -12,7 +12,7 @@ has seen the output.
 | 2 | Odds ingestion | `build/02-odds-ingestion.md` | ✅ complete 2026-08-09 |
 | 3 | Cleaning and joining | `build/03-cleaning-joining.md` | ✅ complete 2026-08-10 |
 | 4 | Features | `build/04-features.md` | ✅ complete 2026-08-10 |
-| 5 | Minutes model | `build/05-minutes-model.md` | ⬜ not started |
+| 5 | Minutes model | `build/05-minutes-model.md` | ✅ complete 2026-08-10 |
 | 6 | Rate models | `build/06-rate-models.md` | ⬜ not started |
 | 7 | Simulation | `build/07-simulation.md` | ⬜ not started |
 | 8 | Pricing | `build/08-pricing.md` | ⬜ not started |
@@ -89,3 +89,23 @@ returned, and anything left unresolved.
 - Features exist only for historical played rows. Projection-time feature building for tonight's games (roster from a `today_out` override or injury feed, per guide §5.5) is built when `project` arrives (phase 8).
 - `f_usage_l5` has a fat tail (max 71 from 1-minute stints inside small windows) — consider minutes-weighting the window when the rate models care.
 - `f_started` treated as pregame info; phase 9 should verify measured edge with and without it (capture-time reality check).
+
+### Phase 5 — Minutes model (2026-08-10)
+
+**Built:** Features extended to all 29,421 rostered player-games (backward as-of for non-played rows; `f_min_last`, `f_opp_ortg` added; leakage test still passes). `src/model_minutes.py` — two-stage: isotonic-calibrated HistGradientBoosting DNP classifier + share regressor + full Dirichlet over playing players per simulation, share×200 (+25 only on explicit OT). Concentration fit by matching interval coverage on a late-train calibration slice (c=192; the MLE approach landed c≈89 and failed coverage — see DECISIONS.md). `run.py train` evaluates on the holdout, refits on all data, saves `models/minutes.pkl` (gitignored). `tests/test_minutes_sum.py` standalone.
+
+**DoD results, holdout n=3,304 (2026-06-01+, regulation, time-split):**
+
+| | MAE (minutes) |
+|---|---|
+| model (sim median) | **4.19** |
+| baseline: trailing-5 mean | 4.76 |
+| baseline: last game | 5.11 |
+
+Coverage 50% → 56.0%, 80% → 82.4%, 95% → 94.2% (all within tolerance; slightly wide at 50). DNP log loss 0.2099, calibration deciles track (plot at reports/minutes_dnp_calibration.png). Sum test: 100 team-games × 50 sims, exactly 200 in regulation, 225 only with explicit OT, no negatives. `grep 36` over src/ is clean. **Verdict: beats trailing-5 on MAE with calibrated coverage — proceed permitted.**
+
+**Unresolved:**
+- Backtest knows historical pregame availability (printed in every train run). The projection-time gap is real and unmeasured until phase 10's `today_out.csv` workflow.
+- 50% coverage is 6pts wide — the Dirichlet's single global c can't sharpen established-starter minutes and bench volatility simultaneously; a role-dependent concentration is the natural phase 7 refinement if points tails misbehave.
+- Blowout proxy is ratings-based; game spread/total markets (capturable via the odds API) would be strictly better once phase 8 pulls game lines.
+- No game-level OT model yet — phase 7 decides whether props settle including OT and simulates accordingly.

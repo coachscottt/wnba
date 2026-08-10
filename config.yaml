@@ -72,6 +72,23 @@ features:
   team_tz_offsets: {ATL: 0, CHI: 1, CON: 0, DAL: 1, GS: 3, IND: 0, LA: 3, LV: 3,
                     MIN: 1, NY: 0, PHX: 2.5, POR: 3, SEA: 3, TOR: 0, WSH: 0}
 
+minutes:
+  # time-based split: train < holdout_start, evaluate on >= (never random)
+  holdout_start: "2026-06-01"
+  # simulations per team-game for evaluation quantiles
+  sims_eval: 1000
+  # Dirichlet concentration: MLE over this log-spaced grid on training rotations
+  concentration_min: 5
+  concentration_max: 500
+  concentration_points: 25
+  # fit c on the current roster-rules regime only (guide §2: pre-2026 minutes
+  # distributions don't transfer cleanly under the new CBA — 2026 games only)
+  concentration_since: "2026-01-01"
+  seed: 20260810
+  # regulation-only evaluation (OT games excluded: actual minutes incompatible
+  # with the 200-minute simulation frame; OT simulation is a phase 7 concern)
+  eval_regulation_only: true
+
 clean:
   # Which player_games column settles each market (alternates share the base key)
   market_stats:

@@ -153,3 +153,27 @@ Format:
 **Alternatives:** Within-season vacated minutes (bad early-season estimates); including dnp_coach as an absence; pytest.
 **Why:** Each follows the leakage rule or the ask-before-adding-packages rule; cross-season vacated minutes because "the star's usual minutes" is best estimated from last season in game 1.
 **Revisit if:** projection-time reality differs — e.g. lineups not confirmed at capture time makes (d) optimistic; phase 9 should measure with and without `f_started`.
+
+## 2026-08-10 — Features extended to all rostered players (phase 5 prerequisite)
+**Decided:** The features table now carries every rostered player-game (29,421 rows) with a `status` column. Played rows use shifted windows; non-played rows get identical as-of values via a backward as-of join on the player's played history (their own game is never in that history, so "last played value" = everything strictly before tip). Added `f_min_last` (last game's minutes — also the phase 5 baseline) and `f_opp_ortg` (for the blowout proxy).
+**Alternatives:** A separate reduced feature set for DNP rows.
+**Why:** The DNP classifier's positive class is dnp_coach rows, which had no feature rows; and phase 8 projection needs features for full rosters anyway. The leakage test now covers non-played rows too and still passes.
+**Revisit if:** never — this is the architecture phase 8 builds on.
+
+## 2026-08-10 — Minutes model: Dirichlet shares with coverage-fit concentration
+**Decided:** Two-stage as specced: HistGradientBoosting DNP classifier with isotonic recalibration on a time-ordered late-train slice, HistGradientBoosting regressor for expected minutes SHARE, full Dirichlet over the players who play in each simulation (not the normalize-independent-draws fallback), share × 200 (+25 only on explicit OT). Concentration c chosen by matching 50/80/95 interval coverage on the calibration slice — **not** by Dirichlet MLE.
+**Alternatives:** MLE for c (landed c≈89 → intervals far too wide, 50% interval covering 62-66%); fitting c on recent-era subsets (2025+: no change; 2026-only: worse — season-start rotations are the noisiest).
+**Why:** The likelihood fit conflates the regressor's μ-error with true rotation dispersion, systematically underestimating c. Coverage is the quantity that must be calibrated (props live in the tails), so fit it directly on data the holdout never sees. Result: c=192, holdout coverage 56/82/94 vs nominal 50/80/95.
+**Revisit if:** phase 7 simulation shows tail problems on points (minutes tails propagate); or a game-total/spread market feature replaces the ratings-based blowout proxy.
+
+## 2026-08-10 — Minutes evaluation choices
+**Decided:** Holdout = 2026-06-01 onward (time-based, ~3.3k player-games), regulation games only; evaluation population = pregame-available players (played + dnp_coach); baseline comparison on MAE with model interval coverage reported alongside (point-estimate baselines have no intervals); backtest explicitly labeled as knowing historical pregame availability.
+**Alternatives:** Including OT games (actual minutes incompatible with the 200-minute frame — OT simulation is phase 7's job); random splits (never).
+**Why:** Each mirrors the spec; the availability caveat is the guide's "real result vs fantasy" distinction, printed in every train run.
+**Revisit if:** phase 7 adds the game-level OT event model.
+
+## 2026-08-10 — Packages: scikit-learn, scipy, numpy, matplotlib declared
+**Decided:** `uv add scikit-learn scipy numpy matplotlib` — all were already installed transitively; our code now imports them directly.
+**Alternatives:** xgboost (also present transitively) — HistGradientBoosting is sklearn-native, handles NaN features without imputation (which sidesteps a whole class of imputer-leakage), and is fast enough.
+**Why:** Same explicit-dependency rule as requests/rapidfuzz. matplotlib is sanctioned by the repo's own `.gitignore` (`reports/*.png`) and the guide's layout (calibration plots in reports/).
+**Revisit if:** never, realistically.

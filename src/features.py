@@ -1,11 +1,11 @@
-"""Feature layer: for every played player-game, predictors computed strictly
+"""Feature layer: for every rostered player-game, predictors computed strictly
 as-of (games 1..N-1 plus pregame roster/availability info for game N).
 
-The whole pipeline is a pure function of its input frames — the leakage test
-reruns it on a truncated copy of history (future deleted, same-date stats
-zeroed) and asserts identical feature rows. Every window is shifted before it
-rolls; every season-to-date value is a shifted cumulative; every shrinkage
-prior is itself as-of.
+Played rows get shifted-window values; non-played rows (DNP/inactive) get the
+same values via a backward as-of join on the player's played history — both are
+"everything known before tip". The whole pipeline is a pure function of its
+input frames: the leakage test reruns it on truncated history (future deleted,
+same-date stats zeroed) and asserts identical feature rows.
 """
 
 from __future__ import annotations
@@ -69,7 +69,6 @@ def league_asof(frame: pl.DataFrame, by: list[str], vals: dict[str, str],
     daily = daily.with_columns(
         [pl.col(c).cum_sum().shift(1).over(grp).alias(f"cum_{c}") for c in vals]
         + [pl.col("n_rows").cum_sum().shift(1).over(grp).alias("cum_n")])
-    # previous-season final cumulative per group
     finals = daily.group_by(grp).agg(
         [(pl.col(c).sum()).alias(f"fin_{c}") for c in vals])
     finals = finals.sort(by + ["season"]).with_columns(
@@ -77,10 +76,75 @@ def league_asof(frame: pl.DataFrame, by: list[str], vals: dict[str, str],
     return daily.join(finals, on=grp, how="left")
 
 
+def _player_exprs(fcfg: dict, shifted: bool) -> list[pl.Expr]:
+    """Player-level as-of expressions over the played frame, sorted
+    (player_id, game_date). shifted=True excludes the current row (for the
+    played row itself); shifted=False includes it (for backward-asof lookup
+    by later non-played rows — their own game is never in the played frame)."""
+    over_p = ["player_id", "season"]
+    stats = fcfg["form_stats"]
+    windows = fcfg["windows"]
+
+    def base(col: str) -> pl.Expr:
+        e = pl.col(col)
+        return e.shift(1).over(over_p) if shifted else e
+
+    def ratio40(num: pl.Expr, den: pl.Expr) -> pl.Expr:
+        return pl.when(den > 0).then(40 * num / den).otherwise(None)
+
+    exprs = []
+    for s in stats:
+        bs, bm = base(s), base("minutes")
+        for w in windows:
+            exprs.append(ratio40(
+                bs.rolling_sum(w, min_samples=1).over(over_p),
+                bm.rolling_sum(w, min_samples=1).over(over_p),
+            ).alias(f"f_{s}40_l{w}"))
+        rate = pl.when(pl.col("minutes") > 0).then(
+            40 * pl.col(s) / pl.col("minutes")).otherwise(None)
+        rate = rate.shift(1).over(over_p) if shifted else rate
+        exprs.append(rate.ewm_mean(
+            half_life=float(fcfg["ewm_half_life_games"]), ignore_nulls=True)
+            .over(over_p).alias(f"f_{s}40_ewm"))
+        exprs.append(ratio40(
+            bs.cum_sum().over(over_p), bm.cum_sum().over(over_p),
+        ).alias(f"raw_{s}40_szn"))
+    exprs += [
+        base("minutes").rolling_mean(w, min_samples=1).over(over_p)
+        .alias(f"f_min_l{w}") for w in windows]
+    exprs.append(base("minutes").rolling_mean(1, min_samples=1).over(over_p)
+                 .alias("f_min_last"))
+    share = pl.col("minutes") / pl.col("team_min")
+    share = share.shift(1).over(over_p) if shifted else share
+    exprs.append(share.rolling_mean(5, min_samples=1).over(over_p)
+                 .alias("f_min_share_l5"))
+    exprs.append(base("started").rolling_mean(10, min_samples=1).over(over_p)
+                 .alias("f_start_rate_l10"))
+    for name, num in (("f_ftr_l5", "fta"), ("f_3par_l5", "fg3a")):
+        exprs.append(
+            pl.when(base("fga").rolling_sum(5, min_samples=1).over(over_p) > 0)
+            .then(base(num).rolling_sum(5, min_samples=1).over(over_p)
+                  / base("fga").rolling_sum(5, min_samples=1).over(over_p))
+            .alias(name))
+    n = pl.col("minutes").cum_count().over(over_p)
+    exprs.append(((n - 1) if shifted else n).cast(pl.Float64)
+                 .alias("f_games_played"))
+    usage = pl.col("usage_g").shift(1).over(over_p) if shifted else pl.col("usage_g")
+    exprs.append(usage.rolling_mean(5, min_samples=1).over(over_p)
+                 .alias("f_usage_l5"))
+    return exprs
+
+
+PLAYER_COLS = None  # filled on first pipeline run
+
+
 # ---------------------------------------------------------------- pipeline
 
 
 def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
+    stats = fcfg["form_stats"]
+    kf, kt, ko, kop = (float(fcfg[k]) for k in ("k_form", "k_team", "k_opp", "k_opp_pos"))
+
     pg_all = frames["pg"].with_columns(
         pl.col("game_date").cast(pl.Utf8),
         pl.col("minutes").fill_null(0.0),
@@ -92,78 +156,39 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
     )
     played = pg_all.filter(pl.col("status") == "played").sort(
         ["player_id", "game_date"])
-    stats = fcfg["form_stats"]
-    windows = fcfg["windows"]
-    kf, kt, ko, kop = (float(fcfg[k]) for k in ("k_form", "k_team", "k_opp", "k_opp_pos"))
 
-    # ---- player form: sum-based trailing per-40, EWM, season-to-date
-    over_p = ["player_id", "season"]
-    exprs = []
-    def ratio40(num: pl.Expr, den: pl.Expr) -> pl.Expr:
-        return pl.when(den > 0).then(40 * num / den).otherwise(None)
-
-    for s in stats:
-        sh_s = pl.col(s).shift(1).over(over_p)
-        sh_m = pl.col("minutes").shift(1).over(over_p)
-        for w in windows:
-            exprs.append(ratio40(
-                sh_s.rolling_sum(w, min_samples=1).over(over_p),
-                sh_m.rolling_sum(w, min_samples=1).over(over_p),
-            ).alias(f"f_{s}40_l{w}"))
-        exprs.append(
-            (pl.when(pl.col("minutes") > 0)
-             .then(40 * pl.col(s) / pl.col("minutes")).otherwise(None)
-             .shift(1).over(over_p)
-             .ewm_mean(half_life=float(fcfg["ewm_half_life_games"]),
-                       ignore_nulls=True)
-             .over(over_p)).alias(f"f_{s}40_ewm"))
-        exprs.append(ratio40(
-            pl.col(s).cum_sum().shift(1).over(over_p),
-            pl.col("minutes").cum_sum().shift(1).over(over_p),
-        ).alias(f"raw_{s}40_szn"))
-    exprs += [
-        pl.col("minutes").shift(1).over(over_p).rolling_mean(w, min_samples=1)
-        .over(over_p).alias(f"f_min_l{w}") for w in windows]
-    exprs += [
-        ((pl.col("minutes") / pl.col("team_min")).shift(1).over(over_p)
-         .rolling_mean(5, min_samples=1).over(over_p)).alias("f_min_share_l5"),
-        pl.col("started").shift(1).over(over_p).rolling_mean(10, min_samples=1)
-        .over(over_p).alias("f_start_rate_l10"),
-        pl.when(pl.col("fga").shift(1).over(over_p).rolling_sum(5, min_samples=1)
-                .over(over_p) > 0)
-        .then(pl.col("fta").shift(1).over(over_p).rolling_sum(5, min_samples=1)
-              .over(over_p)
-              / pl.col("fga").shift(1).over(over_p).rolling_sum(5, min_samples=1)
-              .over(over_p))
-        .alias("f_ftr_l5"),
-        pl.when(pl.col("fga").shift(1).over(over_p).rolling_sum(5, min_samples=1)
-                .over(over_p) > 0)
-        .then(pl.col("fg3a").shift(1).over(over_p).rolling_sum(5, min_samples=1)
-              .over(over_p)
-              / pl.col("fga").shift(1).over(over_p).rolling_sum(5, min_samples=1)
-              .over(over_p))
-        .alias("f_3par_l5"),
-        (pl.col("minutes").cum_count().over(over_p) - 1).cast(pl.Float64)
-        .alias("f_games_played"),
-        pl.col("started").cast(pl.Float64).alias("f_started"),
-    ]
-    feat = played.with_columns(exprs)
-
-    # ---- usage (needs per-team-game totals)
+    # team totals per game (for usage), then per-game usage
     tm = played.group_by("game_id", "team_id").agg(
         pl.col("fga").sum().alias("tm_fga"), pl.col("fta").sum().alias("tm_fta"),
         pl.col("tov").sum().alias("tm_tov"))
-    feat = feat.join(tm, on=["game_id", "team_id"], how="left").with_columns(
+    pw = played.join(tm, on=["game_id", "team_id"], how="left").with_columns(
         (100 * (pl.col("fga") + 0.44 * pl.col("fta") + pl.col("tov"))
          * (pl.col("team_min") / 5)
          / (pl.when(pl.col("minutes") > 0).then(pl.col("minutes")).otherwise(None)
             * (pl.col("tm_fga") + 0.44 * pl.col("tm_fta") + pl.col("tm_tov"))))
         .alias("usage_g")
-    ).with_columns(
-        pl.col("usage_g").shift(1).over(over_p).rolling_mean(5, min_samples=1)
-        .over(over_p).alias("f_usage_l5"))
+    ).sort(["player_id", "game_date"])
 
-    # ---- league as-of priors, by position (for form shrinkage + opp pos defense)
+    meta_cols = KEYS + ["pos", "home_away", "status", "started"]
+    shifted = pw.with_columns(_player_exprs(fcfg, shifted=True))
+    pcols = [c for c in shifted.columns if c.startswith(("f_", "raw_"))]
+    base_played = shifted.select(meta_cols + pcols)
+
+    # non-played roster rows: same values via backward as-of on played history
+    lookup = pw.with_columns(_player_exprs(fcfg, shifted=False)).select(
+        "player_id", "season",
+        pl.col("game_date").str.to_date().alias("d"), *pcols
+    ).sort("d")
+    nonplayed = pg_all.filter(pl.col("status") != "played").select(
+        meta_cols).with_columns(
+        pl.col("game_date").str.to_date().alias("d")).sort("d")
+    base_np = nonplayed.join_asof(
+        lookup, on="d", by=["player_id", "season"], strategy="backward",
+    ).drop("d").select(meta_cols + pcols)
+
+    feat = pl.concat([base_played, base_np])
+
+    # ---- league as-of priors by position; shrink season-to-date form
     lp = league_asof(
         played.select("season", "game_date", "pos", *stats, "minutes"),
         ["pos"], {s: s for s in stats} | {"minutes": "minutes"})
@@ -187,7 +212,8 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
                    pl.col(f"lg_{s}40")).alias(f"f_{s}40_szn"))
     feat = feat.with_columns(
         (pl.col("f_games_played") / (pl.col("f_games_played") + kf))
-        .alias("f_form_weight"))
+        .alias("f_form_weight"),
+        pl.col("started").cast(pl.Float64).alias("f_started"))
 
     # ---- team context + opponent, as-of from the games table
     g = frames["games"].with_columns(pl.col("game_date").cast(pl.Utf8))
@@ -240,21 +266,23 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
                pl.col("lg_ortg")).alias("t_drtg"),
         shrunk(pl.col("n_pace"), pl.col("cum_pace") / pl.col("n_pace"), ko,
                pl.col("lg_pace")).alias("o_pace"),
+        shrunk(pl.col("n_ortg"), pl.col("cum_ortg") / pl.col("n_ortg"), ko,
+               pl.col("lg_ortg")).alias("o_ortg"),
         shrunk(pl.col("n_drtg"), pl.col("cum_drtg") / pl.col("n_drtg"), ko,
                pl.col("lg_ortg")).alias("o_drtg"),
-    ).select("game_id", "team_id", "t_pace", "t_ortg", "t_drtg", "o_pace", "o_drtg")
+    ).select("game_id", "team_id", "t_pace", "t_ortg", "t_drtg",
+             "o_pace", "o_ortg", "o_drtg")
     feat = feat.join(
         team_ctx.select("game_id", "team_id", "t_pace", "t_ortg", "t_drtg"),
         on=["game_id", "team_id"], how="left").rename(
         {"t_pace": "f_team_pace", "t_ortg": "f_team_ortg", "t_drtg": "f_team_drtg"})
     feat = feat.join(
         team_ctx.select("game_id", pl.col("team_id").alias("opponent_id"),
-                        "o_pace", "o_drtg"),
+                        "o_pace", "o_ortg", "o_drtg"),
         on=["game_id", "opponent_id"], how="left").rename(
-        {"o_pace": "f_opp_pace", "o_drtg": "f_opp_drtg"})
+        {"o_pace": "f_opp_pace", "o_ortg": "f_opp_ortg", "o_drtg": "f_opp_drtg"})
 
-    # ---- opponent positional defense: per-40 points allowed to each position,
-    # as-of, shrunk hard toward the league positional average, expressed as ratio
+    # ---- opponent positional defense (as-of, shrunk hard, ratio to league)
     allowed = played.group_by("opponent_id", "season", "game_date", "pos").agg(
         pl.col("points").sum().alias("pts"), pl.col("minutes").sum().alias("mins")
     ).sort(["opponent_id", "pos", "season", "game_date"]).with_columns(
@@ -315,10 +343,6 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
         (pl.col("home_away") == "home").cast(pl.Float64).alias("f_home"))
 
     # ---- teammate availability (pregame info for game N)
-    # Per played game, trailing form BOTH including the current game (for
-    # backward-asof lookups from later dates) and shifted (for same-date rows).
-    # Career-window (cross-season) on purpose: an absent star's "usual minutes"
-    # in game 1 of a season is best estimated from last season.
     sh_min = pl.col("minutes").shift(1).over("player_id")
     sh_ast = pl.col("ast").shift(1).over("player_id")
     trail = played.sort(["player_id", "game_date"]).select(
@@ -342,13 +366,11 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
     roster = pg_all.select(
         "game_id", "team_id", "player_id", "pos", "status",
         pl.col("game_date").str.to_date().alias("d"))
-    # played tonight: exact match, use the shifted (strictly-before) values
     r_played = roster.filter(pl.col("status") == "played").join(
         trail.select("player_id", "d", pl.col("v_min_sh").alias("v_min"),
                      pl.col("v_ast40_sh").alias("v_ast40"),
                      pl.col("v_n_sh").alias("v_n")),
         on=["player_id", "d"], how="left")
-    # out tonight: backward asof — their last played game is strictly earlier
     r_out = roster.filter(pl.col("status") != "played").sort("d").join_asof(
         trail.select("player_id", "d", "v_min", "v_ast40", "v_n").sort("d"),
         on="d", by="player_id", strategy="backward")
@@ -362,7 +384,6 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
     feat = feat.join(vac_team, on=["game_id", "team_id"], how="left")
     feat = feat.join(vac_pos, on=["game_id", "team_id", "pos"], how="left")
 
-    # primary ball-handler = top as-of ast/40 on tonight's roster (min games)
     bh_flag = roster2.filter(
         pl.col("v_n") >= int(fcfg["ballhandler_min_games"])
     ).sort("v_ast40", descending=True, nulls_last=True).group_by(
@@ -373,7 +394,8 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
         .cast(pl.Float64).fill_null(0.0).alias("f_bh_out"))
 
     fcols = [c for c in feat.columns if c.startswith("f_")]
-    return feat.select(KEYS + fcols).sort(["game_date", "game_id", "player_id"])
+    return feat.select(KEYS + ["status"] + fcols).sort(
+        ["game_date", "game_id", "player_id"])
 
 
 # ---------------------------------------------------------------- entry point
@@ -391,16 +413,17 @@ def run_features(conn: sqlite3.Connection | None = None, quiet: bool = False) ->
         conn.execute("DROP TABLE IF EXISTS features")
         conn.execute(
             "CREATE TABLE features (game_id TEXT, player_id TEXT, season INTEGER,"
-            f" game_date TEXT, team_id TEXT, opponent_id TEXT, {ddl},"
+            f" game_date TEXT, team_id TEXT, opponent_id TEXT, status TEXT, {ddl},"
             " PRIMARY KEY (game_id, player_id))")
         conn.executemany(
-            f"INSERT INTO features VALUES ({','.join('?' * (len(KEYS) + len(fcols)))})",
+            f"INSERT INTO features VALUES ({','.join('?' * (len(KEYS) + 1 + len(fcols)))})",
             feat.rows())
     if quiet:
         return feat
 
-    log.info(f"features: {feat.height} rows ({frames['pg'].height} roster rows in, "
-             f"non-played rows carry no feature row), {len(fcols)} features")
+    n_played = feat.filter(pl.col("status") == "played").height
+    log.info(f"features: {feat.height} rows ({n_played} played, "
+             f"{feat.height - n_played} non-played rostered), {len(fcols)} features")
     log.info("feature summary (flag: >20% nulls or zero variance):")
     log.info(f"  {'feature':26} {'cover%':>7} {'mean':>8} {'sd':>8} "
              f"{'min':>8} {'max':>8} {'nulls':>6}")

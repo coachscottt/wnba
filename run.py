@@ -7,7 +7,6 @@ from src.log import get_logger
 
 # Which build phase delivers each subcommand.
 NOT_IMPLEMENTED = {
-    "train": 5,
     "project": 8,
     "evaluate": 9,
 }
@@ -67,6 +66,11 @@ def main(argv: list[str] | None = None) -> int:
                 "continuing to odds snapshot")
             rc = 1
         return max(rc, run_odds())
+
+    if args.command == "train":
+        from src.model_minutes import run_train
+
+        return run_train()
 
     if args.command == "clean":
         from src.clean import run_clean
