@@ -43,7 +43,9 @@ features:
   windows: [3, 5, 10]
   ewm_half_life_games: 5
   # stats that get form features (per-40, sum-based within window)
-  form_stats: [points, reb, ast]
+  form_stats: [points, reb, ast, fg3a, fg2a, fta]
+  # opponent team-level allow-factors (per-40 allowed vs league, shrunk hard)
+  opp_allow_stats: [reb, ast, fg3a, fg2a, fta]
   # shrinkage constants k in (n*obs + k*prior)/(n+k) — "games the prior is worth".
   # Initial values, to be tuned on validation folds in phases 6/9 (guide §8.3):
   # small season + mid-season projection => meaningfully large k.
@@ -58,6 +60,9 @@ features:
     points: 14.0
     reb: 6.6
     ast: 3.1
+    fg3a: 3.5
+    fg2a: 9.5
+    fta: 3.8
   # rest: cap at 7 days; anything longer (incl. the FIBA World Cup break) is its
   # own category via f_long_break, not a continuous value
   rest_cap_days: 7
@@ -88,6 +93,20 @@ minutes:
   # regulation-only evaluation (OT games excluded: actual minutes incompatible
   # with the 200-minute simulation frame; OT simulation is a phase 7 concern)
   eval_regulation_only: true
+
+rates:
+  holdout_start: "2026-06-01"
+  # Beta-prior pseudo-attempts for accuracy shrinkage (games' worth of evidence
+  # the league/position prior is worth) — a 6-for-12 shooter is not a 50% shooter
+  k_p3: 60
+  k_p2: 80
+  k_ftp: 40
+  # league reference pace for the per-40 -> per-game pace factor
+  lg_pace_ref: 82.3
+  # CRPS pmf grid upper bound (counts)
+  crps_max_count: 70
+  sims_points: 2000
+  seed: 20260810
 
 clean:
   # Which player_games column settles each market (alternates share the base key)

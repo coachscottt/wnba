@@ -108,7 +108,7 @@ def _player_exprs(fcfg: dict, shifted: bool) -> list[pl.Expr]:
             .over(over_p).alias(f"f_{s}40_ewm"))
         exprs.append(ratio40(
             bs.cum_sum().over(over_p), bm.cum_sum().over(over_p),
-        ).alias(f"raw_{s}40_szn"))
+        ).alias(f"f_{s}40_szn_raw"))
     exprs += [
         base("minutes").rolling_mean(w, min_samples=1).over(over_p)
         .alias(f"f_min_l{w}") for w in windows]
@@ -129,6 +129,10 @@ def _player_exprs(fcfg: dict, shifted: bool) -> list[pl.Expr]:
     n = pl.col("minutes").cum_count().over(over_p)
     exprs.append(((n - 1) if shifted else n).cast(pl.Float64)
                  .alias("f_games_played"))
+    # season as-of make/attempt counters for Beta accuracy shrinkage (phase 6)
+    for c in ("fg3m", "fg3a", "fg2m", "fg2a", "ftm", "fta"):
+        exprs.append(base(c).cum_sum().over(over_p).fill_null(0.0)
+                     .alias(f"f_{c}_cum"))
     usage = pl.col("usage_g").shift(1).over(over_p) if shifted else pl.col("usage_g")
     exprs.append(usage.rolling_mean(5, min_samples=1).over(over_p)
                  .alias("f_usage_l5"))
@@ -148,6 +152,8 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
     pg_all = frames["pg"].with_columns(
         pl.col("game_date").cast(pl.Utf8),
         pl.col("minutes").fill_null(0.0),
+        (pl.col("fga") - pl.col("fg3a")).alias("fg2a"),
+        (pl.col("fgm") - pl.col("fg3m")).alias("fg2m"),
     ).join(
         frames["players"].select("player_id", "position"), on="player_id", how="left"
     ).with_columns(
@@ -208,7 +214,7 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
         default = float(fcfg["league_prior_defaults"][s])
         feat = feat.with_columns(pl.col(f"lg_{s}40").fill_null(default))
         feat = feat.with_columns(
-            shrunk(pl.col("f_games_played"), pl.col(f"raw_{s}40_szn"), kf,
+            shrunk(pl.col("f_games_played"), pl.col(f"f_{s}40_szn_raw"), kf,
                    pl.col(f"lg_{s}40")).alias(f"f_{s}40_szn"))
     feat = feat.with_columns(
         (pl.col("f_games_played") / (pl.col("f_games_played") + kf))
@@ -304,6 +310,35 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
         allowed.select("opponent_id", "season", "game_date", "pos", "f_opp_pos_def"),
         on=["opponent_id", "season", "game_date", "pos"], how="left")
     feat = feat.with_columns(pl.col("f_opp_pos_def").fill_null(1.0))
+
+    # ---- opponent team-level allow-factors per stat (as-of, shrunk hard):
+    # "this team allows more threes" is estimable; player-vs-team is not.
+    for s in fcfg.get("opp_allow_stats", []):
+        al = played.group_by("opponent_id", "season", "game_date").agg(
+            pl.col(s).sum().alias("v"), pl.col("minutes").sum().alias("mins")
+        ).sort(["opponent_id", "season", "game_date"]).with_columns(
+            pl.col("v").cum_sum().shift(1).over(["opponent_id", "season"])
+            .alias("cum_v"),
+            pl.col("mins").cum_sum().shift(1).over(["opponent_id", "season"])
+            .alias("cum_m"),
+            (pl.col("v").cum_count().over(["opponent_id", "season"]) - 1)
+            .alias("n_g"))
+        lg_s = al.group_by("season", "game_date").agg(
+            pl.col("v").sum().alias("sv"), pl.col("mins").sum().alias("sm")
+        ).sort(["season", "game_date"]).with_columns(
+            (40 * pl.col("sv").cum_sum().shift(1).over("season")
+             / pl.col("sm").cum_sum().shift(1).over("season")).alias("lg40"))
+        default = float(fcfg["league_prior_defaults"].get(s, 1.0))
+        al = al.join(lg_s.select("season", "game_date", "lg40"),
+                     on=["season", "game_date"], how="left").with_columns(
+            pl.col("lg40").fill_null(default))
+        al = al.with_columns(
+            (shrunk(pl.col("n_g"), 40 * pl.col("cum_v") / pl.col("cum_m"), kop,
+                    pl.col("lg40")) / pl.col("lg40")).alias(f"f_opp_allow_{s}"))
+        feat = feat.join(
+            al.select("opponent_id", "season", "game_date", f"f_opp_allow_{s}"),
+            on=["opponent_id", "season", "game_date"], how="left").with_columns(
+            pl.col(f"f_opp_allow_{s}").fill_null(1.0))
 
     # ---- situational, from the team schedule
     tz = fcfg["team_tz_offsets"]

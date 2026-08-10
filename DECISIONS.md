@@ -142,6 +142,18 @@ Format:
 **Why:** Our code imports it directly for fuzzy proposals; same transitive-fragility argument as requests. difflib's ratio quality on names is noticeably worse.
 **Revisit if:** never, realistically.
 
+## 2026-08-10 — Rate model structure (phase 6)
+**Decided:** Empirical-Bayes means, explicit count families, no ML regressor: per-40 mean = feature-layer EB season rate (league→position→player) × opponent team-level allow-factor (as-of, shrunk k=15) × pace factor. Counts (3PA/2PA/FTA/REB/AST) are Negative Binomial with moment-fit dispersion; makes are Binomial with Beta-shrunk accuracy (k_p3=60, k_p2=80, k_ftp=40 pseudo-attempts); points strictly composed as 2×2PM + 3×3PM + FTM in simulation; combos never fitted. Opponent adjustments team-level only — no player-vs-team interactions (a player faces a given team ~4 times a season; there is no sample).
+**Alternatives:** Poisson (observed variance/mean: reb 2.88, ast 2.41, fg3a 2.67, fg2a 3.56, fta 3.23 — all clearly overdispersed, Poisson would be too narrow and make low lines look like free overs); gradient boosting for rate means (kept for minutes where interactions dominate; rates favor the interpretable EB structure the guide specifies); full MCMC (start with EB per guide §10.3).
+**Why:** Matches guide §10 exactly; every dispersion is justified by a printed variance/mean ratio.
+**Revisit if:** phase 9 shows a specific stat's mean model lagging — that's where a regressor on top of EB earns its complexity.
+
+## 2026-08-10 — Rate evaluation conditions on actual minutes
+**Decided:** CRPS/PIT for rate models are computed given the minutes actually played; baselines (season-to-date raw rate, trailing-10 rate) get the same distribution family and dispersion, differing only in the mean rate.
+**Alternatives:** Evaluating through the full minutes×rate pipeline (that is phase 7's composed evaluation).
+**Why:** Isolates rate quality from minutes uncertainty — otherwise a good rate model hides behind minutes noise. Baselines sharing the family isolates exactly the thing being claimed: the mean structure (shrinkage + opponent + pace) adds information.
+**Revisit if:** never — phase 7 evaluates the composition.
+
 ## 2026-08-10 — Shrinkage constants (phase 4 initial values)
 **Decided:** `k_form: 10`, `k_team: 8`, `k_opp: 12`, `k_opp_pos: 15` in config.yaml, applied as (n·obs + k·prior)/(n+k).
 **Alternatives:** Small k (chases hot streaks — guide explicitly warns against k=1); tuning now.

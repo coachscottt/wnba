@@ -69,8 +69,12 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.command == "train":
         from src.model_minutes import run_train
+        from src.model_rates import run_train_rates
 
-        return run_train()
+        rc = run_train()
+        if rc != 0:
+            return rc
+        return run_train_rates()
 
     if args.command == "clean":
         from src.clean import run_clean

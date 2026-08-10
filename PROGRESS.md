@@ -13,7 +13,7 @@ has seen the output.
 | 3 | Cleaning and joining | `build/03-cleaning-joining.md` | ✅ complete 2026-08-10 |
 | 4 | Features | `build/04-features.md` | ✅ complete 2026-08-10 |
 | 5 | Minutes model | `build/05-minutes-model.md` | ✅ complete 2026-08-10 |
-| 6 | Rate models | `build/06-rate-models.md` | ⬜ not started |
+| 6 | Rate models | `build/06-rate-models.md` | ✅ complete 2026-08-10 (all 4 stats) |
 | 7 | Simulation | `build/07-simulation.md` | ⬜ not started |
 | 8 | Pricing | `build/08-pricing.md` | ⬜ not started |
 | 9 | Evaluation | `build/09-evaluation.md` | ⬜ not started |
@@ -109,3 +109,23 @@ Coverage 50% → 56.0%, 80% → 82.4%, 95% → 94.2% (all within tolerance; slig
 - 50% coverage is 6pts wide — the Dirichlet's single global c can't sharpen established-starter minutes and bench volatility simultaneously; a role-dependent concentration is the natural phase 7 refinement if points tails misbehave.
 - Blowout proxy is ratings-based; game spread/total markets (capturable via the odds API) would be strictly better once phase 8 pulls game lines.
 - No game-level OT model yet — phase 7 decides whether props settle including OT and simulates accordingly.
+
+### Phase 6 — Rate models (2026-08-10)
+
+**Built:** Features extended (form stats for fg3a/fg2a/fta, as-of make/attempt counters for Beta accuracy shrinkage, team-level `f_opp_allow_*` factors, raw-season baselines; 75 features total, leakage test passes). `src/model_rates.py` — EB means (szn-shrunk × opp-allow × pace), NB counts with moment-fit dispersion, Beta-shrunk accuracies, points strictly composed from 2PM/3PM/FTM in simulation. Stats built and evaluated sequentially per spec. `run.py train` now trains minutes then rates; `models/rates.pkl` saved.
+
+**DoD results, holdout n=3,049 played rows (2026-06-01+, actual-minutes-conditioned):**
+
+| stat | var/mean (NB justification) | CRPS model | szn-raw | trail-10 | PIT |
+|---|---|---|---|---|---|
+| 3PM | 2.67 (attempts) | **0.4359** | 0.4432 | 0.4446 | flat |
+| REB | 2.88 | **1.0062** | 1.0174 | 1.0284 | flat |
+| AST | 2.41 | **0.7652** | 0.7682 | 0.7808 | flat |
+| PTS (composed) | 6.40 (direct, baselines only) | **2.3907** | 2.4277 | 2.4508 | flat |
+
+All overdispersion ratios ≫ 1 — Poisson would have been wrong everywhere, as the guide warned. p3 shrinkage weight at holdout: p10 0.03 / median 0.34 / p90 0.61 (the Beta prior does most of the work for low-volume shooters). **Verdict: all four stats beat both baselines — proceed permitted.**
+
+**Unresolved:**
+- The raw 3PA *attempts* model slightly loses to the season-raw baseline on CRPS (0.7854 vs 0.7559) even though 3PM and points — the priced quantities — win. Likely the opp/pace adjustments add noise on attempts; worth an ablation in phase 9.
+- FTA dispersion is extreme (r=2.9) — free-throw attempts are the least predictable component; drives the points tails, watch it in phase 7 calibration.
+- Accuracy counters (p3/p2/ftp) are season-scoped; career-scoped counters would stabilize early-season estimates further.
