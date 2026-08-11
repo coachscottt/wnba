@@ -242,6 +242,144 @@ def table_count(conn: sqlite3.Connection, table: str) -> int:
     return conn.execute(f"SELECT COUNT(*) AS n FROM {table}").fetchone()["n"]
 
 
+# ---------------------------------------------------------------- live gap-fill
+
+
+def _split_pair(v) -> tuple[int | None, int | None]:
+    try:
+        a, b = str(v).split("-")
+        return int(a), int(b)
+    except (ValueError, AttributeError):
+        return None, None
+
+
+def gapfill_live(conn: sqlite3.Connection, scfg: dict) -> int:
+    """The release feed lags ~a week. Fetch completed games newer than it via
+    the live ESPN scoreboard + summary endpoints, raw-first, same tables.
+    When the release later catches up, its canonical rows replace these."""
+    from datetime import date, datetime, timedelta, timezone
+
+    from sportsdataverse import wnba
+
+    last = conn.execute("SELECT MAX(game_date) d FROM games").fetchone()["d"]
+    today_et = (datetime.now(timezone.utc) - timedelta(hours=4)).date()
+    d = date.fromisoformat(last) + timedelta(days=1)
+    if d > today_et:
+        return 0
+    excl = set(scfg["exclude_abbreviations"])
+    new_games = 0
+    while d <= today_et:
+        try:
+            sb = wnba.espn_wnba_scoreboard(dates=d.strftime("%Y%m%d"))
+        except Exception as e:  # noqa: BLE001 — live API failure must not kill update
+            log.info(f"  live scoreboard {d}: {type(e).__name__}: {e} — skipping day")
+            d += timedelta(days=1)
+            continue
+        if sb.height:
+            sb.write_parquet(RAW_DIR / f"live_scoreboard_{d}.parquet")
+        for g in (sb.to_dicts() if sb.height else []):
+            gid = str(g["game_id"])
+            if (not g["status_type_completed"]
+                    or g.get("season_type") not in (2, 3)
+                    or g["home_abbreviation"] in excl
+                    or g["away_abbreviation"] in excl
+                    or conn.execute("SELECT 1 FROM games WHERE game_id = ?",
+                                    (gid,)).fetchone()):
+                continue
+            try:
+                s = wnba.espn_wnba_summary(int(gid))
+                pb = s["boxscore_player"]
+            except Exception as e:  # noqa: BLE001
+                log.info(f"  live box {gid}: {type(e).__name__}: {e} — skipping game")
+                continue
+            pb.write_parquet(RAW_DIR / f"live_box_{gid}.parquet")
+            _insert_live_game(conn, g, pb, d.isoformat(), scfg)
+            new_games += 1
+        d += timedelta(days=1)
+    if new_games:
+        log.info(f"live gap-fill: {new_games} games ingested ahead of the "
+                 f"release feed (possessions from player sums — replaced by "
+                 f"canonical release data when it catches up)")
+    return new_games
+
+
+def _insert_live_game(conn: sqlite3.Connection, g: dict, pb: pl.DataFrame,
+                      game_date: str, scfg: dict) -> None:
+    gid = str(g["game_id"])
+    ot = max(0, int(g.get("status_period") or 4) - 4)
+    coeff = float(scfg["ft_possession_coeff"])
+
+    pg_rows, avail_rows, team_tot = [], [], {}
+    for r in pb.to_dicts():
+        pid = str(r["athlete_id"])
+        tid = str(r["team_id"])
+        fgm, fga = _split_pair(r["field_goals_made_field_goals_attempted"])
+        f3m, f3a = _split_pair(
+            r["three_point_field_goals_made_three_point_field_goals_attempted"])
+        ftm, fta = _split_pair(r["free_throws_made_free_throws_attempted"])
+        dnp = bool(r["did_not_play"])
+        try:
+            minutes = 0.0 if dnp else float(r["minutes"] or 0)
+        except (TypeError, ValueError):
+            minutes = 0.0
+        pm, _ = parse_plus_minus(r.get("plus_minus")) if not dnp else (None, None)
+        home_away = ("home" if tid == str(g["home_id"]) else "away")
+        opp = str(g["away_id"]) if home_away == "home" else str(g["home_id"])
+
+        def num(key):
+            v = r.get(key)
+            try:
+                return int(v)
+            except (TypeError, ValueError):
+                return None
+
+        oreb, dreb = num("offensive_rebounds"), num("defensive_rebounds")
+        reb = num("rebounds")
+        pg_rows.append(
+            (gid, game_date, pid, r["athlete_display_name"], tid, opp,
+             home_away, minutes, fga, fgm, f3a, f3m, fta, ftm, num("points"),
+             oreb, dreb, reb, num("assists"), num("steals"), num("blocks"),
+             num("turnovers"), num("fouls"), pm, int(bool(r["starter"])),
+             r["reason"] if dnp else None, "live_ingest"))
+        avail_rows.append((gid, pid, classify_dnp(r["reason"]) if dnp
+                           else "played", minutes))
+        t = team_tot.setdefault(tid, {"fga": 0, "oreb": 0, "tov": 0, "fta": 0,
+                                      "pts": 0})
+        if not dnp:
+            t["fga"] += fga or 0
+            t["oreb"] += oreb or 0
+            t["tov"] += num("turnovers") or 0
+            t["fta"] += fta or 0
+            t["pts"] += num("points") or 0
+
+    poss = {tid: t["fga"] - t["oreb"] + t["tov"] + coeff * t["fta"]
+            for tid, t in team_tot.items()}
+    hp, ap = poss.get(str(g["home_id"])), poss.get(str(g["away_id"]))
+    poss_est = (hp + ap) / 2 if hp and ap else None
+    pace = 40 * poss_est / (40 + 5 * ot) if poss_est else None
+    with conn:
+        conn.execute(
+            "INSERT OR REPLACE INTO games VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (gid, game_date, int(g["season_year"]), int(g["season_type"]),
+             str(g["home_id"]), str(g["away_id"]), g["home_score"],
+             g["away_score"], ot, poss_est, pace,
+             100 * float(g["home_score"]) / hp if hp else None,
+             100 * float(g["away_score"]) / ap if ap else None,
+             g.get("attendance")))
+        conn.executemany(
+            "INSERT OR REPLACE INTO player_games VALUES "
+            "(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", pg_rows)
+        conn.executemany(
+            "INSERT OR REPLACE INTO availability VALUES (?,?,?,?)", avail_rows)
+        conn.executemany(
+            "INSERT OR IGNORE INTO players VALUES (?,?,?,?)",
+            [(str(r["athlete_id"]), r["athlete_display_name"],
+              (r.get("athlete_position") or "")[:1] or None,
+              r.get("athlete_jersey")) for r in pb.to_dicts()])
+    log.info(f"  live: {g['away_abbreviation']} @ {g['home_abbreviation']} "
+             f"{game_date} ({gid}): {len(pg_rows)} player rows")
+
+
 # ---------------------------------------------------------------- validation
 
 
@@ -260,13 +398,25 @@ def run_validation(conn: sqlite3.Connection, cfg: dict) -> tuple[int, int]:
             for r in sched.group_by(f"{side}_id").len().to_dicts():
                 tid = str(r[f"{side}_id"])
                 expected[tid] = expected.get(tid, 0) + r["len"]
+        sched_ids = set(sched["game_id"].cast(pl.Utf8).to_list())
+        live_only = [str(r["game_id"]) for r in conn.execute(
+            "SELECT game_id FROM games WHERE season = ?", (year,))
+            if str(r["game_id"]) not in sched_ids]
+        if live_only:
+            log.info(f"  note: {len(live_only)} season-{year} games are "
+                     f"live-ingested ahead of the release schedule — excluded "
+                     f"from the schedule-count comparison")
+        ph = ",".join("?" * len(live_only)) or "''"
         got = {
             str(r["team_id"]): r["n"]
             for r in conn.execute(
-                "SELECT team_id, COUNT(*) n FROM ("
-                " SELECT home_team_id team_id FROM games WHERE season = ?"
-                " UNION ALL SELECT away_team_id FROM games WHERE season = ?"
-                ") GROUP BY team_id", (year, year)).fetchall()
+                f"SELECT team_id, COUNT(*) n FROM ("
+                f" SELECT home_team_id team_id FROM games WHERE season = ?"
+                f"  AND game_id NOT IN ({ph})"
+                f" UNION ALL SELECT away_team_id FROM games WHERE season = ?"
+                f"  AND game_id NOT IN ({ph})"
+                f") GROUP BY team_id",
+                (year, *live_only, year, *live_only)).fetchall()
         }
         for tid, exp in expected.items():
             if got.get(tid, 0) != exp:
@@ -404,7 +554,10 @@ def run_update() -> int:
     max_done = str(done["game_date"].max())
 
     if last is not None and max_done <= last:
-        log.info(f"0 new games (latest completed game {max_done}, already ingested)")
+        n_live = gapfill_live(conn, scfg)
+        if n_live == 0:
+            log.info(f"0 new games (release feed through {max_done}, "
+                     f"live gap-fill current)")
         passed, total = run_validation(conn, cfg)
         print_summary(conn, passed, total)
         return 0
@@ -420,6 +573,7 @@ def run_update() -> int:
         ingest_season(conn, year, scfg)
 
     set_meta(conn, "last_ingested_game_date", max_done)
+    gapfill_live(conn, scfg)
     passed, total = run_validation(conn, cfg)
     print_summary(conn, passed, total)
     return 0

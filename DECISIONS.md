@@ -166,6 +166,24 @@ Format:
 **Why:** Guide §11 structure exactly; correlations come free.
 **Revisit if:** teammate-out repricing looks wrong in practice — then a usage model conditioned on the active lineup is the upgrade.
 
+## 2026-08-11 — Phase 8: projection-time roster and priors
+**Decided:** Projection rosters = the team's LAST game's active set (played + dnp_coach), not a multi-game union; league priors and opponent positional defense for future dates come from backward-asof joins on include-current values instead of exact-date joins.
+**Alternatives:** 3-game roster union (first attempt — inflated predicted share sums to 1.07–1.30, and the Dirichlet's normalization then deflated every player's minutes ~10–25%, making the entire slate scream "under"); default-constant priors at future dates (understated scoring rates ~1–2 points).
+**Why:** Training rosters are the actual game's active list; projection must match that population or the shares don't mean the same thing. The slate flipped from 100% pathological unders to a balanced over/under mix after these fixes.
+**Revisit if:** phase 10's today_out.csv arrives — manual scratches then trim the roster further.
+
+## 2026-08-11 — Live ESPN gap-fill for the release feed's lag
+**Decided:** `update` now backfills completed games newer than the release feed via live ESPN scoreboard + summary endpoints (raw parquet saved first; possessions approximated from player sums; rows marked `live_ingest` and replaced by canonical release data when it catches up). Schedule-count validation excludes live-only games with a printed note.
+**Alternatives:** Waiting for the release feed (~1 week behind — models were pricing tonight's games on Aug 1 data while books knew about ten days of role changes, trades, and injury returns; e.g. a player the model had at 12 minutes was priced by books as a starter).
+**Why:** The phase 1 spec explicitly sanctions live-endpoint fallback when the wrapper's data is insufficient. Stale stats don't degrade a pricing layer gracefully — they produce confident garbage.
+**Revisit if:** the release feed changes cadence; or phase 10 automation wants scoreboard polling on a schedule.
+
+## 2026-08-11 — Pricing conventions
+**Decided:** Fair probability = de-vigged MEDIAN across books quoting both sides at the same line (both multiplicative and power computed and compared each run; power drives edge per config). Edge = conditional-on-no-push model probability minus fair. EV and Kelly (quarter, per config) computed against the BEST available price. Whole-line pushes: win/lose probabilities conditional on no push, stake returned on push. Edge floor 3%.
+**Alternatives:** Sharp-book anchor (no US sharp book posts WNBA props in our feed); averaging prices across books (destroys the best-price information).
+**Why:** Guide §12 exactly.
+**Revisit if:** a sharper reference book appears in the feed; floor and fraction get re-tuned by phase 9.
+
 ## 2026-08-10 — Star-tier fix: three mechanisms, all validation-tuned
 **Decided:** (1) The minutes-share regressor gets an isotonic correction fit on the calibration slice (tree regressors compress extremes — stars' shares were under-predicted). (2) The Dirichlet gains a share-exponent gamma (alpha ∝ mu^1.5, tuned jointly with c by worst-level coverage on the calibration slice) — a single global c cannot calibrate starters and bench at once. (3) Rate (k, EWM-blend) tuning is now minutes-WEIGHTED CRPS (chosen: w=0.3 EWM blend on most stats, k 2–8) — unweighted CRPS let the deep bench outvote the stars. Accuracy Beta ks re-tuned by binomial NLL went UP (k_p3=150, k_p2=100, k_ftp=60): shooting percentages want more shrinkage, not less — accuracy was never the star problem.
 **Alternatives:** Leaving it for phase 9 (would systematically fade star overs in pricing); hand-inflating star rates (unprincipled).

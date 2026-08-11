@@ -68,7 +68,9 @@ def league_asof(frame: pl.DataFrame, by: list[str], vals: dict[str, str],
     grp = by + ["season"]
     daily = daily.with_columns(
         [pl.col(c).cum_sum().shift(1).over(grp).alias(f"cum_{c}") for c in vals]
-        + [pl.col("n_rows").cum_sum().shift(1).over(grp).alias("cum_n")])
+        + [pl.col("n_rows").cum_sum().shift(1).over(grp).alias("cum_n")]
+        + [pl.col(c).cum_sum().over(grp).alias(f"cum_{c}_incl") for c in vals]
+        + [pl.col("n_rows").cum_sum().over(grp).alias("cum_n_incl")])
     finals = daily.group_by(grp).agg(
         [(pl.col(c).sum()).alias(f"fin_{c}") for c in vals])
     finals = finals.sort(by + ["season"]).with_columns(
@@ -207,9 +209,29 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
             .otherwise(40 * pl.col(f"prev_{s}") / pl.col("prev_minutes"))
             .fill_null(default).fill_nan(default)
             .alias(f"lg_{s}40"))
-    feat = feat.join(
-        lp.select("pos", "season", "game_date", *[f"lg_{s}40" for s in stats]),
+    # historical rows: exact date join (values as-of strictly before the game).
+    # projection rows (future dates): backward as-of join on include-current
+    # values — the exact join would miss and silently fall back to defaults.
+    lg_cols = [f"lg_{s}40" for s in stats]
+    is_proj = pl.col("game_id").str.starts_with("proj_")
+    feat_hist = feat.filter(~is_proj).join(
+        lp.select("pos", "season", "game_date", *lg_cols),
         on=["pos", "season", "game_date"], how="left")
+    feat_proj = feat.filter(is_proj)
+    if feat_proj.height:
+        lp_incl = lp.with_columns([
+            pl.when(pl.col("cum_n_incl") >= int(fcfg["min_league_games_for_prior"]))
+            .then(40 * pl.col(f"cum_{s}_incl") / pl.col("cum_minutes_incl"))
+            .otherwise(40 * pl.col(f"prev_{s}") / pl.col("prev_minutes"))
+            .alias(f"lg_{s}40") for s in stats
+        ]).select("pos", "season", "game_date", *lg_cols).with_columns(
+            pl.col("game_date").str.to_date().alias("_d")).sort("_d")
+        feat_proj = feat_proj.with_columns(
+            pl.col("game_date").str.to_date().alias("_d")).sort("_d").join_asof(
+            lp_incl.drop("game_date"), on="_d", by=["pos", "season"],
+            strategy="backward").drop("_d")
+    feat = pl.concat([feat_hist, feat_proj.select(feat_hist.columns)]) \
+        if feat_proj.height else feat_hist
     for s in stats:
         default = float(fcfg["league_prior_defaults"][s])
         feat = feat.with_columns(pl.col(f"lg_{s}40").fill_null(default))
@@ -300,7 +322,13 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
         pl.col("mins").cum_sum().shift(1).over(["opponent_id", "pos", "season"])
         .alias("cum_mins"),
         (pl.col("pts").cum_count().over(["opponent_id", "pos", "season"]) - 1)
-        .alias("n_g"))
+        .alias("n_g"),
+        pl.col("pts").cum_sum().over(["opponent_id", "pos", "season"])
+        .alias("cum_pts_incl"),
+        pl.col("mins").cum_sum().over(["opponent_id", "pos", "season"])
+        .alias("cum_mins_incl"),
+        pl.col("pts").cum_count().over(["opponent_id", "pos", "season"])
+        .alias("n_g_incl"))
     allowed = allowed.join(
         lp.select("pos", "season", "game_date", "lg_points40"),
         on=["pos", "season", "game_date"], how="left").with_columns(
@@ -309,9 +337,26 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
         (shrunk(pl.col("n_g"), 40 * pl.col("cum_pts") / pl.col("cum_mins"), kop,
                 pl.col("lg_points40")) / pl.col("lg_points40"))
         .alias("f_opp_pos_def"))
-    feat = feat.join(
+    feat_hist = feat.filter(~is_proj).join(
         allowed.select("opponent_id", "season", "game_date", "pos", "f_opp_pos_def"),
         on=["opponent_id", "season", "game_date", "pos"], how="left")
+    feat_proj = feat.filter(is_proj)
+    if feat_proj.height:
+        al_incl = allowed.with_columns(
+            (shrunk(pl.col("n_g_incl"),
+                    40 * pl.col("cum_pts_incl") / pl.col("cum_mins_incl"), kop,
+                    pl.col("lg_points40")) / pl.col("lg_points40"))
+            .alias("f_opp_pos_def")
+        ).select("opponent_id", "season", "pos", "game_date", "f_opp_pos_def"
+                 ).with_columns(
+            pl.col("game_date").str.to_date().alias("_d")).sort("_d")
+        feat_proj = feat_proj.with_columns(
+            pl.col("game_date").str.to_date().alias("_d")).sort("_d").join_asof(
+            al_incl.drop("game_date"), on="_d",
+            by=["opponent_id", "season", "pos"], strategy="backward").drop("_d")
+        feat = pl.concat([feat_hist, feat_proj.select(feat_hist.columns)])
+    else:
+        feat = feat_hist
     feat = feat.with_columns(pl.col("f_opp_pos_def").fill_null(1.0))
 
     # ---- opponent team-level allow-factors per stat (as-of, shrunk hard):
@@ -434,6 +479,75 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
     fcols = [c for c in feat.columns if c.startswith("f_")]
     return feat.select(KEYS + ["status"] + fcols).sort(
         ["game_date", "game_id", "player_id"])
+
+
+# ---------------------------------------------------------------- projection
+
+
+def projection_features(conn: sqlite3.Connection,
+                        events: list[dict]) -> pl.DataFrame:
+    """Feature rows for FUTURE games. Each event needs event_id, game_date_et,
+    home_team_raw, away_team_raw. Roster = players seen on the team in its
+    last 3 completed games (traded/waived players may linger — acceptable
+    until an injury feed exists; every rostered player is assumed available).
+    Synthetic rows run through the exact same as-of pipeline; game_id is
+    'proj_<event_id>'."""
+    cfg = load_config()
+    fcfg = cfg["features"]
+    frames = build_frames(conn)
+    teams_by_name = {r["display_name"]: str(r["team_id"]) for r in conn.execute(
+        "SELECT t.team_id, t.display_name FROM teams t")}
+
+    pg_extra, games_extra = [], []
+    game_cols = frames["games"].columns
+    pg_cols = frames["pg"].columns
+    for ev in events:
+        home = teams_by_name.get(ev["home_team_raw"])
+        away = teams_by_name.get(ev["away_team_raw"])
+        if not home or not away:
+            log.info(f"  projection: unmatched team name "
+                     f"'{ev['home_team_raw']}' / '{ev['away_team_raw']}' — "
+                     f"event {ev['event_id']} skipped")
+            continue
+        gid = f"proj_{ev['event_id']}"
+        g = dict.fromkeys(game_cols)
+        g.update(game_id=gid, game_date=ev["game_date_et"],
+                 season=int(cfg["season"]), season_type=2,
+                 home_team_id=home, away_team_id=away, overtime_periods=0)
+        games_extra.append(g)
+        for tid, opp, ha in ((home, away, "home"), (away, home, "away")):
+            # last game's ACTIVE set (played + coach's decision) — matches the
+            # roster shape the minutes model trained on; a 3-game union
+            # inflates predicted share sums 1.1-1.3x and deflates everyone
+            roster = conn.execute(
+                "SELECT DISTINCT pg.player_id "
+                "FROM player_games pg "
+                "JOIN availability a ON a.game_id = pg.game_id"
+                " AND a.player_id = pg.player_id "
+                "WHERE pg.team_id = ? AND a.status IN ('played', 'dnp_coach') "
+                "AND pg.game_date = (SELECT MAX(game_date) FROM player_games"
+                " WHERE team_id = ?)", (tid, tid)).fetchall()
+            for p in roster:
+                started = conn.execute(
+                    "SELECT started FROM player_games WHERE player_id = ?"
+                    " AND team_id = ? ORDER BY game_date DESC LIMIT 1",
+                    (p["player_id"], tid)).fetchone()
+                row = dict.fromkeys(pg_cols)
+                row.update(game_id=gid, game_date=ev["game_date_et"],
+                           player_id=p["player_id"], team_id=tid,
+                           opponent_id=opp, home_away=ha, minutes=0.0,
+                           started=started["started"] if started else 0,
+                           status="proj", season=int(cfg["season"]), ot=0)
+                pg_extra.append(row)
+
+    if not pg_extra:
+        return pl.DataFrame()
+    frames["pg"] = pl.concat(
+        [frames["pg"], pl.DataFrame(pg_extra, schema=frames["pg"].schema)])
+    frames["games"] = pl.concat(
+        [frames["games"], pl.DataFrame(games_extra, schema=frames["games"].schema)])
+    feat = pipeline(frames, fcfg)
+    return feat.filter(pl.col("game_id").str.starts_with("proj_"))
 
 
 # ---------------------------------------------------------------- entry point

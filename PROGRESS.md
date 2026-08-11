@@ -15,7 +15,7 @@ has seen the output.
 | 5 | Minutes model | `build/05-minutes-model.md` | ✅ complete 2026-08-10 |
 | 6 | Rate models | `build/06-rate-models.md` | ✅ complete 2026-08-10 (all 4 stats) |
 | 7 | Simulation | `build/07-simulation.md` | ✅ complete 2026-08-10 |
-| 8 | Pricing | `build/08-pricing.md` | ⬜ not started |
+| 8 | Pricing | `build/08-pricing.md` | ✅ complete 2026-08-11 |
 | 9 | Evaluation | `build/09-evaluation.md` | ⬜ not started |
 | 10 | Automation | `build/10-automation.md` | ⬜ not started |
 
@@ -144,3 +144,14 @@ All overdispersion ratios ≫ 1 — Poisson would have been wrong everywhere, as
 - Slight star overshoot possible now (Wilson +0.7, Jones +0.8 on ~20-game samples) — phase 9's market comparison sizes it.
 - Ionescu-type injury-return ramps remain the hardest case (−1.7); beat-reporter minutes restrictions (guide §9.3) are the missing input, not more math.
 - Usage-share redistribution beyond minutes-flow deferred (DECISIONS.md).
+
+### Phase 8 — Pricing (2026-08-11)
+
+**Built:** `src/price.py` (American↔probability, multiplicative + power de-vig with per-run comparison, fair-vs-best separation, push-aware edge/EV, full + quarter Kelly, 3% edge floor, slate CSV) and `run.py project` (latest snapshot → projection features → simulation → priced slate). Projection-time machinery added to `src/features.py` (`projection_features`: synthetic future-game rows through the same as-of pipeline; last-game active rosters; asof prior joins). **Also: live ESPN gap-fill in `update`** — the release feed's ~1-week lag was silently poisoning projections (books knew ten days of roster news the model didn't); completed games now backfill from the live scoreboard/summary endpoints (27 games ingested, data through 2026-08-10).
+
+**DoD results:** holds printed per book (medians 6.4–7.2% — the guide's 6–12% range); both de-vig methods printed (median |diff| 0.002, max 0.007 — insensitive on this slate; power in use); fair (de-vigged consensus median) and best (max across books) clearly separated in code and output; slate CSV written (`reports/slate_2026-08-11.csv`, 138 sides across 6 games). Two projection-breaking bugs found and fixed via the debugging loop (roster bloat deflating all minutes; default priors at future dates — see DECISIONS.md).
+
+**Unresolved — read before trusting any slate:**
+- **Model-vs-market disagreements are implausibly large** (59 of 138 sides above the 3% floor; top edges 15–35%). A real edge in this market is 1–5%. Until phase 9 measures calibration against closing lines and CLV, treat the slate as a diagnostic artifact, not a betting card. No stake has been sized against real money and none should be.
+- Projection rosters assume everyone active in the last game plays tonight — no injury feed until phase 10 (`today_out.csv`).
+- Live-ingested games use player-sum possessions (no team-turnover component) until the release feed catches up and replaces them.

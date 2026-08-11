@@ -130,6 +130,15 @@ simulation:
   # P(stat >= k) grid upper bound
   p_ge_max: 45
 
+pricing:
+  # fair probability: de-vigged median across books quoting both sides.
+  # multiplicative | power — both are printed; this picks which drives edge.
+  devig_method: power
+  # quarter Kelly: full Kelly assumes the model's p is right; it is not
+  kelly_fraction: 0.25
+  # edges below this are noise relative to model error (tune in phase 9)
+  min_edge: 0.03
+
 clean:
   # Which player_games column settles each market (alternates share the base key)
   market_stats:
