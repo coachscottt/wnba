@@ -84,10 +84,13 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.command == "clean":
         from src.clean import run_clean
+        from src.db import connect
         from src.features import run_features
+        from src.paper import settle
 
         rc = run_clean()
         run_features()
+        settle(connect())
         return rc
 
     if args.command == "audit":

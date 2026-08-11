@@ -262,6 +262,10 @@ def run_project() -> int:
         return 0
     path = write_slate_csv(slate, stamp.split("T")[0])
     n_bets = sum(r["bet_flag"] for r in slate)
+
+    from src.paper import log_slate
+
+    log_slate(conn, slate, stamp)
     pcfg = cfg["pricing"]
     log.info("")
     log.info(f"slate: {len(slate)} priced sides, {n_bets} at/above the "
