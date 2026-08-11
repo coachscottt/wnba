@@ -31,6 +31,8 @@ odds:
   odds_format: american
   # Only snapshot events tipping within this many hours
   horizon_hours: 30
+  # fail runs loudly when the newest snapshot exceeds this age (guide §14.5)
+  staleness_hours: 36
   # Intended capture cadence (guide §6.5): open, midday, T-60min, closing.
   # Used for the projected-monthly-usage math; scheduling itself is phase 10.
   snapshots_per_day: 4

@@ -173,7 +173,15 @@ def run_odds(dry_run: bool = False) -> int:
              f"events ok)")
     used_after = int(headers.get("x-requests-used", used_before))
     _print_quota(headers, used_after - used_before, cfg)
-    return 0
+    with conn:
+        conn.execute(
+            "INSERT OR REPLACE INTO run_log VALUES (?,?,?,?,?)",
+            (captured_at, inserted, len(upcoming) - failures, failures,
+             int(headers.get("x-requests-remaining", 0) or 0)))
+
+    from src.monitor import check_staleness
+
+    return check_staleness(conn)
 
 
 def _scrub(text: str, secret: str) -> str:

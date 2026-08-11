@@ -1,0 +1,633 @@
+{
+ "id": "79a00262dc799b713bbcb4473a7be183",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-01T02:00:00Z",
+ "home_team": "Portland Fire",
+ "away_team": "Indiana Fever",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "last_update": "2026-07-31T15:25:30Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:02Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -106,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -122,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -102,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -128,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -115,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -113,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -106,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -120,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": 100,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -108,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -120,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Monique Billings",
+       "price": -122,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Monique Billings",
+       "price": -106,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "last_update": "2026-07-31T15:24:30Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:06Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -105,
+       "point": 23.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -127,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -120,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -111,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -116,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -114,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -116,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -116,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -116,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -115,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -129,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": -120,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -111,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Monique Billings",
+       "price": -121,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Monique Billings",
+       "price": -110,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "last_update": "2026-07-31T15:25:31Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:58Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -112,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -120,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Monique Billings",
+       "price": -127,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Monique Billings",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -109,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -117,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -120,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -112,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -115,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -115,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -118,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -113,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": 101,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -134,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -110,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -121,
+       "point": 15.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "last_update": "2026-07-31T15:25:11Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:59Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 123,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -106,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 116,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -103,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -122,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 107,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 102,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 110,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -125,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": 120,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 128,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -103,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -122,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -117,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -125,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -104,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Monique Billings",
+       "price": 200,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": 105,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Monique Billings",
+       "price": 145,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": -125,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "last_update": "2026-07-31T15:25:30Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -143,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 110,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -115,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -112,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -108,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -120,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -112,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -115,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -112,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -112,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -115,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Monique Billings",
+       "price": -120,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Monique Billings",
+       "price": -108,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": 115,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -149,
+       "point": 9.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

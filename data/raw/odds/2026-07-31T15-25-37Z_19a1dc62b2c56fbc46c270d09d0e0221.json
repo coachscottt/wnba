@@ -1,0 +1,675 @@
+{
+ "id": "19a1dc62b2c56fbc46c270d09d0e0221",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-07-31T23:30:00Z",
+ "home_team": "Atlanta Dream",
+ "away_team": "Seattle Storm",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "last_update": "2026-07-31T15:25:30Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:30Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -106,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -122,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -130,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -120,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -102,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -128,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -118,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -110,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -114,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -114,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 100,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -130,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -118,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -128,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -102,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -122,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -106,
+       "point": 10.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "last_update": "2026-07-31T15:24:30Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:10Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -126,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -105,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -116,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -101,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -131,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -116,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -111,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -119,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -127,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -104,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -107,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -124,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -106,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -129,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -103,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -126,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "last_update": "2026-07-31T15:25:11Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": 110,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -117,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -130,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 105,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 100,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -134,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": 102,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -103,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 115,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -122,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 110,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -117,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": 102,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -121,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 102,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 115,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -122,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -112,
+       "point": 17.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "last_update": "2026-07-31T15:25:31Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:25:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -107,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -125,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -113,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -120,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -128,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -105,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -112,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -120,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -115,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -115,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -108,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 110,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -150,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -124,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -132,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -102,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -121,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -110,
+       "point": 19.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "last_update": "2026-07-31T15:25:30Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-31T15:26:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -119,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -109,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -102,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -127,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -120,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -108,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -112,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -115,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -143,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": 110,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -101,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -128,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -103,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -141,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": 109,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -103,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 11.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

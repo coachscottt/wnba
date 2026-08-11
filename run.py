@@ -92,8 +92,13 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.command == "audit":
         from src.clean import run_audit
+        from src.db import connect
+        from src.monitor import check_staleness, weekly_summary
 
-        return run_audit()
+        rc = run_audit()
+        conn = connect()
+        weekly_summary(conn)
+        return max(rc, check_staleness(conn))
 
     log = get_logger("run")
     phase = NOT_IMPLEMENTED[args.command]

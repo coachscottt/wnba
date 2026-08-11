@@ -1,11 +1,11 @@
 # Unmatched report
 
-Generated 2026-08-11 21:33 UTC by `run.py clean`.
+Generated 2026-08-11 22:51 UTC by `run.py clean`.
 
 ## Overview
 
+- `stats_pending`: 1311
 - `ok`: 1014
-- `stats_pending`: 806
 - `voided`: 32
 
 **Match rate** (odds rows whose game has stats): 100.0% (1046/1046)

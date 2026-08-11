@@ -1,0 +1,682 @@
+{
+ "id": "e52e6c804045050e1ba3d90ff4fc0387",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-09T19:30:00Z",
+ "home_team": "Minnesota Lynx",
+ "away_team": "Dallas Wings",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-09T16:04:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -128,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -125,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Azzi Fudd",
+       "price": -104,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -120,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -106,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -110,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -122,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -106,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -120,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -102,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -128,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -102,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -128,
+       "point": 14.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-09T16:04:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -110,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -121,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -123,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -120,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -111,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -126,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -108,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -124,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -107,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -129,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -103,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -110,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Azzi Fudd",
+       "price": -120,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -130,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -102,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -133,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": 100,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-09T16:04:22Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -120,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -106,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -122,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -123,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -127,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -102,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -120,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -108,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 100,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -130,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": 106,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -137,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -130,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Azzi Fudd",
+       "price": 100,
+       "point": 11.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-09T16:01:23Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -125,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -107,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -107,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -125,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -127,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -105,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -134,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": 101,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -109,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -122,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -109,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Azzi Fudd",
+       "price": -137,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -109,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -128,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -105,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-09T16:03:36Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -129,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -125,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -118,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 100,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -125,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": 106,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": 125,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -122,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": 110,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": 104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -117,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": 106,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -103,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 105,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -117,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -143,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 100,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -129,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": 116,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -129,
+       "point": 12.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

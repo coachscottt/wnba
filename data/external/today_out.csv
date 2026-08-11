@@ -1,0 +1,5 @@
+# Players ruled OUT for tonight, one ESPN player name per line (as shown in
+# the slate CSV). Edit before running `python run.py project`; takes effect
+# immediately — their minutes redistribute to teammates in the simulation.
+# Lines starting with # are ignored. Example:
+# A'ja Wilson

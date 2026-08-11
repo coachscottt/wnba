@@ -124,6 +124,14 @@ CREATE TABLE IF NOT EXISTS prop_lines (
                                           -- game_unmatched | name_unmatched | market_unknown
 );
 
+CREATE TABLE IF NOT EXISTS run_log (
+    ts_utc          TEXT PRIMARY KEY,   -- when the run happened
+    lines_inserted  INTEGER,
+    events_ok       INTEGER,
+    events_failed   INTEGER,
+    quota_remaining INTEGER
+);
+
 CREATE TABLE IF NOT EXISTS meta (
     key   TEXT PRIMARY KEY,
     value TEXT

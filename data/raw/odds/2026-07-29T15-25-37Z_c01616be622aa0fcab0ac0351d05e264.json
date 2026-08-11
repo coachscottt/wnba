@@ -1,0 +1,633 @@
+{
+ "id": "c01616be622aa0fcab0ac0351d05e264",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-07-30T00:00:00Z",
+ "home_team": "Dallas Wings",
+ "away_team": "Atlanta Dream",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "last_update": "2026-07-29T15:25:35Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-29T15:25:04Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -115,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -113,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -102,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -128,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -128,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -102,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -130,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 100,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -114,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -114,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -115,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -104,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Azzi Fudd",
+       "price": -125,
+       "point": 13.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "last_update": "2026-07-29T15:24:41Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-29T15:25:24Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -116,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -113,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -117,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -115,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -115,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -131,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -101,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -108,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -123,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -130,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -102,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -105,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Azzi Fudd",
+       "price": -126,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -106,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -106,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "last_update": "2026-07-29T15:25:02Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-29T15:25:51Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -141,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -103,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": 107,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -106,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -125,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -132,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 107,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -129,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -115,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -104,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -143,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -115,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 108,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 106,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 102,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -127,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -103,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 115,
+       "point": 20.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "last_update": "2026-07-29T15:24:41Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-29T15:25:11Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -103,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -125,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -116,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -111,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -127,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -102,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": 103,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Azzi Fudd",
+       "price": -133,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -112,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -115,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -128,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -101,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -103,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -125,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "last_update": "2026-07-29T15:22:00Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-29T15:25:51Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -115,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -118,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -112,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Azzi Fudd",
+       "price": -105,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Azzi Fudd",
+       "price": -128,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -110,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -122,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -115,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -115,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -140,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": 105,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -121,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -109,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -112,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -120,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -115,
+       "point": 14.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

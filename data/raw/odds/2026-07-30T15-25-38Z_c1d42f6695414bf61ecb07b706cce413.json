@@ -1,0 +1,609 @@
+{
+ "id": "c1d42f6695414bf61ecb07b706cce413",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-07-31T00:10:00Z",
+ "home_team": "Chicago Sky",
+ "away_team": "Connecticut Sun",
+ "bookmakers": [
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "last_update": "2026-07-30T15:24:34Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-30T15:25:02Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -126,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -105,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": -132,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": -101,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -117,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -114,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -132,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -117,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -113,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -136,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": 103,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -111,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Vandersloot",
+       "price": -119,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -112,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -119,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "last_update": "2026-07-30T15:25:28Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-30T15:25:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -120,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -122,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -106,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -113,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -115,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": 100,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": -130,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -125,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -104,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -104,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Vandersloot",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -125,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -104,
+       "point": 12.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "last_update": "2026-07-30T15:20:18Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-30T15:22:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -121,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -111,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -108,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -125,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -109,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": -132,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -137,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -129,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Vandersloot",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -127,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -105,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -134,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": 101,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -132,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -102,
+       "point": 11.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "last_update": "2026-07-30T15:24:43Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-30T15:25:45Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": 110,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -121,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -108,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": 110,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -117,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -121,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -118,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": 105,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -103,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 128,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": 115,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -132,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 104,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 100,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": 106,
+       "point": 15.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "last_update": "2026-07-30T15:24:54Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-30T15:25:29Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -123,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -104,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -133,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 103,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -123,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -105,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -128,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -101,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": 101,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -135,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Vandersloot",
+       "price": 104,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -110,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -118,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": 102,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": -132,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -120,
+       "point": 15.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

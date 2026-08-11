@@ -1,0 +1,82 @@
+# Collect-only automation (phase 10): fetch stats + an odds snapshot, then
+# commit the updated database and raw odds JSON back to this repository.
+# NO projections and NO slates run here — phase 9 showed the model does not
+# yet beat the market, so only the data collection is automated.
+#
+# ── How GitHub Actions works, in one paragraph ────────────────────────────
+# This file lives in .github/workflows/. GitHub reads it and, at the times
+# in `schedule`, boots a fresh Linux machine ("runner"), downloads this
+# repository onto it, executes the steps below top-to-bottom, then throws
+# the machine away. Anything we want to KEEP (the database, the raw JSON)
+# must be committed back to the repository before the machine vanishes —
+# that's what the last step does.
+
+name: collect-odds
+
+on:
+  # ── Capture times ───────────────────────────────────────────────────────
+  # Cron times are UTC. WNBA games tip roughly 7:00–10:00 PM Eastern.
+  # ⚠ Scheduled workflows are ROUTINELY 10–30 minutes late (sometimes more),
+  #   so each time below is set ~40 min before the moment we actually care
+  #   about — a delayed run still lands in time.
+  # ⚠ DAYLIGHT SAVING: Eastern is UTC-4 in summer (EDT) and UTC-5 from early
+  #   November to mid-March (EST). Cron stays in UTC, so when clocks change
+  #   these fire an hour later in Eastern terms. The WNBA season ends in
+  #   September, so this matters only if a future season runs later — but
+  #   know the rule.
+  schedule:
+    - cron: "5 16 * * *"   # 12:05 PM ET — midday baseline line
+    - cron: "20 22 * * *"  # 6:20 PM ET — pre-tip for 7:00 PM games
+    - cron: "20 1 * * *"   # 9:20 PM ET — near-closing for late games
+  # `workflow_dispatch` adds a "Run workflow" button in the GitHub UI so a
+  # run can be triggered by hand — useful for testing.
+  workflow_dispatch:
+
+# Never let two runs execute at once (a delayed run overlapping the next
+# one would race on the database commit).
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    # the free Linux runner
+    runs-on: ubuntu-latest
+    # a stuck network call should not burn runner minutes forever
+    timeout-minutes: 20
+    # allow this job's GITHUB_TOKEN to push the data commit back
+    permissions:
+      contents: write
+
+    steps:
+      # 1) download the repository onto the runner
+      - uses: actions/checkout@v4
+
+      # 2) install uv (the same tool used locally), which then installs the
+      #    exact locked dependencies from uv.lock
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+
+      # 3) the collection itself: stats update (with live ESPN gap-fill)
+      #    + one odds snapshot. The API key comes from the repository
+      #    SECRET, injected as an environment variable — it never appears
+      #    in this file or in logs.
+      #    `update` ends with the 36-hour staleness check: if snapshots
+      #    have quietly stopped landing, this exits non-zero, the run turns
+      #    red, and GitHub emails the failure (see notes in RESTORE.md).
+      - name: update (stats + odds snapshot + staleness gate)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: uv run python run.py update
+
+      # 4) commit the updated database + raw odds JSON back to the repo.
+      #    [skip ci] in the message prevents the data commit itself from
+      #    triggering any workflow. If nothing changed (no games), the
+      #    `|| true` keeps an empty commit attempt from failing the run.
+      - name: commit collected data
+        run: |
+          git config user.name "collect-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/wnba.db data/raw/odds
+          git commit -m "collect: $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]" || true
+          git push

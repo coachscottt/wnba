@@ -484,14 +484,14 @@ def pipeline(frames: dict[str, pl.DataFrame], fcfg: dict) -> pl.DataFrame:
 # ---------------------------------------------------------------- projection
 
 
-def projection_features(conn: sqlite3.Connection,
-                        events: list[dict]) -> pl.DataFrame:
+def projection_features(conn: sqlite3.Connection, events: list[dict],
+                        out_ids: set[str] | None = None) -> pl.DataFrame:
     """Feature rows for FUTURE games. Each event needs event_id, game_date_et,
-    home_team_raw, away_team_raw. Roster = players seen on the team in its
-    last 3 completed games (traded/waived players may linger — acceptable
-    until an injury feed exists; every rostered player is assumed available).
-    Synthetic rows run through the exact same as-of pipeline; game_id is
-    'proj_<event_id>'."""
+    home_team_raw, away_team_raw. Roster = the last completed game's active
+    set; players in out_ids (today_out.csv) are marked dnp_injury so their
+    minutes vacate to teammates instead of being simulated. Synthetic rows
+    run through the exact same as-of pipeline; game_id is 'proj_<event_id>'."""
+    out_ids = out_ids or set()
     cfg = load_config()
     fcfg = cfg["features"]
     frames = build_frames(conn)
@@ -537,7 +537,9 @@ def projection_features(conn: sqlite3.Connection,
                            player_id=p["player_id"], team_id=tid,
                            opponent_id=opp, home_away=ha, minutes=0.0,
                            started=started["started"] if started else 0,
-                           status="proj", season=int(cfg["season"]), ot=0)
+                           status="dnp_injury" if str(p["player_id"]) in out_ids
+                           else "proj",
+                           season=int(cfg["season"]), ot=0)
                 pg_extra.append(row)
 
     if not pg_extra:

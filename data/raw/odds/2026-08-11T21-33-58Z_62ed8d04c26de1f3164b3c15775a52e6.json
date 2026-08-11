@@ -1,0 +1,334 @@
+{
+ "id": "62ed8d04c26de1f3164b3c15775a52e6",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-13T02:00:00Z",
+ "home_team": "Portland Fire",
+ "away_team": "Minnesota Lynx",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-11T21:33:32Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -114,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -114,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -130,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": 100,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": 102,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -132,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -102,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -128,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -115,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -114,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -114,
+       "point": 12.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-11T21:33:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -125,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -106,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -127,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -128,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -104,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -109,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -121,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -128,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -104,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -106,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -125,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -102,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -130,
+       "point": 12.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-11T21:33:24Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -119,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -109,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -119,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -109,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -108,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -120,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -119,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -109,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -102,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -127,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -118,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -110,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -123,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -104,
+       "point": 14.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

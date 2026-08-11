@@ -203,12 +203,31 @@ def run_project() -> int:
     except FileNotFoundError:
         log.info("no trained model found, run `python run.py train` first")
         return 1
-    proj = projection_features(conn, events)
+
+    # manual availability override — the two-minute daily habit
+    out_ids: set[str] = set()
+    out_path = ROOT / "data" / "external" / "today_out.csv"
+    if out_path.exists():
+        wanted = [ln.strip() for ln in out_path.read_text(encoding="utf-8").splitlines()
+                  if ln.strip() and not ln.strip().startswith("#")]
+        for nm in wanted:
+            r = conn.execute(
+                "SELECT player_id, player_name FROM players "
+                "WHERE LOWER(player_name) = LOWER(?)", (nm,)).fetchone()
+            if r:
+                out_ids.add(str(r["player_id"]))
+                log.info(f"today_out: {r['player_name']} ruled OUT — minutes "
+                         "vacate to teammates")
+            else:
+                log.info(f"today_out: '{nm}' not found in players — check the "
+                         "spelling against the slate CSV")
+    proj = projection_features(conn, events, out_ids)
     if proj.is_empty():
         log.info("no projection features built — check team-name matching above")
         return 1
     names = {str(r["player_id"]): (r["player_name"], r["position"])
              for r in conn.execute("SELECT player_id, player_name, position FROM players")}
+    proj = proj.filter(pl.col("status") == "proj")  # out players not simulated
     proj = proj.with_columns(
         pl.col("player_id").replace_strict(
             {k: v[0] for k, v in names.items()}, default=None).alias("player_name"),

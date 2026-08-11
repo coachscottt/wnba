@@ -1,0 +1,675 @@
+{
+ "id": "d113b66ed1649d47506a6434e06bd1b6",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-01T17:00:00Z",
+ "home_team": "Chicago Sky",
+ "away_team": "Las Vegas Aces",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "last_update": "2026-08-01T15:25:33Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-01T15:25:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -102,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -125,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -104,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -128,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -102,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -120,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -104,
+       "point": 27.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -125,
+       "point": 27.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Vandersloot",
+       "price": -104,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "last_update": "2026-08-01T15:24:50Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-01T15:25:41Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -121,
+       "point": 26.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -109,
+       "point": 26.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -104,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -127,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -102,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -116,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -113,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -117,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -107,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -124,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 104,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -138,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -135,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": 102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Vandersloot",
+       "price": -105,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Elizabeth Williams",
+       "price": -118,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Elizabeth Williams",
+       "price": -112,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "last_update": "2026-08-01T15:22:19Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-01T15:23:37Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -109,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -107,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -124,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -122,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -109,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -112,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -120,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -104,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -129,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -109,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -132,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -107,
+       "point": 27.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -124,
+       "point": 27.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -121,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Vandersloot",
+       "price": -110,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "last_update": "2026-08-01T15:25:13Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-01T15:25:31Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -120,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -123,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -105,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -132,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": 102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -106,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -122,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -118,
+       "point": 27.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -110,
+       "point": 27.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": 103,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -133,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 103,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -133,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Elizabeth Williams",
+       "price": -125,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Elizabeth Williams",
+       "price": -103,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Vandersloot",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -101,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -128,
+       "point": 10.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "last_update": "2026-08-01T15:25:13Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-01T15:25:11Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 115,
+       "point": 29.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": 114,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 104,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -114,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -122,
+       "point": 27.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": 106,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -104,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -104,
+       "point": 28.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -136,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 104,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -148,
+       "point": 26.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -103,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -141,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -143,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 110,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -118,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -122,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -124,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": 120,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Elizabeth Williams",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Vandersloot",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Elizabeth Williams",
+       "price": -121,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

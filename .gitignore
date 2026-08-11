@@ -2,13 +2,14 @@
 .venv/
 __pycache__/
 *.pyc
-data/raw/
+# stats raw stays local (regenerable from upstream releases + live ESPN);
+# odds raw IS committed — it's the irreplaceable archive (phase 10 decision)
+data/raw/stats/
 *.db
+# phase 10 exception: GitHub Actions commits the database back after each
+# collection run (see DECISIONS.md; git warns at 50 MB, hard-limits at 100 MB)
+!data/wnba.db
 *.db-journal
 logs/*.log
 reports/*.png
-
-# Phase 10 note: automating via GitHub Actions requires committing the database
-# back to the repo. When you get there, add an exception here and record it in
-# DECISIONS.md. See guide §14.3 for size limits.
 models/

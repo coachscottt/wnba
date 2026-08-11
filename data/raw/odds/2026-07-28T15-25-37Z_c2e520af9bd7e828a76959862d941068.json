@@ -1,0 +1,567 @@
+{
+ "id": "c2e520af9bd7e828a76959862d941068",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-07-29T01:30:00Z",
+ "home_team": "Seattle Storm",
+ "away_team": "Indiana Fever",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "last_update": "2026-07-28T15:25:31Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-28T15:25:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": 102,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -132,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -120,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -118,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -110,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -102,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -128,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -118,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -110,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -128,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -130,
+       "point": 15.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "last_update": "2026-07-28T15:25:10Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-28T15:25:12Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -128,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -104,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -115,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -115,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -118,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -112,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -112,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -123,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -103,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -129,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -119,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -111,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": -134,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": 101,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "last_update": "2026-07-28T15:22:38Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-28T15:24:51Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -121,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -110,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": -104,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -109,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -124,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -113,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -120,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -135,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": 100,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -109,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -112,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -120,
+       "point": 15.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "last_update": "2026-07-28T15:24:50Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-28T15:25:04Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -114,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -114,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -130,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": 100,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": 104,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -135,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": 100,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -105,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -123,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -120,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -108,
+       "point": 18.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "last_update": "2026-07-28T15:25:20Z",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-07-28T15:25:29Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -134,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": 100,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 110,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -112,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -104,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 108,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -115,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": -106,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 110,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 117,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": 117,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -120,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -148,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -109,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -127,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -127,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -103,
+       "point": 14.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
