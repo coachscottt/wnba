@@ -130,6 +130,16 @@ simulation:
   # P(stat >= k) grid upper bound
   p_ge_max: 45
 
+evaluate:
+  # walk-forward: retrain at each week boundary, predict that week
+  start: "2026-06-01"
+  sims: 5000
+  crps_max: 45
+  # Dirichlet (c, gamma) are coverage-fit once on data before `start` and
+  # reused across folds (leak-free at the earliest cutoff; refitting per fold
+  # costs minutes and moves them little)
+  seed: 20260811
+
 pricing:
   # fair probability: de-vigged median across books quoting both sides.
   # multiplicative | power — both are printed; this picks which drives edge.

@@ -5,10 +5,7 @@ import sys
 
 from src.log import get_logger
 
-# Which build phase delivers each subcommand.
-NOT_IMPLEMENTED = {
-    "evaluate": 9,
-}
+NOT_IMPLEMENTED: dict[str, int] = {}
 
 HELP = {
     "update": "fetch new games and odds since last run",
@@ -65,6 +62,11 @@ def main(argv: list[str] | None = None) -> int:
                 "continuing to odds snapshot")
             rc = 1
         return max(rc, run_odds())
+
+    if args.command == "evaluate":
+        from src.evaluate import run_evaluate
+
+        return run_evaluate()
 
     if args.command == "project":
         from src.price import run_project

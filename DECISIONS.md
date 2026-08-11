@@ -225,3 +225,15 @@ Format:
 **Alternatives:** xgboost (also present transitively) — HistGradientBoosting is sklearn-native, handles NaN features without imputation (which sidesteps a whole class of imputer-leakage), and is fast enough.
 **Why:** Same explicit-dependency rule as requests/rapidfuzz. matplotlib is sanctioned by the repo's own `.gitignore` (`reports/*.png`) and the guide's layout (calibration plots in reports/).
 **Revisit if:** never, realistically.
+
+## 2026-08-11 — Phase 9 evaluation design
+**Decided:** Weekly walk-forward Jun 1–Aug 10 (11 folds), each fold retraining and re-tuning strictly on data before its week; Dirichlet (c, γ) coverage-fit once at the earliest cutoff and reused (refit per fold costs minutes, moves it little). The "untouched holdout" is the season's remainder from 2026-08-11 forward — the guide's "final 3 weeks" assumed a finished season, and Jun–Aug was already design-contaminated by phases 5–8, which every evaluation printout discloses. Binary metrics use the 653 graded single-capture morning lines (capture time known, pre-tip). CLV skipped outright: no closing lines exist; no substitute price used.
+**Alternatives:** Freezing Jul 21–Aug 10 (would leave zero odds-covered evaluation data); pretending the Jun+ window was clean (it was not).
+**Why:** The only honest structure available mid-season with a two-week odds archive.
+**Revisit if:** three-plus weeks of near-tip captures accumulate — then rerun with CLV and a genuinely untouched window.
+
+## 2026-08-11 — Rebounds: model loses to rate×minutes
+**Decided:** Recorded as a plain loss (CRPS 1.0486 vs B3's 1.0408); no fix attempted inside phase 9.
+**Alternatives:** Quietly tuning until it flipped (would burn the evaluation window's integrity further).
+**Why:** The opponent adjustment for rebounds is points-based positional defense — likely noise for boards. A reb-specific opponent feature (rebound rate allowed) is the candidate fix, to be validated prospectively.
+**Revisit if:** phase 10's accumulated prospective data confirms the gap.

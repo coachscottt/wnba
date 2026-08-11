@@ -16,7 +16,7 @@ has seen the output.
 | 6 | Rate models | `build/06-rate-models.md` | ✅ complete 2026-08-10 (all 4 stats) |
 | 7 | Simulation | `build/07-simulation.md` | ✅ complete 2026-08-10 |
 | 8 | Pricing | `build/08-pricing.md` | ✅ complete 2026-08-11 |
-| 9 | Evaluation | `build/09-evaluation.md` | ⬜ not started |
+| 9 | Evaluation | `build/09-evaluation.md` | ✅ complete 2026-08-11 |
 | 10 | Automation | `build/10-automation.md` | ⬜ not started |
 
 Optional, run before phase 3 if applicable:
@@ -155,3 +155,19 @@ All overdispersion ratios ≫ 1 — Poisson would have been wrong everywhere, as
 - **Model-vs-market disagreements are implausibly large** (59 of 138 sides above the 3% floor; top edges 15–35%). A real edge in this market is 1–5%. Until phase 9 measures calibration against closing lines and CLV, treat the slate as a diagnostic artifact, not a betting card. No stake has been sized against real money and none should be.
 - Projection rosters assume everyone active in the last game plays tonight — no injury feed until phase 10 (`today_out.csv`).
 - Live-ingested games use player-sum possessions (no team-turnover component) until the release feed catches up and replaces them.
+
+### Phase 9 — Evaluation (2026-08-11)
+
+**Built:** `src/evaluate.py` + `run.py evaluate` — weekly walk-forward (11 folds, Jun 1–Aug 10, per-fold refits with tuning confined to each fold's own train data), distributional metrics, binary metrics vs posted lines, four baselines side by side, CLV handling. 16,292 out-of-sample player-game-stat predictions.
+
+**Stated plainly, per the spec:**
+- **Baseline 3 (trailing-10 per-40 rate × projected minutes): the model beats it on points (CRPS 2.576 vs 2.607), assists (0.741 vs 0.748), and threes (0.419 vs 0.431), and LOSES on rebounds (1.049 vs 1.041).** The hierarchical machinery adds real value on scoring stats; on rebounds it does not.
+- **Baseline 4 (the de-vigged market): the model does NOT beat the market** — log loss 0.6979 vs the market's 0.6942 over 653 graded morning lines (model does beat B3's 0.7026 on the same quotes). Per guide §13.4 this is the expected outcome for most models; knowing it is the point of the phase.
+- **Calibration is genuinely good:** PIT flat (bin heights 0.95–1.09), interval coverage 48.6/78.2/93.5 vs nominal 50/80/95. The distributions are honest; the market's central estimates are slightly better.
+- **CLV: unavailable and skipped** — every graded prop has exactly one morning capture (~11:25 ET); no closing lines exist yet and no substitute was used. The closing-line archive begins with near-tip snapshots from 2026-08-11 onward; CLV becomes computable within a few slates.
+
+**Honesty caveats printed with every run:** model design (γ, calibrations, tuning grids) was chosen after inspecting June–August results in phases 5–8, so walk-forward numbers are upper bounds; the untouched prospective read starts 2026-08-11. The 653-quote binary sample is small. No bankroll curve, ROI, or units-won was produced, and none will be at this sample size.
+
+**Unresolved:**
+- Rebounds: B3 wins — the rate model's opponent/pace adjustments appear to add noise for rebounds; candidate fix is a reb-specific feature (opponent rebound rate allowed, not points-based positional defense).
+- The phase 8 slate's large "edges" are now explained: with the market better calibrated than the model on centers (0.6942 vs 0.6979), 15–35% disagreements are model error, not edge. **Do not bet the slate.** The only path to a real verdict is accumulating closing lines + CLV prospectively (phase 10 automation).
