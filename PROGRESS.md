@@ -17,7 +17,7 @@ has seen the output.
 | 7 | Simulation | `build/07-simulation.md` | ✅ complete 2026-08-10 |
 | 8 | Pricing | `build/08-pricing.md` | ✅ complete 2026-08-11 |
 | 9 | Evaluation | `build/09-evaluation.md` | ✅ complete 2026-08-11 |
-| 10 | Automation | `build/10-automation.md` | ⬜ not started |
+| 10 | Automation | `build/10-automation.md` | ✅ complete 2026-08-11 (collect-only; Actions pending owner push) |
 
 Optional, run before phase 3 if applicable:
 
@@ -171,3 +171,24 @@ All overdispersion ratios ≫ 1 — Poisson would have been wrong everywhere, as
 **Unresolved:**
 - Rebounds: B3 wins — the rate model's opponent/pace adjustments appear to add noise for rebounds; candidate fix is a reb-specific feature (opponent rebound rate allowed, not points-based positional defense).
 - The phase 8 slate's large "edges" are now explained: with the market better calibrated than the model on centers (0.6942 vs 0.6979), 15–35% disagreements are model error, not edge. **Do not bet the slate.** The only path to a real verdict is accumulating closing lines + CLV prospectively (phase 10 automation).
+
+### Phase 10 — Automation (2026-08-11)
+
+**The spec's gate was honored:** phase 9 showed the model losing to the market, so the owner was asked before automating. Decision: **collect-only automation** (GitHub Actions snapshots odds + stats three times daily and commits the data; projections stay manual).
+
+**Built:** `run_daily.bat` (Tier 1 double-click: update → clean → project, window stays open); `.github/workflows/collect.yml` (line-by-line commented; 12:05 PM / 6:20 PM / 9:20 PM ET captures scheduled ~40 min ahead of targets to absorb Actions' 10–30 min delays; DST note; concurrency guard; secret-based key; data committed back with [skip ci]); `src/monitor.py` (36-hour staleness hard-fail wired into every `update`, weekly collection summary wired into `audit`, `run_log` table); `data/external/today_out.csv` manual availability override (out players' minutes vacate to teammates in projection sims — verified live: marking a star out moved every teammate's line probabilities); `.gitignore` exceptions for `data/wnba.db` + raw odds; `RESTORE.md`; `load_env` now honors the environment variable so the Actions secret works.
+
+**DoD results:**
+- ✅ Double-clickable script runs end-to-end (update → clean → project → pause).
+- ✅ Staleness check: passes at 1.3h; faked 40h clock fails loudly with exit 1.
+- ✅ Restore tested: fresh clone → `uv sync` → `audit` runs against the restored 40 MB database, 7/7 validation checks, weekly summary correctly flags the 5 pre-automation archive holes.
+- ⏳ **Actions on-schedule run + failure-notification test require the repo to exist on GitHub first** — owner setup steps below; the workflow file is ready and cannot be exercised until then.
+
+**Owner setup (one-time, ~10 minutes):**
+1. Create a **private** repo on github.com, then from `wnba-props/`: `git remote add origin https://github.com/<you>/wnba-props.git` and `git push -u origin master`.
+2. On GitHub: repo → Settings → Secrets and variables → Actions → New repository secret → name `ODDS_API_KEY`, value = the key from `.env`.
+3. Actions tab → enable workflows → run `collect-odds` once via the "Run workflow" button (tests the whole chain including the data commit).
+4. Test failure email: temporarily rename the secret (breaks the run), confirm the email arrives (Settings → Notifications → Actions → Email), rename it back.
+
+**Operating rhythm from here (guide §15):** daily — edit `today_out.csv` if news breaks, double-click `run_daily.bat` when you want a slate (diagnostic only); weekly — `python run.py evaluate` to watch the walk-forward, read `reports/unmatched.md`, check the audit summary; the Actions collector builds the closing-line archive unattended. **CLV becomes computable after a few slates of near-tip captures — that number, not the slate edges, decides whether this model ever gets real money.**
+

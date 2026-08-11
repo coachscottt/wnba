@@ -237,3 +237,15 @@ Format:
 **Alternatives:** Quietly tuning until it flipped (would burn the evaluation window's integrity further).
 **Why:** The opponent adjustment for rebounds is points-based positional defense — likely noise for boards. A reb-specific opponent feature (rebound rate allowed) is the candidate fix, to be validated prospectively.
 **Revisit if:** phase 10's accumulated prospective data confirms the gap.
+
+## 2026-08-11 — Phase 10: collect-only automation (owner decision at the spec's gate)
+**Decided:** GitHub Actions automates DATA COLLECTION ONLY — three daily `update` runs (12:05 PM / 6:20 PM / 9:20 PM ET, each ~40 min ahead of its target to absorb Actions' routine 10–30 min delays) committing `data/wnba.db` and `data/raw/odds/` back to the repo. Projections stay manual (`run_daily.bat` or `run.py project`).
+**Alternatives:** Full automation including slates (spec recommends against — phase 9 showed the model losing to the market; automating it "just produces wrong answers faster"); local Task Scheduler (machine must be awake at capture times); pure manual (archive holes when nights are missed — 5 such holes already exist).
+**Why:** The one thing the project needs now is a consistent closing-line archive for the CLV verdict, and that is exactly what scheduled capture does best and manual operation does worst. Owner chose this option explicitly.
+**Revisit if:** CLV proves out — then automating `project` becomes defensible; or if Actions' timing jitter proves too coarse for closing lines (Tier 3 VPS is the upgrade).
+
+## 2026-08-11 — .gitignore exceptions: database and raw odds committed
+**Decided:** `!data/wnba.db` (38.4 MB today) and raw odds JSON (`data/raw/stats/` stays ignored) are committed; the GitHub repo doubles as the offsite backup of the irreplaceable odds archive.
+**Alternatives:** External backup location (another moving part); committing raw stats too (regenerable, large).
+**Why:** Guide §14.3's pattern. Git warns at 50 MB — at current growth the db stays under it through season's end; if it approaches, drop the pre-2024 seasons from the committed db or move to Turso (guide §14.3).
+**Revisit if:** `git status` starts warning about file size.
