@@ -13,6 +13,8 @@
 
 name: collect-odds
 
+# (workflow re-registration nudge: GitHub indexes workflow files on push
+# events that touch .github/workflows/)
 on:
   # ── Capture times ───────────────────────────────────────────────────────
   # Cron times are UTC. WNBA games tip roughly 7:00–10:00 PM Eastern.
