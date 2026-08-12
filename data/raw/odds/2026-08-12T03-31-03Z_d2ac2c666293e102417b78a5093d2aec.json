@@ -1,0 +1,214 @@
+{
+ "id": "d2ac2c666293e102417b78a5093d2aec",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-12T02:03:00Z",
+ "home_team": "Las Vegas Aces",
+ "away_team": "Washington Mystics",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T03:30:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -138,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": 106,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -120,
+       "point": 24.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -108,
+       "point": 24.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -146,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": 112,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -156,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": 120,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -102,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -128,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -106,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -122,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -110,
+       "point": 23.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -118,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -114,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T03:30:51Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 105,
+       "point": 23.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -145,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -115,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -115,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": 100,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -135,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -110,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -120,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": -110,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -135,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 110,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -145,
+       "point": 11.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
