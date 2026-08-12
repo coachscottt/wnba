@@ -25,7 +25,8 @@ from src.log import get_logger
 
 log = get_logger("price")
 
-MARKET_STAT = {"player_points": "points"}
+MARKET_STAT = {"player_points": "points", "player_rebounds": "reb",
+               "player_assists": "ast"}
 
 
 # ---------------------------------------------------------------- conversions

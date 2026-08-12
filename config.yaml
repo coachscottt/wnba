@@ -24,8 +24,10 @@ stats:
 
 odds:
   sport_key: basketball_wnba
-  # One market to start (guide §6.2); add more only after the phase 3 join works.
-  markets: [player_points]
+  # Started with one market (guide §6.2); rebounds + assists added 2026-08-12
+  # once the join, models, and grading all proved out. Credit cost scales with
+  # markets: 3 credits/event/snapshot instead of 1.
+  markets: [player_points, player_rebounds, player_assists]
   regions: us
   # american = integer prices like -115; the storage format for over/under_price
   odds_format: american
@@ -155,6 +157,8 @@ clean:
   # Which player_games column settles each market (alternates share the base key)
   market_stats:
     player_points: points
+    player_rebounds: reb
+    player_assists: ast
   # Odds-API team display names that differ from ESPN's; empty until one appears
   team_aliases: {}
   # Fuzzy proposals below this rapidfuzz score are not even suggested
