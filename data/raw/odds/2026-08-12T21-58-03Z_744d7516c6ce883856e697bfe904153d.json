@@ -1,0 +1,484 @@
+{
+ "id": "744d7516c6ce883856e697bfe904153d",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-13T00:00:00Z",
+ "home_team": "Dallas Wings",
+ "away_team": "Toronto Tempo",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T21:57:06Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -104,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -125,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -104,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Rice",
+       "price": -125,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -122,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -106,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -115,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -113,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyara Sabally",
+       "price": 100,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Nyara Sabally",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Isabelle Harrison",
+       "price": -118,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Isabelle Harrison",
+       "price": -110,
+       "point": 11.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T21:57:58Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -116,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -114,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -107,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -124,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -112,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -118,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyara Sabally",
+       "price": -104,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Nyara Sabally",
+       "price": -128,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -101,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Rice",
+       "price": -131,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -104,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -127,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Isabelle Harrison",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Isabelle Harrison",
+       "price": -123,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": -123,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": -107,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Laura Juskaite",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Laura Juskaite",
+       "price": -106,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": -101,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Awak Kuier",
+       "price": -132,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T21:57:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -118,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -129,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": 110,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyara Sabally",
+       "price": -103,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 118,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -129,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": 104,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -106,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -148,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -113,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": 112,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": 108,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -117,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": -120,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 115,
+       "point": 24.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyara Sabally",
+       "price": -129,
+       "point": 13.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T21:57:20Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -114,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -114,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": 103,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -133,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyara Sabally",
+       "price": 103,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Nyara Sabally",
+       "price": -133,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": -118,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Awak Kuier",
+       "price": -110,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -103,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -125,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -122,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -106,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Isabelle Harrison",
+       "price": -110,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Isabelle Harrison",
+       "price": -118,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -103,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Rice",
+       "price": -125,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Laura Juskaite",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Laura Juskaite",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": -135,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": 104,
+       "point": 9.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

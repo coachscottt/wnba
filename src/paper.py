@@ -110,12 +110,15 @@ def settle(conn: sqlite3.Connection) -> None:
             status, amount = "lost", -b["risk"]
         else:
             continue
+        # closing = last capture STRICTLY after the bet was logged; a bet from
+        # the day's final snapshot has no closing comparison (never compare a
+        # price to itself and call it CLV)
         close = conn.execute(
             "SELECT over_price, under_price FROM prop_lines WHERE event_id = ? "
             "AND player_id = ? AND market = ? AND line = ? AND book = ? "
-            "ORDER BY captured_at_utc DESC LIMIT 1",
-            (b["event_id"], b["player_id"], b["market"], b["line"], b["book"])
-        ).fetchone()
+            "AND captured_at_utc > ? ORDER BY captured_at_utc DESC LIMIT 1",
+            (b["event_id"], b["player_id"], b["market"], b["line"], b["book"],
+             b["logged_at"])).fetchone()
         c_price = None
         if close:
             c_price = close["over_price"] if b["side"] == "over" else close["under_price"]
@@ -144,9 +147,7 @@ def summary(conn: sqlite3.Connection) -> None:
     clv = conn.execute(
         "SELECT COUNT(*) n, AVG(clv_cents) avg_c,"
         " SUM(clv_cents > 0) pos FROM paper_bets "
-        "WHERE clv_cents IS NOT NULL AND logged_at != ("
-        " SELECT MAX(captured_at_utc) FROM prop_lines WHERE event_id = paper_bets.event_id)"
-    ).fetchone()
+        "WHERE clv_cents IS NOT NULL").fetchone()
     log.info(f"paper book (risk/win $100, data only): {s['n']} bets — "
              f"{s['pend'] or 0} pending, {s['w'] or 0}W-{s['l'] or 0}L"
              f"-{s['pv'] or 0}P/V, net ${s['net'] or 0:+,.0f} on "

@@ -263,7 +263,10 @@ def gapfill_live(conn: sqlite3.Connection, scfg: dict) -> int:
 
     last = conn.execute("SELECT MAX(game_date) d FROM games").fetchone()["d"]
     today_et = (datetime.now(timezone.utc) - timedelta(hours=4)).date()
-    d = date.fromisoformat(last) + timedelta(days=1)
+    # start ON the last ingested date, not after it: an early game finishing
+    # while late games are in progress must not hide that date's remaining
+    # games from later runs (the per-game existence check below handles dupes)
+    d = date.fromisoformat(last)
     if d > today_et:
         return 0
     excl = set(scfg["exclude_abbreviations"])

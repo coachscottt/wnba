@@ -1,0 +1,334 @@
+{
+ "id": "9a2fa5d20edb2bc7e2ce1298cb3d5348",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-13T23:00:00Z",
+ "home_team": "Connecticut Sun",
+ "away_team": "Atlanta Dream",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T21:57:22Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -128,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -102,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 102,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -132,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 100,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -110,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -110,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -118,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -125,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -113,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -115,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -120,
+       "point": 11.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T21:57:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -119,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -111,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -107,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -124,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -103,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -129,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -119,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -112,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -125,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -106,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -109,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -122,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -134,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": 101,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -133,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_points",
+     "last_update": "2026-08-12T21:56:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -105,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -123,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -111,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -116,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -118,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -110,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 103,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -133,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -112,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -115,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 100,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -127,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -110,
+       "point": 12.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
