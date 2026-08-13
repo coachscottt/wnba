@@ -1,0 +1,394 @@
+{
+ "id": "62ed8d04c26de1f3164b3c15775a52e6",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-13T02:03:00Z",
+ "home_team": "Portland Fire",
+ "away_team": "Minnesota Lynx",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T03:33:11Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -146,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -132,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": 154,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -210,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": 210,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -300,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -118,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -112,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T03:33:11Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 108,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -140,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -140,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": 108,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -118,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": 118,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -154,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -128,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -102,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 154,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -205,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T03:33:11Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -132,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -104,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -160,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": 120,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": 136,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -182,
+       "point": 10.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T03:33:59Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 120,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -165,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -180,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": 130,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": 135,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -185,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T03:33:59Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -125,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -105,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -160,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": 120,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -135,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -125,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 105,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -145,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Frieda Buhner",
+       "price": -115,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Frieda Buhner",
+       "price": -115,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T03:33:59Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -155,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": 110,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": 135,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -190,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -130,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -105,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -220,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": 155,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
