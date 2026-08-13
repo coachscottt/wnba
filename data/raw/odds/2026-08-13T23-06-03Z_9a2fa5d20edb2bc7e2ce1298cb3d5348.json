@@ -1,0 +1,1648 @@
+{
+ "id": "9a2fa5d20edb2bc7e2ce1298cb3d5348",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-13T23:05:00Z",
+ "home_team": "Connecticut Sun",
+ "away_team": "Atlanta Dream",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:02:41Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -136,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 140,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -188,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 118,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -158,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -154,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 116,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 100,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -132,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -130,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:02:41Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -104,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -125,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -104,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 104,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -135,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -110,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -130,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -113,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -115,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": 102,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -132,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -120,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -120,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -130,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -113,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -115,
+       "point": 18.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:02:41Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -125,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -106,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -144,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 108,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -152,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 116,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -132,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 116,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -154,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -128,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -132,
+       "point": 12.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:05:15Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -165,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 100,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -135,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -165,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:05:15Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -115,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -115,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -110,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -125,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -110,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -135,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 100,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -115,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -120,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -105,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -105,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 105,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -140,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Aaliyah Edwards",
+       "price": -120,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aaliyah Edwards",
+       "price": -115,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kennedy Burke",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kennedy Burke",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -135,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -105,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -130,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:05:15Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -105,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -140,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -140,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -115,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -120,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Aaliyah Edwards",
+       "price": -105,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Aaliyah Edwards",
+       "price": -130,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -130,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:01:47Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -107,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -127,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 111,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -155,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -117,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 119,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -159,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:01:47Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 104,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -137,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -109,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -122,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -112,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -121,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Kennedy Burke",
+       "price": -105,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kennedy Burke",
+       "price": -129,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -136,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": 101,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -103,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -130,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -103,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -124,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -108,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -109,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -124,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -108,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Aaliyah Edwards",
+       "price": 101,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aaliyah Edwards",
+       "price": -136,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -124,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -108,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -128,
+       "point": 16.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:01:47Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -141,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 106,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -112,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -120,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -132,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -129,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -104,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -148,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -125,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -106,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -124,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -108,
+       "point": 5.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:02:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -182,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -106,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": 130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 106,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -121,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:02:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -104,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -114,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -129,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -108,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 102,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -143,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -106,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": 100,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -124,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 100,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -129,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -141,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -137,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -125,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -141,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 100,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 102,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 108,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -143,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:02:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -127,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -159,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 130,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 115,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 148,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -150,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:01:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -125,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 110,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -143,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -111,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -116,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -105,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -123,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": 152,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -200,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -185,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 140,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -141,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 109,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 145,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -192,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -102,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -127,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:01:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -105,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -123,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -125,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -103,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 120,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -156,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -112,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -115,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -105,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -123,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": 100,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -122,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -106,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Aaliyah Edwards",
+       "price": 105,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aaliyah Edwards",
+       "price": -135,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Kennedy Burke",
+       "price": 103,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kennedy Burke",
+       "price": -133,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -103,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 106,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -137,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Isobel Borlase",
+       "price": 115,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Isobel Borlase",
+       "price": -149,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:01:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -156,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": 120,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -135,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -141,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 108,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -132,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 122,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -159,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 102,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -132,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -130,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Brionna Jones",
+       "price": -127,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brionna Jones",
+       "price": -102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Aaliyah Edwards",
+       "price": -156,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aaliyah Edwards",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -123,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -105,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 118,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -154,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Kennedy Burke",
+       "price": 115,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kennedy Burke",
+       "price": -149,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

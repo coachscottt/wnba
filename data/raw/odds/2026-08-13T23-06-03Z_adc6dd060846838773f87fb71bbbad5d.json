@@ -1,0 +1,1618 @@
+{
+ "id": "adc6dd060846838773f87fb71bbbad5d",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-14T00:00:00Z",
+ "home_team": "New York Liberty",
+ "away_team": "Los Angeles Sparks",
+ "bookmakers": [
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:05:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -141,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 104,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -123,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -108,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 119,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -162,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -163,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 120,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -158,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": 116,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -143,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": 105,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -125,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -109,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 105,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -142,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:05:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -120,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -111,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -125,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -106,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -116,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -123,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -116,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -132,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -101,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -120,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -111,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -121,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -117,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -113,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -112,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -119,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:05:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -142,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": 105,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -103,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -131,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -133,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 106,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -144,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -122,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -111,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -104,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -131,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -146,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 107,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -132,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 105,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -143,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:05:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -104,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -120,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -148,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 114,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 116,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -154,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:05:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -104,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -125,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -122,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -106,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -120,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -108,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -118,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -128,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -102,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -125,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -135,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebekah Gardner",
+       "price": -110,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebekah Gardner",
+       "price": -118,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -110,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:05:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -146,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -120,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -132,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -102,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -130,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 108,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -144,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 102,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -136,
+       "point": 9.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:05:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -175,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -109,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -150,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 105,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -125,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -150,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -112,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 118,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:05:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -132,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -104,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 110,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -108,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": 123,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -122,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -132,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -106,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -127,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -120,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -104,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -148,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 110,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": -113,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -120,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": 100,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -157,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -134,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 118,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 112,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -112,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -148,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 102,
+       "point": 24.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": 106,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 100,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": 105,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:05:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -107,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 123,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -141,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -104,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": 115,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -120,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -175,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -103,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:01:33Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -109,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -122,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -152,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -160,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 111,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -106,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -127,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:01:33Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -124,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -108,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -114,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -118,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -124,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -108,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -118,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -114,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -135,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -125,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -107,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -129,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -104,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -121,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -110,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -102,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -132,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -115,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:01:33Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -132,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 100,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -134,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 106,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -141,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -105,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -135,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": 101,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -136,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -120,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -112,
+       "point": 5.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:05:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -125,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 106,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -137,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -164,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 103,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -133,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -106,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -122,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -164,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 125,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 112,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": 171,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -227,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 155,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -204,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:05:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": 100,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -112,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -123,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -104,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -122,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -106,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -123,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -104,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -114,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -114,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -135,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 105,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -105,
+       "point": 23.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -123,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Marine Johannes",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -105,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -123,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:05:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 117,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -152,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -149,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 106,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -137,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 161,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -213,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 109,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -141,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -118,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -149,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 113,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -147,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": 145,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -192,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -130,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1078 @@
+{
+ "id": "39bf012a0015d3c6753cc0b21100866e",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-14T23:30:00Z",
+ "home_team": "Indiana Fever",
+ "away_team": "Dallas Wings",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:05:45Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -152,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": 114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -132,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 118,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -158,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -136,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -122,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -108,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:05:45Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -118,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -110,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -114,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -114,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 100,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Lexie Hull",
+       "price": 102,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Lexie Hull",
+       "price": -132,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -125,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -104,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -120,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -108,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -120,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -128,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -102,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -106,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -122,
+       "point": 25.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:05:45Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 132,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -178,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -132,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Lexie Hull",
+       "price": -138,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Lexie Hull",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 122,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -162,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 116,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -154,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -125,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -106,
+       "point": 5.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:05:43Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -132,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -103,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -101,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -135,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": 106,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -143,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -144,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": 106,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 119,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -163,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:05:43Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -112,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -119,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -126,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -105,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -116,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -115,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -107,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -124,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -108,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -123,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -112,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -127,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -105,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -105,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -127,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:05:43Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -138,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": 102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -137,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": 101,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": 102,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -139,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -156,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -163,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -143,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Lexie Hull",
+       "price": -150,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Lexie Hull",
+       "price": 110,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:01:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 123,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -164,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -141,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": 106,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": 118,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -159,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -129,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 103,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -137,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:01:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -129,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -104,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -115,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -115,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -104,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -124,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -108,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -108,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -122,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -117,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -114,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -125,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -107,
+       "point": 21.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:01:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -103,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -130,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -164,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 122,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 108,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -143,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 117,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -157,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-13T23:05:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 103,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -133,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -128,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -101,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -156,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -133,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": 103,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -135,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": 104,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": 117,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -152,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -149,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-13T23:05:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Lexie Hull",
+       "price": 103,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Lexie Hull",
+       "price": -133,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -110,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -118,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -123,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -104,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -108,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -120,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -106,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -122,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -112,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -115,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -123,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -104,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -119,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -109,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -111,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -116,
+       "point": 12.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-13T23:05:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Lexie Hull",
+       "price": -143,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Lexie Hull",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -156,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -130,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 120,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -156,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -145,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -115,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -112,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -119,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -109,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
