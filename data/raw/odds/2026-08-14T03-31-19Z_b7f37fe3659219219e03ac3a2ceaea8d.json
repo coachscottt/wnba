@@ -1,0 +1,430 @@
+{
+ "id": "b7f37fe3659219219e03ac3a2ceaea8d",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-14T02:06:00Z",
+ "home_team": "Las Vegas Aces",
+ "away_team": "Washington Mystics",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-14T03:30:45Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -118,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -112,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -215,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": 158,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -102,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -130,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -128,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-14T03:30:45Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -146,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": 112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -108,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": -120,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -130,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": 100,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -110,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -118,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -115,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -113,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 106,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -138,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 104,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -135,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -108,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -120,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-14T03:30:45Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": 108,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": -144,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": 182,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": -250,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -180,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": 134,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 188,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -260,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -152,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": 114,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -148,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -128,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -104,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -108,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -122,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-14T03:31:00Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -120,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -115,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -140,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -220,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": 155,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -145,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": 105,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-14T03:31:00Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -115,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -120,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -120,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -110,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -135,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-14T03:31:00Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -165,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": 120,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -125,
+       "point": 5.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
