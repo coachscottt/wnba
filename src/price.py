@@ -271,11 +271,14 @@ def run_project() -> int:
     log.info("")
     log.info(f"slate: {len(slate)} priced sides, {n_bets} at/above the "
              f"{float(pcfg['min_edge']):.0%} edge floor with positive EV")
-    log.info(f"  {'player':22} {'line':>6} {'side':>5} {'best':>6} "
+    log.info(f"  {'player':22} {'stat':4} {'line':>6} {'side':>5} {'best':>6} "
              f"{'book':12} {'model':>6} {'fair':>6} {'edge':>6} "
              f"{'kelly/4':>7}")
+    stat_abbr = {"player_points": "pts", "player_rebounds": "reb",
+                 "player_assists": "ast"}
     for r in slate[:15]:
-        log.info(f"  {r['player'][:22]:22} {r['line']:>6} {r['side']:>5} "
+        log.info(f"  {r['player'][:22]:22} {stat_abbr.get(r['market'], '?'):4} "
+                 f"{r['line']:>6} {r['side']:>5} "
                  f"{r['best_price']:>+6} {r['book'][:12]:12} "
                  f"{r['model_p']:>6.1%} {r['fair_p']:>6.1%} "
                  f"{r['edge']:>+6.1%} {r['kelly_frac']:>7.2%}")
