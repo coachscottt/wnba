@@ -1,0 +1,1402 @@
+{
+ "id": "6b4f25c1f4c4acebd21a5e1e465343c9",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-15T02:00:00Z",
+ "home_team": "Seattle Storm",
+ "away_team": "Portland Fire",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-14T16:55:21Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -144,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 108,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -132,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -192,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": 142,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 112,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -148,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-14T16:55:21Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -110,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -118,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -118,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -110,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -128,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -128,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -120,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -108,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -122,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -106,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -130,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": 100,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -130,
+       "point": 15.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-14T16:55:21Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -146,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -132,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -162,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": 122,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -112,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -118,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 102,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -136,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -112,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -118,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -130,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-14T16:55:57Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -152,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 112,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -136,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 107,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 135,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -184,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 140,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -192,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-14T16:55:57Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -126,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -105,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -124,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -107,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -104,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -128,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -106,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -124,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -107,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -126,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -105,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -129,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -103,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -122,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -108,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-14T16:55:57Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -106,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -128,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 106,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -144,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -159,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": 117,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -145,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": 107,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -111,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -122,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 103,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -140,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -113,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -120,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 105,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -143,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-14T16:55:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": 101,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -134,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -145,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 111,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-14T16:55:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -134,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": 101,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -127,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -107,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -129,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -105,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -122,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -109,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -113,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -118,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -129,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -104,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -112,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -120,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -128,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -120,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -112,
+       "point": 13.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-14T16:55:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 109,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -107,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -125,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -152,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": 114,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -130,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -103,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -104,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -129,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": 106,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -141,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-14T16:55:22Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -134,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -109,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -165,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -155,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 140,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 123,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-14T16:55:22Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -129,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 100,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -107,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -106,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -129,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": 106,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -139,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": 120,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 116,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 105,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -121,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 115,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -122,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 105,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -118,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -106,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -125,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 102,
+       "point": 17.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-14T16:55:22Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -125,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -105,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": 140,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -141,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 108,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -143,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -115,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-14T16:55:55Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 152,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -200,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -141,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 109,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 144,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -189,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 109,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -141,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -130,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": 164,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -217,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -154,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": 118,
+       "point": 1.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-14T16:55:55Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -123,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 112,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -145,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -128,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -101,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -111,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -116,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -114,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -114,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -110,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -118,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -125,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -103,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -101,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -128,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": -120,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -108,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Zia Cooke",
+       "price": 113,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Zia Cooke",
+       "price": -147,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-14T16:55:55Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -149,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -127,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 112,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -135,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -108,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -120,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -132,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": 102,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -149,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": 174,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -233,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Awa Fam",
+       "price": 102,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Awa Fam",
+       "price": -132,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
