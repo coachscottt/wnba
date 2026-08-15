@@ -1,0 +1,814 @@
+{
+ "id": "7748b7323012e52de45a2c18b561c590",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-16T21:00:00Z",
+ "home_team": "Seattle Storm",
+ "away_team": "Chicago Sky",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T16:27:29Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -120,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": 154,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -210,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -166,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": 124,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 114,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -152,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -166,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": 124,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T16:27:29Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -130,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -125,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -104,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": 100,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -114,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -114,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordan Horston",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordan Horston",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -118,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -110,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -125,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -104,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T16:27:29Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -102,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -130,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 116,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -154,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordan Horston",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordan Horston",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -136,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": 102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -138,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": 104,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T16:27:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -118,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -115,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -164,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": 120,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -138,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": 101,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -117,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -116,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T16:27:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -127,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -105,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -122,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -105,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -127,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -105,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -126,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": 102,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -135,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -119,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -112,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -117,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -114,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordan Horston",
+       "price": -116,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordan Horston",
+       "price": -114,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T16:27:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -145,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": 106,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -132,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -103,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -116,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -117,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": 101,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -137,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordan Horston",
+       "price": -170,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordan Horston",
+       "price": 124,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": 125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -171,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -157,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T16:26:38Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -105,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -123,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -145,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": 112,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": 134,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -175,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -118,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 132,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -172,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -156,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": 120,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T16:26:38Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jade Melbourne",
+       "price": -119,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jade Melbourne",
+       "price": -109,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordan Horston",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordan Horston",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -120,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -108,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": -127,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -102,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -120,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -105,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -123,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -116,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -111,
+       "point": 11.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T16:26:38Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jordan Horston",
+       "price": -164,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordan Horston",
+       "price": 126,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -130,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -135,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": 104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Natisha Hiedeman",
+       "price": 118,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Natisha Hiedeman",
+       "price": -154,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": 132,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -111,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -116,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

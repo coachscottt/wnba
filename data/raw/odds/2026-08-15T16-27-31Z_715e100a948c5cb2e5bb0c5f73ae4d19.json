@@ -1,0 +1,1822 @@
+{
+ "id": "715e100a948c5cb2e5bb0c5f73ae4d19",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-15T23:30:00Z",
+ "home_team": "Washington Mystics",
+ "away_team": "Los Angeles Sparks",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T16:26:39Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -138,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 134,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -180,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -146,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -114,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -114,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T16:26:39Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -118,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -113,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -115,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -132,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": 102,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -122,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": -106,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -106,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -122,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 104,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -135,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -106,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -122,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 102,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -132,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T16:26:39Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": 128,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -172,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -122,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -108,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -146,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": 110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": 116,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -154,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 104,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -138,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -106,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -162,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 122,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -146,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Lauren Betts",
+       "price": 110,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -154,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": 116,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T16:27:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -106,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -129,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -159,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": 117,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Georgia Amoore",
+       "price": 114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Georgia Amoore",
+       "price": -155,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -156,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -164,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 120,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -159,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": 116,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 103,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -140,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -142,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": 134,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -183,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T16:27:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -102,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -129,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -102,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -130,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": -102,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -102,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -128,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -104,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 100,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -133,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -109,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -121,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -131,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -101,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -127,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -106,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": -126,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -126,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -142,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Lauren Betts",
+       "price": 107,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Georgia Amoore",
+       "price": 102,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Georgia Amoore",
+       "price": -135,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T16:27:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -108,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -126,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -147,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": 108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 103,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -140,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -117,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -116,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -152,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Lauren Betts",
+       "price": 112,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -142,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": 104,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": 105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -143,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -157,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -152,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": 112,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -152,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": 112,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 133,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -182,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T16:27:02Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Georgia Amoore",
+       "price": -165,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -104,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -155,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 107,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -155,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": 118,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -139,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -134,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -175,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T16:27:02Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -136,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 116,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 118,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -136,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -121,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -112,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -107,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 112,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Chance Gray",
+       "price": 110,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": 107,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": 123,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Georgia Amoore",
+       "price": -105,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -124,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -109,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -136,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -137,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": 115,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": 115,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -103,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -104,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -113,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -106,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": 110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -134,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T16:27:02Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -129,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": 107,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -124,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -148,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -141,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -143,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -134,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -148,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 123,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -120,
+       "point": 10.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T16:27:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 109,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -141,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -137,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": 106,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -164,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": 125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -167,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -118,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -149,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Georgia Amoore",
+       "price": 126,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Georgia Amoore",
+       "price": -164,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": 149,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": -196,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -185,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": 141,
+       "point": 1.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T16:27:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -103,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -120,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 113,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -147,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -143,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -119,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -109,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -105,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -123,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -114,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": -114,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -139,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Lauren Betts",
+       "price": 107,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 109,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -141,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": 101,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -109,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -119,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Georgia Amoore",
+       "price": 104,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Georgia Amoore",
+       "price": -135,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Chance Gray",
+       "price": -114,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Chance Gray",
+       "price": -114,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T16:27:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 139,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -182,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -115,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -112,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": 141,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -185,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 107,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -139,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -145,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -167,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 128,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -141,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Lauren Betts",
+       "price": 109,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -147,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": 113,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -147,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": 114,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": 100,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -130,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -141,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": 109,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T16:25:56Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -173,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -112,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -120,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -170,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": 124,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Georgia Amoore",
+       "price": 125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Georgia Amoore",
+       "price": -170,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T16:25:56Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 102,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -138,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": -129,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": -104,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -112,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -120,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -103,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -136,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Lauren Betts",
+       "price": 102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -112,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -120,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Michaela Onyenwere",
+       "price": -118,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Michaela Onyenwere",
+       "price": -113,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -105,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -127,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": -109,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -122,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Cotie McMahon",
+       "price": -118,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Cotie McMahon",
+       "price": -113,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T16:25:56Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Shakira Austin",
+       "price": -107,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Shakira Austin",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -121,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -110,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Sonia Citron",
+       "price": 107,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Sonia Citron",
+       "price": -141,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -134,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Iriafen",
+       "price": 105,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Iriafen",
+       "price": -141,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": 118,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -159,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Lauren Betts",
+       "price": -145,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Lauren Betts",
+       "price": 110,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
