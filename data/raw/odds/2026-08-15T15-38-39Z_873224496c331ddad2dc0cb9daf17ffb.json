@@ -1,0 +1,826 @@
+{
+ "id": "873224496c331ddad2dc0cb9daf17ffb",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-16T21:00:00Z",
+ "home_team": "Atlanta Dream",
+ "away_team": "Indiana Fever",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T15:37:47Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -112,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -118,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 136,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -182,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -108,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -122,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -125,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -106,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -138,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 114,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -152,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 108,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -144,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T15:37:47Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -110,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -106,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -122,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -115,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -113,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -120,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -104,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -125,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -128,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -102,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -115,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -113,
+       "point": 25.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T15:37:47Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -106,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -132,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 100,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 116,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -154,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -138,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": 104,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -136,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": 102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 102,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -136,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -182,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": 136,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T15:38:20Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -131,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 106,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -144,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -130,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 124,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -169,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -132,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -109,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -124,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -142,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T15:38:20Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -125,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -106,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -117,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -113,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -108,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -123,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -110,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -120,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -116,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -111,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -120,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -128,
+       "point": 11.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T15:38:20Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 104,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -141,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -138,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": 101,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -139,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": 102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 103,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -139,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -130,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -105,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -106,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -129,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 126,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -172,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T15:37:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 113,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -147,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -102,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -127,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 132,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 112,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -145,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -118,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -125,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T15:37:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -105,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -123,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -115,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -112,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -115,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -112,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -103,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -125,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -106,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -122,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -118,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -110,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -106,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -122,
+       "point": 15.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T15:37:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -169,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": 130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 104,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -135,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -123,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -105,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -123,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -105,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 106,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -137,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 122,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -159,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1018 @@
+{
+ "id": "23fa20addebd0a27549bb5d96bf060d7",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-15T17:00:00Z",
+ "home_team": "Connecticut Sun",
+ "away_team": "New York Liberty",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T15:38:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -180,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": 134,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -146,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": 110,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -106,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 106,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -140,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 102,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -136,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T15:38:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -122,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -106,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -128,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -102,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -125,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -104,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": 104,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -135,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -108,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -120,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": -120,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Marine Johannes",
+       "price": -108,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 100,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -130,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -135,
+       "point": 11.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T15:38:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 116,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -154,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 110,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -146,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 116,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -154,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Han Xu",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Han Xu",
+       "price": -106,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -122,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -108,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T15:37:36Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 107,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -146,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": 111,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -151,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -124,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -109,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 109,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -148,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -177,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": 129,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T15:37:36Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -110,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -120,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -112,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -132,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -128,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": -109,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Marine Johannes",
+       "price": -122,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -109,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -122,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 100,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -132,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -119,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -113,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -117,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -113,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -117,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T15:37:36Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -146,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": 107,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -148,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": 109,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -137,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": 101,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 109,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -148,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T15:38:12Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -167,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -122,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 112,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -130,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -162,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T15:38:12Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 115,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -115,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 125,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": 117,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -122,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -137,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 104,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": 112,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": 116,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 107,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -125,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 107,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -148,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 104,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -112,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -120,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 110,
+       "point": 15.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T15:38:12Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -175,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 105,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 108,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -130,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-15T15:33:04Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 107,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -139,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -172,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": 131,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -119,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -109,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 155,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -204,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -137,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": 106,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 106,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -137,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-15T15:32:00Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -119,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -109,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -112,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -115,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -132,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -102,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -123,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 126,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -164,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -116,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -111,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 102,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -132,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": -123,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Marine Johannes",
+       "price": -104,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-15T15:32:00Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -143,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 112,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -145,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 112,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -145,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -119,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -115,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 149,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -196,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
