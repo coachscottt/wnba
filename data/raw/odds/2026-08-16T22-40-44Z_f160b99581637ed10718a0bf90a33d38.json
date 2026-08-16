@@ -1,0 +1,1078 @@
+{
+ "id": "f160b99581637ed10718a0bf90a33d38",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-18T02:00:00Z",
+ "home_team": "Golden State Valkyries",
+ "away_team": "Dallas Wings",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T22:39:57Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -136,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 118,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -158,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": 104,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -138,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -152,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 114,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -104,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -128,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T22:39:57Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -130,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": 100,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -118,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -110,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -113,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -115,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -113,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -115,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -114,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -114,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -110,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -118,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -102,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -128,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -128,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -102,
+       "point": 15.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T22:39:57Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -146,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -152,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -120,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -106,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -114,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -114,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -122,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -108,
+       "point": 10.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T22:40:22Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -136,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -143,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 105,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -102,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -133,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -126,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -108,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -106,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -128,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 126,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -173,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T22:40:22Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -118,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -112,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -122,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -109,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 100,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -133,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -120,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -111,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -133,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -134,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": 101,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -128,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -104,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T22:40:22Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -101,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -135,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 116,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -158,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -117,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -116,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 101,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -137,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -152,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -119,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -114,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -101,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -135,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -157,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T22:40:33Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": 104,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -137,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -139,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 105,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -130,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -103,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -125,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -107,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -102,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -132,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T22:40:33Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -136,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": 101,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -120,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -112,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -117,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -122,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -109,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -107,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -129,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -104,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -110,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -121,
+       "point": 13.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T22:40:33Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -150,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -112,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 113,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -150,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T22:39:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -123,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -104,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -132,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -120,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -108,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -137,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 106,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 128,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -167,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": 106,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -137,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T22:39:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -110,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -118,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -122,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -106,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -119,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -109,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -119,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -109,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -130,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": 100,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -105,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -123,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -116,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -111,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": 101,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T22:39:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Odyssey Sims",
+       "price": -106,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Odyssey Sims",
+       "price": -122,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 115,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -149,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -116,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -111,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -145,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -109,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -119,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -116,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -111,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 117,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -152,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 120,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -156,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
