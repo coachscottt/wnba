@@ -1,0 +1,1498 @@
+{
+ "id": "7f616c3e2ee934da2bb1cafe7c814f6c",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-16T23:00:00Z",
+ "home_team": "Phoenix Mercury",
+ "away_team": "Portland Fire",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T16:27:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 146,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -198,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -154,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": 116,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 120,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -160,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T16:27:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -106,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -122,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -118,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -110,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Noemie Brochant",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Noemie Brochant",
+       "price": -120,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 100,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -115,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -113,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -118,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -110,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -106,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 102,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -132,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T16:27:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 104,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -138,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 118,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -158,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -132,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -108,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -122,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Mack",
+       "price": -138,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Mack",
+       "price": 104,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -146,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": 110,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 102,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -136,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T16:28:02Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 107,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -146,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -150,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 121,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -164,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 122,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -166,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T16:28:02Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -113,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -117,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -121,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -109,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -116,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -120,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -110,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -119,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -112,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Noemie Brochant",
+       "price": -115,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Noemie Brochant",
+       "price": -115,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sami Whitcomb",
+       "price": -107,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Sami Whitcomb",
+       "price": -124,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": -131,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Valeriane Ayayi",
+       "price": -101,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Mack",
+       "price": -129,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Mack",
+       "price": -103,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyadiew Puoch",
+       "price": -131,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Nyadiew Puoch",
+       "price": -102,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T16:28:02Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -124,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -138,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": 101,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 107,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Mack",
+       "price": 107,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Mack",
+       "price": -146,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -151,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": 111,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -114,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -119,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -149,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": -176,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Valeriane Ayayi",
+       "price": 129,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -132,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T16:27:19Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -132,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 111,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -155,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T16:27:19Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -117,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": -122,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Valeriane Ayayi",
+       "price": -108,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -124,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -107,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Sami Whitcomb",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Sami Whitcomb",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyadiew Puoch",
+       "price": -132,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Nyadiew Puoch",
+       "price": -102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -102,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -120,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -112,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -102,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -132,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Noemie Brochant",
+       "price": -111,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Noemie Brochant",
+       "price": -121,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -122,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -109,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 101,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -134,
+       "point": 16.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T16:27:19Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 104,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -139,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -104,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -129,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -145,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": 108,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Mack",
+       "price": 114,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Mack",
+       "price": -152,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -134,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": 101,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 113,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -150,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -117,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": 126,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Valeriane Ayayi",
+       "price": -170,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T16:27:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 118,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -152,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -159,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -167,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -182,
+       "point": 1.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T16:27:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natasha Mack",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": 120,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": -115,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 105,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -118,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyadiew Puoch",
+       "price": 115,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Noemie Brochant",
+       "price": 107,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Noemie Brochant",
+       "price": -125,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 105,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 105,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyadiew Puoch",
+       "price": -124,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -104,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -124,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": 110,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -137,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 112,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -103,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -125,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Sami Whitcomb",
+       "price": -110,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -125,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 117,
+       "point": 23.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T16:27:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 117,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 108,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 114,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -109,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Noemie Brochant",
+       "price": -120,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -125,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Mack",
+       "price": -132,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 115,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": 125,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-16T16:27:41Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 149,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -196,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -154,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": 118,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": 134,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -175,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 125,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -164,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 120,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -156,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 132,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -172,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-16T16:27:41Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -114,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -114,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 103,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -133,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -119,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -109,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": 104,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -135,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 103,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -133,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Sami Whitcomb",
+       "price": -133,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Sami Whitcomb",
+       "price": 103,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Valeriane Ayayi",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyadiew Puoch",
+       "price": -127,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Nyadiew Puoch",
+       "price": -102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Mack",
+       "price": -125,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Mack",
+       "price": -103,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Noemie Brochant",
+       "price": -109,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Noemie Brochant",
+       "price": -119,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-16T16:27:41Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -145,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -105,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -123,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -130,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -132,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": 102,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -125,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 120,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -156,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Noemie Brochant",
+       "price": 161,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Noemie Brochant",
+       "price": -213,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Mack",
+       "price": -137,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Mack",
+       "price": 106,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Valeriane Ayayi",
+       "price": -169,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Valeriane Ayayi",
+       "price": 129,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -133,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": 103,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
