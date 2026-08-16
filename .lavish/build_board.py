@@ -125,8 +125,8 @@ page = f"""<!doctype html>
       <div class="stat-value text-2xl">{n_bets}</div>
       <div class="stat-desc">risk/win $100, data only</div></div>
     <div class="stat"><div class="stat-title">Book to date</div>
-      <div class="stat-value text-2xl">70W–51L</div>
-      <div class="stat-desc">net +$1,332 · CLV −1¢ (n=88)</div></div>
+      <div class="stat-value text-2xl">110W–98L</div>
+      <div class="stat-desc">net +$175 · CLV +10¢ (n=184)</div></div>
   </div>
 
   <div class="card bg-base-100 shadow">
@@ -153,5 +153,6 @@ page = f"""<!doctype html>
 out = ROOT / ".lavish" / f"wnba-slate-{date}.html"
 out.write_text(page, encoding="utf-8")
 print(f"wrote {out} ({len(rows)} rows, {n_bets} logged)")
+
 
 
