@@ -1,0 +1,550 @@
+{
+ "id": "82e9dd1bf34357364d7cda4ebfacc413",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-18T23:00:00Z",
+ "home_team": "Toronto Tempo",
+ "away_team": "Indiana Fever",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-17T20:33:10Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -138,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": 104,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 136,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -182,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": 114,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -152,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-17T20:33:10Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -118,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -110,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -104,
+       "point": 24.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -125,
+       "point": 24.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": 100,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -110,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Rice",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -125,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -104,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -110,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -118,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -118,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-17T20:33:10Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": -132,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -158,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": 118,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": 100,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -132,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 114,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -152,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-17T20:31:51Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -126,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -108,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": 113,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -154,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 115,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -156,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-17T20:31:51Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -114,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -116,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -108,
+       "point": 23.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -123,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -105,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -127,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -120,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -110,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -103,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -128,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-17T20:31:51Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -134,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -101,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -136,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 117,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -159,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": 107,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -145,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-17T20:33:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 130,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -169,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -132,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": 102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": 113,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -147,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-17T20:33:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -115,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -112,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -125,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -103,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -106,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -122,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 100,
+       "point": 24.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -130,
+       "point": 24.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -106,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -122,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-17T20:33:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -120,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -149,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": 106,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -137,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -154,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": 119,
+       "point": 5.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
