@@ -17,6 +17,10 @@ soccer's RUNBOOK_CHROMEBOOK.md (paste = Ctrl+Shift+V, `ls` = letters L-S).
 cd ~ && git clone https://github.com/coachscottt/wnba.git && cd wnba
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e .                    # installs from pyproject.toml, ~2-3 min
+pip install 'polars[rtcompat]'      # Chromebook CPUs (e.g. N4500) lack AVX2 -
+                                    # default polars wheel dies with 'Illegal
+                                    # instruction' on import; this wheel doesn't.
+                                    # Needed again after any venv rebuild here.
 grep THE_ODDS_API_KEY ~/soccer/.env | sed 's/THE_ODDS_API_KEY/ODDS_API_KEY/' > .env
 python run.py audit                 # smoke test: prints a data-quality report
 python run.py train                 # ONCE after cloning: fits the models (~9 min on a
@@ -31,6 +35,11 @@ github.com/settings/tokens (classic, "repo" scope), then:
 ```
 git config --global credential.helper store
 git push        # prompts once: username coachscottt, password = the token. Cached after.
+```
+**Type the token at the prompt — never paste it into a chat/Claude session**
+(it would land in the transcript). If that ever happens, revoke it at
+github.com/settings/tokens and generate a fresh one.
+```
 ```
 (`sudo apt install gh && gh auth login` is the alternative.)
 (That `grep ... > .env` line copies the odds key from soccer and renames it
@@ -63,6 +72,7 @@ the one that can't be rebuilt; everything local is re-derivable.
 | clone asks for a password | repo is private → make public at github.com/coachscottt/wnba/settings (Danger Zone) |
 | `KeyError: ODDS_API_KEY` | `.env` missing/misnamed key — it's `ODDS_API_KEY=` (no THE_) |
 | `command not found: python` | `source .venv/bin/activate` |
+| `Illegal instruction` on import (polars) | CPU lacks AVX2 -> `pip install 'polars[rtcompat]'` |
 | `project` says no trained model found | run `python run.py train` once (see setup) |
 | `git push` asks for a password / rejects it | set up the token (see "Push credentials") |
 | `git pull` says conflict on wnba.db | `git checkout -- data/wnba.db && git pull` (collector wins) |
