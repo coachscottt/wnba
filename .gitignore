@@ -13,3 +13,6 @@ data/raw/stats/
 logs/*.log
 reports/*.png
 models/
+# pip install -e . artifact
+src/*.egg-info/
+*.egg-info/

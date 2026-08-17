@@ -19,7 +19,20 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -e .                    # installs from pyproject.toml, ~2-3 min
 grep THE_ODDS_API_KEY ~/soccer/.env | sed 's/THE_ODDS_API_KEY/ODDS_API_KEY/' > .env
 python run.py audit                 # smoke test: prints a data-quality report
+python run.py train                 # ONCE after cloning: fits the models (~9 min on a
+                                    # Chromebook). models/ is gitignored, so a fresh
+                                    # clone has no artifacts and `project` exits with
+                                    # "no trained model found" until this runs.
 ```
+
+### Push credentials (once)
+GitHub needs a token for `git push` (passwords don't work). Create one at
+github.com/settings/tokens (classic, "repo" scope), then:
+```
+git config --global credential.helper store
+git push        # prompts once: username coachscottt, password = the token. Cached after.
+```
+(`sudo apt install gh && gh auth login` is the alternative.)
 (That `grep ... > .env` line copies the odds key from soccer and renames it
 — WNBA calls it `ODDS_API_KEY`, no "THE_". Repo must be public to clone.)
 
@@ -50,4 +63,6 @@ the one that can't be rebuilt; everything local is re-derivable.
 | clone asks for a password | repo is private → make public at github.com/coachscottt/wnba/settings (Danger Zone) |
 | `KeyError: ODDS_API_KEY` | `.env` missing/misnamed key — it's `ODDS_API_KEY=` (no THE_) |
 | `command not found: python` | `source .venv/bin/activate` |
+| `project` says no trained model found | run `python run.py train` once (see setup) |
+| `git push` asks for a password / rejects it | set up the token (see "Push credentials") |
 | `git pull` says conflict on wnba.db | `git checkout -- data/wnba.db && git pull` (collector wins) |
