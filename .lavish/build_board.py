@@ -65,16 +65,18 @@ def edge_cell(e):
     note = " ⚠" if abs(e) >= 0.15 else ""
     return f'<span class="{color}">{e:+.1%}{note}</span>'
 
-body_rows = []
-for r in sorted(rows, key=lambda x: -abs(float(x["edge"]))):
+# one table per stat category, each sorted by |edge|
+STAT_ORDER = ["PTS", "REB", "AST"]
+STAT_TITLE = {"PTS": "Points", "REB": "Rebounds", "AST": "Assists"}
+
+def row_html(r):
     gm = player_game.get(r["player"], "")
     flags = []
     if r["is_whole_line"] == "1":
         flags.append('<span class="badge badge-ghost badge-xs">push poss.</span>')
-    body_rows.append(f"""<tr class="hover">
+    return f"""<tr class="hover">
       <td class="font-medium whitespace-nowrap">{html.escape(r['player'])}
         <div class="text-xs opacity-60">{html.escape(gm)}</div></td>
-      <td>{stat_badge(r['market'])}</td>
       <td class="text-right font-mono">{r['line']}</td>
       <td>{badge(r['side'])}</td>
       <td class="text-right font-mono">{int(r['best_price']):+d}
@@ -84,7 +86,33 @@ for r in sorted(rows, key=lambda x: -abs(float(x["edge"]))):
       <td class="text-right font-mono">{edge_cell(r['edge'])}</td>
       <td class="text-right font-mono">{float(r['kelly_frac']):.1%}</td>
       <td>{' '.join(flags)}</td>
-    </tr>""")
+    </tr>"""
+
+sections = []
+for st in STAT_ORDER:
+    srows = sorted(by_stat.get(st, []), key=lambda x: -abs(float(x["edge"])))
+    if not srows:
+        continue
+    n_flag = sum(1 for r in srows if r["bet_flag"] == "1")
+    sections.append(f"""<div class="card bg-base-100 shadow" id="sec-{st}">
+      <div class="card-body p-4">
+        <h2 class="card-title text-base">{STAT_TITLE[st]}
+          <span class="badge badge-neutral badge-sm">{len(srows)} markets</span>
+          <span class="badge badge-ghost badge-sm">{n_flag} logged</span></h2>
+        <div class="overflow-x-auto">
+          <table class="table table-sm table-zebra">
+            <thead><tr>
+              <th>Player / game</th><th class="text-right">Line</th><th>Side</th>
+              <th class="text-right">Best price</th>
+              <th class="text-right">Model P</th><th class="text-right">Fair P</th>
+              <th class="text-right">Edge</th><th class="text-right">¼-Kelly</th><th></th>
+            </tr></thead>
+            <tbody>{''.join(row_html(r) for r in srows)}</tbody>
+          </table>
+        </div>
+      </div></div>""")
+nav = " · ".join(f'<a class="link" href="#sec-{st}">{STAT_TITLE[st]} ({len(by_stat.get(st, []))})</a>'
+                 for st in STAT_ORDER if by_stat.get(st))
 
 stat_summary = " · ".join(f"{k}: {len(v)}" for k, v in sorted(by_stat.items()))
 
@@ -125,34 +153,24 @@ page = f"""<!doctype html>
       <div class="stat-value text-2xl">{n_bets}</div>
       <div class="stat-desc">risk/win $100, data only</div></div>
     <div class="stat"><div class="stat-title">Book to date</div>
-      <div class="stat-value text-2xl">110W–98L</div>
-      <div class="stat-desc">net +$175 · CLV +10¢ (n=184)</div></div>
+      <div class="stat-value text-2xl">164W–129L</div>
+      <div class="stat-desc">net +$2,429 · CLV +9¢ (n=244)</div></div>
   </div>
 
-  <div class="card bg-base-100 shadow">
-    <div class="card-body p-4">
-      <h2 class="card-title text-base">All sides, sorted by |model − market| disagreement</h2>
-      <div class="overflow-x-auto">
-        <table class="table table-sm table-zebra">
-          <thead><tr>
-            <th>Player / game</th><th>Stat</th><th class="text-right">Line</th><th>Side</th>
-            <th class="text-right">Best price</th>
-            <th class="text-right">Model P</th><th class="text-right">Fair P</th>
-            <th class="text-right">Edge</th><th class="text-right">¼-Kelly</th><th></th>
-          </tr></thead>
-          <tbody>{''.join(body_rows)}</tbody>
-        </table>
-      </div>
-      <p class="text-xs opacity-60">Model P = simulation win probability (push-adjusted).
-      Fair P = de-vigged (power) median across books at the same line. Edge = model − fair.</p>
-    </div>
-  </div>
+  <p class="text-sm">Jump to: {nav}</p>
+
+  {''.join(sections)}
+
+  <p class="text-xs opacity-60">Model P = simulation win probability (push-adjusted).
+  Fair P = de-vigged (power) median across books at the same line. Edge = model − fair.
+  Each table sorted by |edge| within its category.</p>
 
 </div></body></html>"""
 
 out = ROOT / ".lavish" / f"wnba-slate-{date}.html"
 out.write_text(page, encoding="utf-8")
 print(f"wrote {out} ({len(rows)} rows, {n_bets} logged)")
+
 
 
 
