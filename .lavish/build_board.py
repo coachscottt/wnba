@@ -139,10 +139,7 @@ page = f"""<!doctype html>
   </header>
 
   <div role="alert" class="alert alert-warning">
-    <span><b>Diagnostic, not a betting card.</b> Rows ⚠ above 15% edge are
-    near-certainly model error. Extra caution on <b>REB</b>: the one stat where the
-    model lost to its baseline in phase 9 — tonight's top edges cluster there, and
-    the paper book is measuring exactly that. No stakes until CLV proves out.</span>
+    <span><b>Diagnostic, not a betting card.</b> Paper book to date: CLV rises with edge (3–8%: ~0¢; 8–15%: +12¢; 15–25%: +22¢) — the ⚠ high-edge rows are where the market has moved toward the model most, NOT model error as first assumed. Six nights, still small. No stakes until CLV holds at n≈500.</span>
   </div>
 
   <div class="stats stats-vertical sm:stats-horizontal shadow bg-base-100 w-full">
@@ -170,6 +167,7 @@ page = f"""<!doctype html>
 out = ROOT / ".lavish" / f"wnba-slate-{date}.html"
 out.write_text(page, encoding="utf-8")
 print(f"wrote {out} ({len(rows)} rows, {n_bets} logged)")
+
 
 
 
