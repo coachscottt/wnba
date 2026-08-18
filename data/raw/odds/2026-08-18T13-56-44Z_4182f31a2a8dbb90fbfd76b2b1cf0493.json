@@ -1,0 +1,1102 @@
+{
+ "id": "4182f31a2a8dbb90fbfd76b2b1cf0493",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-18T23:00:00Z",
+ "home_team": "Connecticut Sun",
+ "away_team": "Los Angeles Sparks",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-18T13:55:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": 142,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -192,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -146,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -136,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 102,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-18T13:55:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -110,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -120,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -104,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -102,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -128,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 100,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -118,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -110,
+       "point": 11.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-18T13:55:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -138,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 104,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -148,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 112,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 140,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -188,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -146,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-18T13:56:34Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -152,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": 112,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -128,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -106,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 111,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -151,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -145,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 107,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-18T13:56:34Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -105,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -126,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -116,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -115,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -129,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -103,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -117,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -128,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -128,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -104,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -106,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -126,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-18T13:56:34Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -139,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": 102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -109,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -124,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -132,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -103,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -142,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 105,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -149,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 138,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -189,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-18T13:52:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -132,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 124,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -170,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-18T13:52:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -113,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -118,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -103,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -118,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -113,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -127,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -103,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -130,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -109,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -122,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -125,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-18T13:52:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -137,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": 103,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 105,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -138,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -105,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-18T13:56:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 112,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -130,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": 144,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -189,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 124,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -161,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 144,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -189,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 118,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -154,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-18T13:56:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 103,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -133,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -110,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -118,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -101,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -128,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -112,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -115,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -108,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -120,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -110,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -118,
+       "point": 15.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-18T13:56:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -123,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -105,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -125,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Griner",
+       "price": -103,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 141,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -185,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -141,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 108,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 106,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -137,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 106,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -137,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -127,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-18T13:56:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -165,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -159,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 118,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 123,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -134,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 110,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-18T13:56:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -124,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 117,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -106,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 110,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": 120,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 115,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 102,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -112,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 100,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": 120,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -114,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -132,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-18T13:56:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -106,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -103,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -136,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Griner",
+       "price": -130,
+       "point": 5.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
