@@ -114,6 +114,13 @@ for st in STAT_ORDER:
 nav = " · ".join(f'<a class="link" href="#sec-{st}">{STAT_TITLE[st]} ({len(by_stat.get(st, []))})</a>'
                  for st in STAT_ORDER if by_stat.get(st))
 
+book = conn.execute(
+    "SELECT SUM(status='won') w, SUM(status='lost') l, SUM(settled) net,"
+    " COUNT(clv_cents) n, ROUND(AVG(clv_cents)) clv FROM paper_bets "
+    "WHERE status != 'pending'").fetchone()
+book_rec = f"{book['w'] or 0}W–{book['l'] or 0}L"
+book_desc = (f"net ${book['net'] or 0:+,.0f} · CLV {book['clv'] or 0:+.0f}¢ (n={book['n'] or 0})")
+
 stat_summary = " · ".join(f"{k}: {len(v)}" for k, v in sorted(by_stat.items()))
 
 page = f"""<!doctype html>
@@ -150,8 +157,8 @@ page = f"""<!doctype html>
       <div class="stat-value text-2xl">{n_bets}</div>
       <div class="stat-desc">risk/win $100, data only</div></div>
     <div class="stat"><div class="stat-title">Book to date</div>
-      <div class="stat-value text-2xl">164W–129L</div>
-      <div class="stat-desc">net +$2,429 · CLV +9¢ (n=244)</div></div>
+      <div class="stat-value text-2xl">{book_rec}</div>
+      <div class="stat-desc">{book_desc}</div></div>
   </div>
 
   <p class="text-sm">Jump to: {nav}</p>
