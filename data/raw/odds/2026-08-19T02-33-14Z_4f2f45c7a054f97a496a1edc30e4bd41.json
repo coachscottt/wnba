@@ -1,0 +1,586 @@
+{
+ "id": "4f2f45c7a054f97a496a1edc30e4bd41",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-19T01:13:00Z",
+ "home_team": "Las Vegas Aces",
+ "away_team": "Atlanta Dream",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-19T02:33:05Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 178,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -245,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -160,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 130,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -174,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -174,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 130,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 142,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -192,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 178,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -245,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-19T02:33:05Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -102,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -114,
+       "point": 27.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -114,
+       "point": 27.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -128,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -104,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 102,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -136,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -106,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": 108,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": -144,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -120,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -110,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -136,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 102,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -112,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -118,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-19T02:33:05Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -138,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 148,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -200,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 124,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -166,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 118,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -158,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 118,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -158,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -225,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": 164,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -198,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 146,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -245,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 174,
+       "point": 1.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-19T02:32:55Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -115,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -155,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": 110,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 165,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -230,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -155,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": 110,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -140,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 100,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-19T02:32:55Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -105,
+       "point": 27.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -125,
+       "point": 27.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -120,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -115,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -105,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -135,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 100,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -115,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -120,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 115,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -155,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -105,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": -130,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-19T02:32:55Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -155,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": 115,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -115,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -120,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -140,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 120,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -170,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 120,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -165,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -235,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 165,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -165,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 120,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
