@@ -1,0 +1,1570 @@
+{
+ "id": "09563bab4edf9cf2073ee946ad95d61b",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-20T02:10:00Z",
+ "home_team": "Golden State Valkyries",
+ "away_team": "Minnesota Lynx",
+ "bookmakers": [
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-19T20:10:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 107,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -145,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -153,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": 113,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -154,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": 113,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -156,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -131,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -104,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -106,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -128,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-19T20:10:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -105,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -126,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -103,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -128,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -109,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -107,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -124,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -108,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -123,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -105,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -127,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -121,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -109,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -118,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -113,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -104,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -128,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": -123,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla Thornton",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Tiffany Hayes",
+       "price": -111,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Tiffany Hayes",
+       "price": -120,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-19T20:10:13Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -101,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -135,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -130,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -105,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": 103,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla Thornton",
+       "price": -140,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 101,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -138,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 113,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -154,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -132,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -103,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -129,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -139,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": 101,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -138,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 132,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -180,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-19T20:10:01Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -144,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": 108,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -140,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": 106,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 134,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -180,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -132,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-19T20:10:01Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": 104,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -132,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 100,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -102,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 104,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -135,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -102,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -128,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -113,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -115,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -102,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 106,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -138,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla Thornton",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Tiffany Hayes",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Tiffany Hayes",
+       "price": -106,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-19T20:10:01Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -108,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -122,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 116,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -158,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -128,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -104,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": 114,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla Thornton",
+       "price": -152,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 114,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -152,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 122,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -162,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-19T20:10:12Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 108,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -145,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -155,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": 118,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-19T20:10:12Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla Thornton",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -120,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -112,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 110,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -155,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Tiffany Hayes",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Tiffany Hayes",
+       "price": -121,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -130,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -103,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -107,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -124,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -127,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -115,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -115,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -112,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -120,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -103,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -121,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-19T20:10:12Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla Thornton",
+       "price": -148,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -108,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -124,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -135,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": 102,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 108,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -143,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 111,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -148,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -124,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -107,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 106,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -141,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 107,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -150,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-19T20:10:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -109,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -155,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -137,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -195,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 165,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -139,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -115,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -137,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-19T20:10:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -105,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 105,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -130,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -117,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": 105,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": 115,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": 120,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 106,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -129,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 104,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -108,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Tiffany Hayes",
+       "price": 112,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": 123,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -148,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -108,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": -115,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 108,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Tiffany Hayes",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -122,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -139,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -137,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 133,
+       "point": 20.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-19T20:10:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -118,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -132,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 100,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -141,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": 102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 125,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -104,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -106,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-19T20:09:56Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -128,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -101,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 132,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -172,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 109,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -141,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -133,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": 103,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": 134,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -175,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 186,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -250,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-19T20:09:56Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": -115,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla Thornton",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": -101,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -128,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -101,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": 100,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -130,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 100,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 100,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -130,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -123,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -105,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Tiffany Hayes",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Tiffany Hayes",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 100,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": -105,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -123,
+       "point": 11.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-19T20:09:56Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Napheesa Collier",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Napheesa Collier",
+       "price": -123,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -123,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -104,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Courtney Williams",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Courtney Williams",
+       "price": -130,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla Thornton",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla Thornton",
+       "price": -143,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Miles",
+       "price": 110,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Miles",
+       "price": -143,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": 132,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -172,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": 110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -143,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kayla McBride",
+       "price": 107,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kayla McBride",
+       "price": -139,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 117,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -152,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Howard",
+       "price": 141,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Howard",
+       "price": -185,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
