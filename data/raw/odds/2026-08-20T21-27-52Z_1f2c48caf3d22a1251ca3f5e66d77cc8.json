@@ -1,0 +1,646 @@
+{
+ "id": "1f2c48caf3d22a1251ca3f5e66d77cc8",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-22T02:00:00Z",
+ "home_team": "Toronto Tempo",
+ "away_team": "Portland Fire",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T21:26:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": 124,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -166,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -152,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 114,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T21:26:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": -120,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -108,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -128,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -128,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -102,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -125,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -104,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -120,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -108,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -102,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -128,
+       "point": 17.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T21:26:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 128,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -172,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -146,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": 110,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -154,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": 116,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": -128,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -104,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -125,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -106,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T21:27:07Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -113,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": 125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -171,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 144,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -198,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T21:27:07Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -107,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -123,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -115,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -115,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -130,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -102,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -128,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -104,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -102,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -113,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -118,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T21:27:07Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -162,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": 119,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -125,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -109,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -123,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -111,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -160,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": 118,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": -127,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -107,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 101,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -137,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T21:26:59Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -156,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 120,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 149,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -196,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 152,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -200,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": 130,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -169,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -111,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -116,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T21:26:59Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -108,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -120,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -105,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -123,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": -123,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -104,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -106,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -125,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -103,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -116,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": -111,
+       "point": 19.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T21:26:59Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 106,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -137,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -130,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": 101,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Brittney Sykes",
+       "price": -122,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Brittney Sykes",
+       "price": -106,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan Gustafson",
+       "price": -119,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan Gustafson",
+       "price": -109,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Marina Mabrey",
+       "price": -152,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Marina Mabrey",
+       "price": 117,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -154,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": 119,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
