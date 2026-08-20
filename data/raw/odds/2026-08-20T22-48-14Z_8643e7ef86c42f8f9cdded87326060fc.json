@@ -1,0 +1,694 @@
+{
+ "id": "8643e7ef86c42f8f9cdded87326060fc",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-21T23:30:00Z",
+ "home_team": "Chicago Sky",
+ "away_team": "Golden State Valkyries",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T22:47:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": 118,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -158,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -114,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -114,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -148,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": 112,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": 128,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -172,
+       "point": 5.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T22:47:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -104,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -110,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -130,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": 100,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -128,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -106,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -115,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -113,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": 100,
+       "point": 12.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T22:47:27Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": 118,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -158,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": 110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -146,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -136,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -122,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -108,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 142,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -192,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T22:47:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": 106,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -144,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -153,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": 113,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -151,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": 111,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -108,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -125,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T22:47:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -116,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -117,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": -113,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -107,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -123,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -114,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -116,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -111,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -120,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -118,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -112,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -118,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -112,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -121,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -110,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T22:47:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": 102,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -139,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -123,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -110,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -129,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -105,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -103,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -132,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 127,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -174,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T22:47:40Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -108,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -120,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": 117,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -152,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -143,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -147,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": 113,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T22:47:40Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": -119,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -109,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -122,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -106,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Janelle Salaun",
+       "price": -110,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Janelle Salaun",
+       "price": -118,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Cecilia Zandalasini",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Cecilia Zandalasini",
+       "price": -106,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -115,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -112,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": -115,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -112,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Sydney Taylor",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Sydney Taylor",
+       "price": 100,
+       "point": 12.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T22:47:40Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kamilla Cardoso",
+       "price": 115,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kamilla Cardoso",
+       "price": -149,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Veronica Burton",
+       "price": -127,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Veronica Burton",
+       "price": -102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Azura Stevens",
+       "price": -119,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Azura Stevens",
+       "price": -109,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Natasha Cloud",
+       "price": 107,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Natasha Cloud",
+       "price": -139,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Gabby Williams",
+       "price": 141,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Gabby Williams",
+       "price": -185,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

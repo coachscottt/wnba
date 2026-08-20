@@ -1,0 +1,1312 @@
+{
+ "id": "cdd0cd4e662b83ac6836cb4a84a152e3",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-21T02:00:00Z",
+ "home_team": "Las Vegas Aces",
+ "away_team": "Connecticut Sun",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T22:47:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -132,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 108,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -144,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 114,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -152,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -182,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": 136,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -118,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -112,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T22:47:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -128,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -102,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -125,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -104,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -110,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -118,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -130,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -128,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -102,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Kennedy Burke",
+       "price": -120,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kennedy Burke",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -114,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -114,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 100,
+       "point": 27.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -130,
+       "point": 27.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T22:47:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 128,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -172,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 100,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -132,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 116,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -154,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -152,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": 114,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T22:47:46Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -124,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -109,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 100,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -135,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 107,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -145,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -156,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -177,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": 129,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T22:47:46Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -115,
+       "point": 26.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -115,
+       "point": 26.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -116,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -114,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -129,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -103,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -116,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -123,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -107,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -124,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -105,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -127,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Kennedy Burke",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kennedy Burke",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -136,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": 103,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": -122,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -109,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T22:47:46Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 103,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -141,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -123,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -111,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 104,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -141,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -161,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": 118,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -113,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Charlisse Leger-Walker",
+       "price": 109,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Charlisse Leger-Walker",
+       "price": -148,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -175,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": 128,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": -131,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -142,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T22:47:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 107,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -140,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -122,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -109,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 118,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -165,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T22:47:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": 154,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": -209,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -109,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -122,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -117,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -114,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -108,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -125,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -127,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Kennedy Burke",
+       "price": -113,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kennedy Burke",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -125,
+       "point": 26.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -108,
+       "point": 26.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -127,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -105,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -102,
+       "point": 10.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T22:47:16Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 107,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -141,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -104,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -130,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 119,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -159,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -152,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -117,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -121,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -110,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T22:47:44Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -130,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -134,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -125,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 102,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 133,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T22:47:44Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -112,
+       "point": 26.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 115,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -127,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": -106,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 100,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -124,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 114,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 107,
+       "point": 27.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -115,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -125,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -127,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": 110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -132,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -129,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 102,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": 100,
+       "point": 12.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T22:47:44Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -113,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -129,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -103,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 120,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": 105,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -132,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-20T22:47:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 103,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -133,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": -119,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -109,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": -172,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": 132,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 130,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -169,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-20T22:47:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 100,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -130,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -123,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -104,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 105,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -135,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -103,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -125,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": -143,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": 110,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -123,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -105,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": -120,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -108,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Kennedy Burke",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Kennedy Burke",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 109,
+       "point": 27.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -141,
+       "point": 27.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-20T22:47:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -103,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "A'ja Wilson",
+       "price": 103,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "A'ja Wilson",
+       "price": -133,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -143,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Diamond Miller",
+       "price": -119,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Diamond Miller",
+       "price": -109,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Chelsea Gray",
+       "price": 113,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Chelsea Gray",
+       "price": -147,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jackie Young",
+       "price": 128,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jackie Young",
+       "price": -167,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Jewell Loyd",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jewell Loyd",
+       "price": -135,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "NaLyssa Smith",
+       "price": 112,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "NaLyssa Smith",
+       "price": -145,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
