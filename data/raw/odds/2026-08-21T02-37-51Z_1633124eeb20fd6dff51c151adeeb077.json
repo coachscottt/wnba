@@ -1,0 +1,694 @@
+{
+ "id": "1633124eeb20fd6dff51c151adeeb077",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-21T02:06:00Z",
+ "home_team": "Los Angeles Sparks",
+ "away_team": "Atlanta Dream",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-21T02:36:36Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -136,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 130,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -174,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -112,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -118,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -138,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -112,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -118,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -138,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -102,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-21T02:37:47Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -104,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -128,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -128,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -104,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -138,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 102,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -136,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -106,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Monique Akoa Makani",
+       "price": -130,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Monique Akoa Makani",
+       "price": -102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -106,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -125,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -120,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -140,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": 106,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -122,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -108,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": 108,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -144,
+       "point": 11.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-21T02:37:47Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -180,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 134,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -132,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -200,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 148,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 122,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -162,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -146,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 154,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -210,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 110,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -146,
+       "point": 10.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-21T02:37:43Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -195,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 140,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": 105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -145,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 115,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -160,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -170,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-21T02:37:43Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -110,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -125,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -135,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 100,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 100,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -135,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -130,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -105,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -125,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -110,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -120,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -115,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Erica Wheeler",
+       "price": -125,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Erica Wheeler",
+       "price": -110,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -115,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -120,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Isobel Borlase",
+       "price": 110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Isobel Borlase",
+       "price": -150,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Madina Okot",
+       "price": -115,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Madina Okot",
+       "price": -115,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -145,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 110,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Ariel Atkins",
+       "price": -130,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Ariel Atkins",
+       "price": -105,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": -110,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -125,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-21T02:37:43Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -150,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 110,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -135,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 115,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -160,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Madina Okot",
+       "price": 120,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Madina Okot",
+       "price": -170,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -165,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 120,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Cameron Brink",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Cameron Brink",
+       "price": -135,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -175,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -165,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 120,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
