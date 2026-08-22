@@ -1,0 +1,1546 @@
+{
+ "id": "c51758bb72914739b6e6cc2d16ed0882",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-23T02:00:00Z",
+ "home_team": "Phoenix Mercury",
+ "away_team": "Atlanta Dream",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T13:30:00Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -138,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 104,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 108,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -144,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -132,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -114,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -114,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 118,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -158,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T13:30:00Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -108,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -120,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": 104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -135,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Madina Okot",
+       "price": -132,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Madina Okot",
+       "price": 102,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -120,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 104,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -135,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -115,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -113,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Sami Whitcomb",
+       "price": -115,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Sami Whitcomb",
+       "price": -113,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -106,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -122,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -130,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 100,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -118,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -110,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T13:30:00Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -162,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 122,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 140,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -186,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -138,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 104,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -146,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -136,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Madina Okot",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Madina Okot",
+       "price": 128,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T13:30:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -145,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": 107,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -142,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 105,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -155,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -155,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -142,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": 105,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -136,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 100,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T13:30:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -104,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -127,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -104,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -127,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -115,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -116,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -108,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -123,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -132,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -101,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -112,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -104,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -103,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -106,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T13:30:49Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -111,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -109,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -124,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -110,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -123,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -145,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 107,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -146,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 108,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -101,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -134,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 122,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -166,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 126,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -172,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T13:30:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 118,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -157,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -145,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 109,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 106,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -141,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -103,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T13:30:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -110,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": -121,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -118,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -113,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -132,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": -106,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -127,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -127,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -107,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -118,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -114,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -112,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -120,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -124,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -107,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -120,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -112,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T13:30:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -102,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -136,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 102,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -113,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -118,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -117,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -109,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -122,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 119,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -159,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 112,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -150,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -148,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 111,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T13:31:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -121,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -125,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -139,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -136,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -165,
+       "point": 1.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T13:31:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Madina Okot",
+       "price": 118,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Madina Okot",
+       "price": -125,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 105,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": 105,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -107,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -148,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 110,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -115,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": 105,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Sami Whitcomb",
+       "price": 110,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 102,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 107,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -136,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -141,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -139,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -114,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Sami Whitcomb",
+       "price": -122,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": -118,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -125,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -118,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -139,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -124,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -137,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -109,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 105,
+       "point": 13.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T13:31:14Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -113,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": 112,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": -162,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -129,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -121,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T13:30:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": -123,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -105,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -149,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 115,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -135,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 104,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": 109,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -141,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 118,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -154,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 155,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -204,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T13:30:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 103,
+       "point": 19.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -133,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -130,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 100,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -114,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -114,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": -130,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": 100,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -119,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -109,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": 104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -135,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 103,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -133,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": -103,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Sami Whitcomb",
+       "price": -114,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Sami Whitcomb",
+       "price": -114,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -120,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": -108,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T13:30:28Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Allisha Gray",
+       "price": 120,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Allisha Gray",
+       "price": -156,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jordin Canada",
+       "price": -109,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Jordin Canada",
+       "price": -119,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rhyne Howard",
+       "price": -139,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rhyne Howard",
+       "price": 107,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Kahleah Copper",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Kahleah Copper",
+       "price": -167,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Naz Hillmon",
+       "price": -152,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Naz Hillmon",
+       "price": 116,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Alyssa Thomas",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Alyssa Thomas",
+       "price": -127,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "DeWanna Bonner",
+       "price": -112,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "DeWanna Bonner",
+       "price": -115,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Angel Reese",
+       "price": -132,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Angel Reese",
+       "price": 102,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Plum",
+       "price": 149,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Plum",
+       "price": -196,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
