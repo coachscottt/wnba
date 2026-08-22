@@ -1,0 +1,550 @@
+{
+ "id": "1f2c48caf3d22a1251ca3f5e66d77cc8",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-22T02:06:00Z",
+ "home_team": "Toronto Tempo",
+ "away_team": "Portland Fire",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T02:29:26Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": 116,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -154,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Isabelle Harrison",
+       "price": -146,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Isabelle Harrison",
+       "price": 110,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -132,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Rice",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": -146,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Julie Allemand",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Julie Allemand",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -106,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -125,
+       "point": 1.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T02:29:26Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -108,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -122,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -130,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Rice",
+       "price": -102,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 104,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -138,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 102,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -136,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Laura Juskaite",
+       "price": -102,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Laura Juskaite",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Isabelle Harrison",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Isabelle Harrison",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -106,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -125,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyadiew Puoch",
+       "price": 108,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nyadiew Puoch",
+       "price": -144,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Julie Allemand",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Julie Allemand",
+       "price": -120,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": 104,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": -138,
+       "point": 11.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T02:29:26Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Laura Juskaite",
+       "price": 134,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Laura Juskaite",
+       "price": -180,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Julie Allemand",
+       "price": -166,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Julie Allemand",
+       "price": 124,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Isabelle Harrison",
+       "price": -140,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Isabelle Harrison",
+       "price": 106,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -168,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 126,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 122,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -162,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -144,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Rice",
+       "price": 108,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -114,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -114,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -120,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T02:29:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -160,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": 115,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Julie Allemand",
+       "price": -125,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Julie Allemand",
+       "price": -110,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T02:29:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": -130,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -105,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Carla Leite",
+       "price": -110,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Carla Leite",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Isabelle Harrison",
+       "price": -105,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Isabelle Harrison",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -135,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kiki Rice",
+       "price": -110,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Kiki Rice",
+       "price": -125,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Laura Juskaite",
+       "price": -105,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Laura Juskaite",
+       "price": -130,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 100,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -140,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": -105,
+       "point": 10.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T02:29:09Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aneesah Morrow",
+       "price": -110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Aneesah Morrow",
+       "price": -125,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Emily Engstler",
+       "price": 120,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Emily Engstler",
+       "price": -165,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Isabelle Harrison",
+       "price": -125,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Isabelle Harrison",
+       "price": -110,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Laura Juskaite",
+       "price": -135,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Laura Juskaite",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Bridget Carleton",
+       "price": 100,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Bridget Carleton",
+       "price": -140,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Megan DiLeo",
+       "price": -105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Megan DiLeo",
+       "price": -130,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Nyadiew Puoch",
+       "price": 105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Nyadiew Puoch",
+       "price": -145,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

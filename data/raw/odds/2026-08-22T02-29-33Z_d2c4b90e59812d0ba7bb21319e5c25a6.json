@@ -1,0 +1,868 @@
+{
+ "id": "d2c4b90e59812d0ba7bb21319e5c25a6",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-23T01:00:00Z",
+ "home_team": "Los Angeles Sparks",
+ "away_team": "Connecticut Sun",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T02:29:26Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 142,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -192,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 116,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -154,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 130,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -174,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -130,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T02:29:26Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 102,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -132,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -114,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -115,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -106,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -110,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -118,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -130,
+       "point": 15.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T02:29:26Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 104,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -138,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -158,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": 116,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 122,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -162,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -136,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": 102,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T02:29:18Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -153,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 112,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -165,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": 121,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -133,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 120,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -164,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T02:29:18Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -106,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -125,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -106,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -133,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": 100,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -105,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -126,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -131,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -101,
+       "point": 11.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T02:29:18Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -108,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -126,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 104,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -141,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -141,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": 104,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -148,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": 109,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 140,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -192,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T02:27:58Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -157,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 117,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T02:27:58Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -110,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -121,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -108,
+       "point": 12.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -122,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -107,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -124,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -109,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -122,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -106,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -127,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T02:27:58Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 104,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -137,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -121,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -137,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": 104,
+       "point": 6.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T02:28:37Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 120,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -165,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -155,
+       "point": 4.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T02:28:37Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": 118,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 102,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -103,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -104,
+       "point": 12.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -134,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": 112,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 123,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -115,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -125,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -105,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -127,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T02:28:37Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -120,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -127,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 108,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 128,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -157,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T02:28:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -145,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": 112,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": 124,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": -161,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -130,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -156,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": 121,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T02:28:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -109,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": -119,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": -128,
+       "point": 11.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -101,
+       "point": 11.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": -102,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -127,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -106,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -122,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -130,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": 100,
+       "point": 13.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T02:28:48Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Rae Burrell",
+       "price": -147,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rae Burrell",
+       "price": 113,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Olivia Nelson-Ododa",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Olivia Nelson-Ododa",
+       "price": -114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Le\u00efla Lacan",
+       "price": 115,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Le\u00efla Lacan",
+       "price": -149,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Dearica Hamby",
+       "price": -132,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Dearica Hamby",
+       "price": 102,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Nneka Ogwumike",
+       "price": 109,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Nneka Ogwumike",
+       "price": -141,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
