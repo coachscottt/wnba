@@ -1,0 +1,1492 @@
+{
+ "id": "a05ae0cd5516fbbcdd9fda35e698f70d",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-22T23:00:00Z",
+ "home_team": "New York Liberty",
+ "away_team": "Indiana Fever",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T16:26:37Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -104,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -128,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 140,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -192,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 116,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -154,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": 114,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -152,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -130,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T16:26:37Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -102,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -128,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -122,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -106,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -104,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -110,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -118,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -113,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -115,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -104,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -125,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -114,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T16:26:37Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -112,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -118,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -136,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": 102,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 116,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -154,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -152,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": 114,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -146,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": 110,
+       "point": 8.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T16:26:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 111,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -151,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": 109,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -148,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -119,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -114,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -168,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": 123,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -136,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": 100,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -133,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": 112,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -153,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T16:26:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -113,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -118,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -115,
+       "point": 23.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -115,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -104,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -127,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -106,
+       "point": 18.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -125,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -125,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -106,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -121,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -109,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -120,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -111,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -107,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -124,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -107,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -124,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": -107,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -124,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Leonie Fiebich",
+       "price": -116,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Leonie Fiebich",
+       "price": -114,
+       "point": 6.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T16:26:25Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 108,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -147,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -133,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -102,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -146,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": 107,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": 103,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -141,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -104,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -130,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -137,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": 101,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -128,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -106,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": 137,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -187,
+       "point": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "williamhill_us",
+   "title": "Caesars",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T16:21:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 111,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -148,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": 110,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -145,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -108,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -124,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T16:21:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Leonie Fiebich",
+       "price": -114,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Leonie Fiebich",
+       "price": -117,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -132,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": 128,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -170,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -120,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -112,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -130,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -103,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -108,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -124,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -121,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -111,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -121,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -118,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -113,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -103,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -109,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T16:21:53Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -130,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -103,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 113,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -165,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": 110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -155,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -138,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": 105,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -108,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -124,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 109,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -145,
+       "point": 9.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betrivers",
+   "title": "BetRivers",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T16:26:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": 112,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -103,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": 115,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -127,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 102,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -175,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -150,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T16:26:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -103,
+       "point": 24.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": -122,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -103,
+       "point": 26.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": 115,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -122,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 115,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 105,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -120,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -106,
+       "point": 18.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": 114,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -137,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -141,
+       "point": 24.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": 120,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -110,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -150,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -122,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 107,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -103,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -113,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": 102,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Leonie Fiebich",
+       "price": 123,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -115,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Leonie Fiebich",
+       "price": -107,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -129,
+       "point": 17.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T16:26:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 102,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 105,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -186,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": 102,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 105,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -137,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -109,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T16:26:19Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": 114,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -147,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 161,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -213,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -105,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -123,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -143,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": 113,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -147,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": 102,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -132,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 115,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -149,
+       "point": 9.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T16:26:19Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": -109,
+       "point": 25.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -119,
+       "point": 25.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": 104,
+       "point": 23.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -135,
+       "point": 23.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -123,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": 100,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -130,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": 106,
+       "point": 22.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": -137,
+       "point": 22.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": -130,
+       "point": 15.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": 100,
+       "point": 15.5
+      },
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -128,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -101,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -119,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": -109,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": 122,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": -159,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Leonie Fiebich",
+       "price": -112,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Leonie Fiebich",
+       "price": -115,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Sophie Cunningham",
+       "price": -105,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Sophie Cunningham",
+       "price": -123,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Lexie Hull",
+       "price": 117,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Lexie Hull",
+       "price": -152,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Marine Johannes",
+       "price": -139,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Marine Johannes",
+       "price": 107,
+       "point": 7.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T16:26:19Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Sabrina Ionescu",
+       "price": -105,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Sabrina Ionescu",
+       "price": -123,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Aliyah Boston",
+       "price": 117,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Aliyah Boston",
+       "price": -152,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Caitlin Clark",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Caitlin Clark",
+       "price": -103,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Pauline Astier",
+       "price": 161,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Pauline Astier",
+       "price": -213,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Rebecca Allen",
+       "price": -143,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Rebecca Allen",
+       "price": 110,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Makayla Timpson",
+       "price": 110,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Makayla Timpson",
+       "price": -143,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "Kelsey Mitchell",
+       "price": 144,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Kelsey Mitchell",
+       "price": -189,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Jonquel Jones",
+       "price": -137,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Jonquel Jones",
+       "price": 106,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Lexie Hull",
+       "price": -125,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Lexie Hull",
+       "price": -103,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Breanna Stewart",
+       "price": -135,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Breanna Stewart",
+       "price": 105,
+       "point": 7.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

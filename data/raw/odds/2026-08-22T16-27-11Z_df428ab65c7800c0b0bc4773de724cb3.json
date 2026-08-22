@@ -1,0 +1,826 @@
+{
+ "id": "df428ab65c7800c0b0bc4773de724cb3",
+ "sport_key": "basketball_wnba",
+ "sport_title": "WNBA",
+ "commence_time": "2026-08-23T20:00:00Z",
+ "home_team": "Dallas Wings",
+ "away_team": "Seattle Storm",
+ "bookmakers": [
+  {
+   "key": "fanduel",
+   "title": "FanDuel",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T16:26:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 116,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -154,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -112,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -118,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -160,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 120,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -200,
+       "point": 1.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": 148,
+       "point": 1.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -106,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T16:26:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": 100,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Awak Kuier",
+       "price": -130,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -122,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -106,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -110,
+       "point": 17.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -118,
+       "point": 17.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -104,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -125,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -130,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 100,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -118,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -114,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -114,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T16:26:35Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 128,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -172,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": 112,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -148,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": -158,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Awak Kuier",
+       "price": 118,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -132,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": 100,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -162,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 122,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -136,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": 102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -106,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -125,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": 116,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -158,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "DraftKings",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T16:27:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 103,
+       "point": 6.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -140,
+       "point": 6.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -102,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -133,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -109,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -125,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 111,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -151,
+       "point": 3.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T16:27:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -111,
+       "point": 21.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -119,
+       "point": 21.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -108,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -122,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -130,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -102,
+       "point": 16.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -114,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -116,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -122,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -108,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -104,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -128,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": -112,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Awak Kuier",
+       "price": -119,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -110,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -120,
+       "point": 8.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T16:27:03Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -103,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -132,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -126,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -107,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -144,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": 106,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -114,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -119,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": -157,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Awak Kuier",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": 114,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -156,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": 115,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -156,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 123,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -167,
+       "point": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "betonlineag",
+   "title": "BetOnline.ag",
+   "markets": [
+    {
+     "key": "player_assists",
+     "last_update": "2026-08-22T16:26:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 118,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -154,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -156,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 120,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -102,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -127,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -112,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -115,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": 124,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -161,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_points",
+     "last_update": "2026-08-22T16:26:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -109,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -119,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -127,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": -102,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -102,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": -127,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": -112,
+       "point": 14.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -115,
+       "point": 14.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": -105,
+       "point": 8.5
+      },
+      {
+       "name": "Under",
+       "description": "Awak Kuier",
+       "price": -123,
+       "point": 8.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -110,
+       "point": 20.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -118,
+       "point": 20.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": -122,
+       "point": 13.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -106,
+       "point": 13.5
+      },
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": -127,
+       "point": 16.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -102,
+       "point": 16.5
+      }
+     ]
+    },
+    {
+     "key": "player_rebounds",
+     "last_update": "2026-08-22T16:26:54Z",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Arike Ogunbowale",
+       "price": 130,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Arike Ogunbowale",
+       "price": -169,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Ezi Magbegor",
+       "price": -106,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Ezi Magbegor",
+       "price": -122,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Paige Bueckers",
+       "price": -159,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Paige Bueckers",
+       "price": 122,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "Jessica Shepard",
+       "price": 107,
+       "point": 10.5
+      },
+      {
+       "name": "Under",
+       "description": "Jessica Shepard",
+       "price": -139,
+       "point": 10.5
+      },
+      {
+       "name": "Over",
+       "description": "Alanna Smith",
+       "price": -133,
+       "point": 5.5
+      },
+      {
+       "name": "Under",
+       "description": "Alanna Smith",
+       "price": 103,
+       "point": 5.5
+      },
+      {
+       "name": "Over",
+       "description": "Dominique Malonga",
+       "price": -127,
+       "point": 9.5
+      },
+      {
+       "name": "Under",
+       "description": "Dominique Malonga",
+       "price": -102,
+       "point": 9.5
+      },
+      {
+       "name": "Over",
+       "description": "Awak Kuier",
+       "price": -152,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Awak Kuier",
+       "price": 117,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Flau'jae Johnson",
+       "price": 122,
+       "point": 4.5
+      },
+      {
+       "name": "Under",
+       "description": "Flau'jae Johnson",
+       "price": -159,
+       "point": 4.5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
